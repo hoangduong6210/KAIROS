@@ -1,0 +1,31 @@
+[project]
+id = "kairos"
+name = "KAIROS"
+stage = "evidence-release"
+implementation_version = "4.4.0"
+last_updated = "2026-08-19"
+
+[pointers]
+evidence_release = "kairos-benchmark-v1"
+paper_snapshot = "UNRELEASED"
+conference_artifact = "kairos-conference-final"
+status = "wiki/status/Project-Status.md"
+claims = "wiki/claims/Current-Claim-Language.md"
+evidence = "wiki/evidence/Evidence-Ledger.md"
+
+[canonical]
+implementation = "src/kairos/model.py"
+implementation_sha256 = "bd9c108c448ca747ba6031c42251fa9856d00c6da99c9da18ca0a511ee1e3a2f"
+source_manifest = "SOURCE.toml"
+experiments = "experiments"
+wiki = "wiki"
+knowledge_map = "wiki/PROJECT-KNOWLEDGE-MAP.md"
+paper_working_state = "paper/current-state"
+conference_snapshot = "paper/snapshots/kairos-conference-final"
+
+[rights]
+software_license = "AGPL-3.0-or-later"
+documentation = "rights-retained"
+datasets = "no-redistribution-grant"
+paper_assets = "no-root-license-grant"
+historical_release = "not-distributed"

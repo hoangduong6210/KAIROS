@@ -1,0 +1,18 @@
+include LICENSE
+include LICENSE_SCOPE.md
+include NOTICE
+include COPYRIGHT
+include THIRD_PARTY_NOTICES.md
+include SOURCE.toml
+include README.md
+recursive-include src *.py
+recursive-include src NOTICE
+recursive-include configs *.json
+prune archive
+prune datasets
+prune paper
+prune releases
+prune results
+prune runs
+prune .internal
+global-exclude *.csv *.pdf *.docx *.pptx *.ipynb

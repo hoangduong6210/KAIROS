@@ -1,0 +1,30 @@
+KAIROS LICENSE NOTICE
+
+Original KAIROS software is licensed under AGPL-3.0-or-later. The grant is
+limited to the software scope defined in LICENSE_SCOPE.md.
+
+Datasets, papers, PDFs, manuscript source, figures, archives, historical
+releases, names, marks, and third-party
+materials are not relicensed by the repository-level software license.
+Repository presence is not a license grant.
+
+The prior historical release bundle is excluded from the current public tree.
+Its former commercial-license documents do not create a current offer. Any
+separate license requires written authorization from all applicable rights
+holders.
+
+The software warranty disclaimer is in LICENSE. Research outputs are provided
+for research and review, not as financial, investment, medical, safety, or
+other professional advice.
+
+MODIFIED-FILE NOTICE
+
+`src/kairos/model.py` is a modified version of KAIROS software previously
+distributed under AGPL-3.0-or-later. Copyright (C) 2026 Duong Viet Hoang,
+Lun-Min Shih, and Yi-Hao Lai is retained. The SPDX, copyright, and modification
+notice was restored directly in the file on 2026-08-19. It remains licensed
+under AGPL-3.0-or-later.
+
+`SOURCE.toml` registers the new canonical hash and the prior benchmark execution
+hash. The transition adds only the seven registered header lines; frozen evidence
+was not rewritten and the benchmark was not represented as rerun.

@@ -1,0 +1,14 @@
+KAIROS SOURCE NOTICE
+
+Software in this directory is licensed under AGPL-3.0-or-later. See the
+repository LICENSE, LICENSE_SCOPE.md, and NOTICE.
+
+model.py is a modified version of KAIROS software previously distributed under
+AGPL-3.0-or-later. Copyright (C) 2026 Duong Viet Hoang, Lun-Min Shih, and
+Yi-Hao Lai is retained. The SPDX, copyright, and modification notice was
+restored directly in model.py on 2026-08-19. The file remains under
+AGPL-3.0-or-later.
+
+The root SOURCE.toml registers the new canonical source hash and the exact prior
+hash used by benchmark v1. The registered transition is license-notice-only;
+the frozen execution record remains unchanged.

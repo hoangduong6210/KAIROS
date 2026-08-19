@@ -1,0 +1,326 @@
+{
+  "study_id": "kairos-benchmark-v1",
+  "status": "complete",
+  "created_at": "2026-08-19T15:25:34.275224+00:00",
+  "protocol": "protocols/benchmark-v1.md",
+  "protocol_sha256": "05e6bad173282434264eb63fdf9da155c7531b64e72196985f392b8806dfe8c7",
+  "config": "configs/benchmark-v1.json",
+  "config_sha256": "b11035996800de90b2c9e4f2e273277fbbddac1b6b82a916fdfb97d4383826e2",
+  "source": "src/kairos/model.py",
+  "source_sha256": "b9dbbcb36bac125a10912b87033ec46814c4b0a2ffe70ef8e55a01f1919d32da",
+  "dataset": {
+    "data_file": "datasets/raw/raw_prices.csv",
+    "data_sha256": "e66b2bd0312712428745f0d8cfcd2ee63857b1518f12ebc6d5443cc9bd491587",
+    "rows": 3578,
+    "columns": 47,
+    "date_start": "2014-01-01",
+    "date_end": "2023-12-31",
+    "edge_count": 35,
+    "feature_count": 8,
+    "label_threshold": 0.7,
+    "partition_sizes": {
+      "train": 2449,
+      "validation": 715,
+      "test": 350
+    },
+    "positive_rates": {
+      "train": 0.13311555737035524,
+      "validation": 0.23076923076923078,
+      "test": 0.14285714285714285
+    }
+  },
+  "environment": {
+    "python": "3.9.21",
+    "platform": "Linux-5.14.0-570.128.1.el9_6.x86_64-x86_64-with-glibc2.34",
+    "torch": "2.8.0+cu128",
+    "device": "cuda",
+    "cuda": "12.8"
+  },
+  "expected_attempts": 15,
+  "attempts": [
+    {
+      "model": "KAIROS",
+      "seed": 42,
+      "status": "success",
+      "training": {
+        "validation_balanced_accuracy": 0.7896969696969697,
+        "epochs_run": 54,
+        "duration_seconds": 53.738287699990906,
+        "parameter_count": 92388
+      },
+      "metrics": {
+        "balanced_accuracy": 0.8033333333333333,
+        "f1": 0.5088757396449705,
+        "roc_auc": 0.8988666666666667
+      }
+    },
+    {
+      "model": "KAIROS",
+      "seed": 123,
+      "status": "success",
+      "training": {
+        "validation_balanced_accuracy": 0.8009090909090909,
+        "epochs_run": 48,
+        "duration_seconds": 45.67574059998151,
+        "parameter_count": 92388
+      },
+      "metrics": {
+        "balanced_accuracy": 0.8066666666666666,
+        "f1": 0.4752475247524752,
+        "roc_auc": 0.9097333333333333
+      }
+    },
+    {
+      "model": "KAIROS",
+      "seed": 456,
+      "status": "success",
+      "training": {
+        "validation_balanced_accuracy": 0.7881818181818181,
+        "epochs_run": 49,
+        "duration_seconds": 46.527370073017664,
+        "parameter_count": 92388
+      },
+      "metrics": {
+        "balanced_accuracy": 0.8233333333333333,
+        "f1": 0.5,
+        "roc_auc": 0.9050666666666667
+      }
+    },
+    {
+      "model": "KAIROS",
+      "seed": 789,
+      "status": "success",
+      "training": {
+        "validation_balanced_accuracy": 0.7651515151515151,
+        "epochs_run": 40,
+        "duration_seconds": 38.12198843306396,
+        "parameter_count": 92388
+      },
+      "metrics": {
+        "balanced_accuracy": 0.8283333333333334,
+        "f1": 0.5584415584415584,
+        "roc_auc": 0.9134666666666666
+      }
+    },
+    {
+      "model": "KAIROS",
+      "seed": 1024,
+      "status": "success",
+      "training": {
+        "validation_balanced_accuracy": 0.7984848484848485,
+        "epochs_run": 54,
+        "duration_seconds": 51.27801087300759,
+        "parameter_count": 92388
+      },
+      "metrics": {
+        "balanced_accuracy": 0.8,
+        "f1": 0.4943820224719101,
+        "roc_auc": 0.8485333333333334
+      }
+    },
+    {
+      "model": "GRU",
+      "seed": 42,
+      "status": "success",
+      "training": {
+        "validation_balanced_accuracy": 0.7893939393939393,
+        "epochs_run": 24,
+        "duration_seconds": 1.7742838179692626,
+        "parameter_count": 14642
+      },
+      "metrics": {
+        "balanced_accuracy": 0.8300000000000001,
+        "f1": 0.5287356321839081,
+        "roc_auc": 0.9106666666666666
+      }
+    },
+    {
+      "model": "GRU",
+      "seed": 123,
+      "status": "success",
+      "training": {
+        "validation_balanced_accuracy": 0.7921212121212121,
+        "epochs_run": 31,
+        "duration_seconds": 2.1291740749729797,
+        "parameter_count": 14642
+      },
+      "metrics": {
+        "balanced_accuracy": 0.8500000000000001,
+        "f1": 0.5679012345679012,
+        "roc_auc": 0.9062666666666666
+      }
+    },
+    {
+      "model": "GRU",
+      "seed": 456,
+      "status": "success",
+      "training": {
+        "validation_balanced_accuracy": 0.793030303030303,
+        "epochs_run": 29,
+        "duration_seconds": 1.8703054250217974,
+        "parameter_count": 14642
+      },
+      "metrics": {
+        "balanced_accuracy": 0.7949999999999999,
+        "f1": 0.5467625899280576,
+        "roc_auc": 0.9088666666666667
+      }
+    },
+    {
+      "model": "GRU",
+      "seed": 789,
+      "status": "success",
+      "training": {
+        "validation_balanced_accuracy": 0.7896969696969697,
+        "epochs_run": 32,
+        "duration_seconds": 2.1141136080259457,
+        "parameter_count": 14642
+      },
+      "metrics": {
+        "balanced_accuracy": 0.8466666666666667,
+        "f1": 0.5609756097560976,
+        "roc_auc": 0.9096
+      }
+    },
+    {
+      "model": "GRU",
+      "seed": 1024,
+      "status": "success",
+      "training": {
+        "validation_balanced_accuracy": 0.7906060606060605,
+        "epochs_run": 32,
+        "duration_seconds": 2.1171244820579886,
+        "parameter_count": 14642
+      },
+      "metrics": {
+        "balanced_accuracy": 0.8266666666666667,
+        "f1": 0.5325443786982249,
+        "roc_auc": 0.9116666666666666
+      }
+    },
+    {
+      "model": "MLP",
+      "seed": 42,
+      "status": "success",
+      "training": {
+        "validation_balanced_accuracy": 0.636969696969697,
+        "epochs_run": 32,
+        "duration_seconds": 1.898609497002326,
+        "parameter_count": 13586
+      },
+      "metrics": {
+        "balanced_accuracy": 0.6799999999999999,
+        "f1": 0.3855421686746988,
+        "roc_auc": 0.7569333333333333
+      }
+    },
+    {
+      "model": "MLP",
+      "seed": 123,
+      "status": "success",
+      "training": {
+        "validation_balanced_accuracy": 0.6454545454545455,
+        "epochs_run": 30,
+        "duration_seconds": 1.6463915230706334,
+        "parameter_count": 13586
+      },
+      "metrics": {
+        "balanced_accuracy": 0.6566666666666666,
+        "f1": 0.3482587064676617,
+        "roc_auc": 0.7402666666666666
+      }
+    },
+    {
+      "model": "MLP",
+      "seed": 456,
+      "status": "success",
+      "training": {
+        "validation_balanced_accuracy": 0.6457575757575758,
+        "epochs_run": 28,
+        "duration_seconds": 1.584029746009037,
+        "parameter_count": 13586
+      },
+      "metrics": {
+        "balanced_accuracy": 0.6716666666666666,
+        "f1": 0.3568075117370892,
+        "roc_auc": 0.7538
+      }
+    },
+    {
+      "model": "MLP",
+      "seed": 789,
+      "status": "success",
+      "training": {
+        "validation_balanced_accuracy": 0.6475757575757576,
+        "epochs_run": 21,
+        "duration_seconds": 1.1511968780541793,
+        "parameter_count": 13586
+      },
+      "metrics": {
+        "balanced_accuracy": 0.6566666666666666,
+        "f1": 0.336,
+        "roc_auc": 0.7391333333333334
+      }
+    },
+    {
+      "model": "MLP",
+      "seed": 1024,
+      "status": "success",
+      "training": {
+        "validation_balanced_accuracy": 0.6415151515151515,
+        "epochs_run": 41,
+        "duration_seconds": 2.4177708419738337,
+        "parameter_count": 13586
+      },
+      "metrics": {
+        "balanced_accuracy": 0.6666666666666667,
+        "f1": 0.35406698564593303,
+        "roc_auc": 0.7481333333333333
+      }
+    }
+  ],
+  "summary": {
+    "KAIROS": {
+      "balanced_accuracy": {
+        "mean": 0.8123333333333334,
+        "sample_std": 0.012671051872498791
+      },
+      "f1": {
+        "mean": 0.5073893690621828,
+        "sample_std": 0.03108628047074429
+      },
+      "roc_auc": {
+        "mean": 0.8951333333333332,
+        "sample_std": 0.026615033345836692
+      }
+    },
+    "GRU": {
+      "balanced_accuracy": {
+        "mean": 0.8296666666666667,
+        "sample_std": 0.021870832936432386
+      },
+      "f1": {
+        "mean": 0.5473838890268379,
+        "sample_std": 0.017132213101906997
+      },
+      "roc_auc": {
+        "mean": 0.9094133333333332,
+        "sample_std": 0.002054480199196132
+      }
+    },
+    "MLP": {
+      "balanced_accuracy": {
+        "mean": 0.6663333333333332,
+        "sample_std": 0.010027739304327547
+      },
+      "f1": {
+        "mean": 0.3561350745050766,
+        "sample_std": 0.018282264285689118
+      },
+      "roc_auc": {
+        "mean": 0.7476533333333334,
+        "sample_std": 0.007925962962876423
+      }
+    }
+  }
+}

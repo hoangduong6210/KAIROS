@@ -1,0 +1,14 @@
+KAIROS software
+
+Copyright (C) 2026 Duong Viet Hoang, Lun-Min Shih, and Yi-Hao Lai
+
+The original KAIROS software is licensed under the GNU Affero General Public
+License, version 3 or (at your option) any later version. See LICENSE,
+LICENSE_SCOPE.md, and NOTICE for scope and exclusions.
+
+Copyright and license notices embedded in individual files, archived material,
+and nested historical releases remain controlling for those materials.
+
+`src/kairos/model.py` is a modified derivative of the prior KAIROS source. Its
+retained copyright and modification notice is embedded in the source and
+registered through SOURCE.toml without rewriting the frozen evidence release.

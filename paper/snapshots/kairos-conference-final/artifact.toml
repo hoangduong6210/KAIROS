@@ -1,0 +1,14 @@
+id = "kairos-conference-final"
+artifact_kind = "conference-final"
+file = "KAIROS_FINAL.pdf"
+sha256 = "184f40f4e6c4a22555f7ae568bbeb5f7d2105a80e495c71b09bc9e8e90eea9e0"
+pages = 34
+paper_current = false
+conference_current = true
+evidence_release = "UNRELEASED"
+claim_eligible = false
+source_status = "removed-from-public-snapshot"
+source_removal_reason = "venue-template-rights-cleanup"
+snapshot_exception_authorized_on = "2026-08-19"
+historical_workspace_status = "not-distributed"
+recorded_on = "2026-08-19"

@@ -1,0 +1,44 @@
+{
+  "release_id": "kairos-benchmark-v1",
+  "lifecycle": "VALIDATED",
+  "result": {
+    "path": "result.json",
+    "sha256": "4ad144a070cd406e7c92ccd8effe0fb7cb881dc8adbac2a83a9187f0bcd0d1c1"
+  },
+  "closure": {
+    "runner": {
+      "path": "experiments/07_confirmatory_benchmark.py",
+      "sha256": "171e937c5ebfa8de759ef5b3d6089035ec49757613f0504cd9b14d1c38edeba8"
+    },
+    "model": {
+      "path": "src/kairos/model.py",
+      "sha256": "b9dbbcb36bac125a10912b87033ec46814c4b0a2ffe70ef8e55a01f1919d32da"
+    },
+    "config": {
+      "path": "configs/benchmark-v1.json",
+      "sha256": "b11035996800de90b2c9e4f2e273277fbbddac1b6b82a916fdfb97d4383826e2"
+    },
+    "protocol": {
+      "path": "protocols/benchmark-v1.md",
+      "sha256": "05e6bad173282434264eb63fdf9da155c7531b64e72196985f392b8806dfe8c7"
+    },
+    "data": {
+      "path": "datasets/raw/raw_prices.csv",
+      "sha256": "e66b2bd0312712428745f0d8cfcd2ee63857b1518f12ebc6d5443cc9bd491587"
+    }
+  },
+  "coverage": {
+    "expected_attempts": 15,
+    "successful_attempts": 15,
+    "failed_attempts": 0,
+    "models": ["KAIROS", "GRU", "MLP"],
+    "seeds": [42, 123, 456, 789, 1024]
+  },
+  "validation": {
+    "gpu_deterministic_workspace": true,
+    "nonfinite_metrics": 0,
+    "duplicate_attempts": 0,
+    "aggregate_replication_exact": true
+  },
+  "scientific_boundary": "Within-dataset pseudo-label comparison only; no causal, cross-domain, physical-validation, or external early-warning conclusion."
+}

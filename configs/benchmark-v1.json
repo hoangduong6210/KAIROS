@@ -1,0 +1,34 @@
+{
+  "study": {
+    "id": "kairos-benchmark-v1",
+    "data_file": "datasets/raw/raw_prices.csv",
+    "data_sha256": "e66b2bd0312712428745f0d8cfcd2ee63857b1518f12ebc6d5443cc9bd491587",
+    "output_dir": "runs/benchmark-v1"
+  },
+  "split": {
+    "train_end": "2020-12-31",
+    "validation_end": "2022-12-31",
+    "sequence_length": 20,
+    "forecast_horizon": 15
+  },
+  "target": {
+    "minimum_drop": 0.7,
+    "training_percentile": 75.0,
+    "smoothing_window": 5
+  },
+  "training": {
+    "seeds": [42, 123, 456, 789, 1024],
+    "epochs": 100,
+    "patience": 20,
+    "batch_size": 256,
+    "learning_rate": 0.001,
+    "weight_decay": 0.0005,
+    "tip_weight": 0.02,
+    "compliance_weight": 0.05
+  },
+  "evaluation": {
+    "primary_metric": "balanced_accuracy",
+    "secondary_metrics": ["f1", "roc_auc"],
+    "models": ["KAIROS", "GRU", "MLP"]
+  }
+}

@@ -1,0 +1,19 @@
+[canonical]
+path = "src/kairos/model.py"
+sha256 = "bd9c108c448ca747ba6031c42251fa9856d00c6da99c9da18ca0a511ee1e3a2f"
+registered_on = "2026-08-19"
+license = "AGPL-3.0-or-later"
+notice_status = "embedded"
+
+[predecessor]
+sha256 = "b9dbbcb36bac125a10912b87033ec46814c4b0a2ffe70ef8e55a01f1919d32da"
+role = "kairos-benchmark-v1 execution source"
+evidence_release = "kairos-benchmark-v1"
+transition = "license-notice-only"
+removed_line_range_for_verification = "2-8"
+
+[verification]
+frozen_release_mutated = false
+benchmark_rerun = false
+result_reinterpreted = false
+method = "Remove the seven registered header lines and verify the predecessor SHA-256 byte-for-byte."
