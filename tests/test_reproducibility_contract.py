@@ -156,6 +156,7 @@ def test_environment_verifier_fails_if_any_locked_distribution_is_missing(
     monkeypatch: pytest.MonkeyPatch,
 ) -> None:
     real_version = environment_verifier.metadata.version
+    monkeypatch.setattr(environment_verifier.sys, "version_info", (3, 9, 21))
 
     def version_with_missing_distribution(name: str) -> str:
         if name == "charset-normalizer":
