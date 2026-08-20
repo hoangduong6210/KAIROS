@@ -18,6 +18,7 @@ interpretation. [Trace: `C-REPO-001` → `E-REPO-001`]
 | Repository surface | Role | Lifecycle | Wiki owner |
 |---|---|---|---|
 | `.gitignore` | Generated, cache, mutable-run, and local-data exclusions | Canonical support | [Reproducibility](REPRODUCIBILITY.md) |
+| `.dockerignore` | Container-context exclusion of data, archives, generated outputs, and private material | Canonical support | [Reproducibility](REPRODUCIBILITY.md) |
 | `.github/` | Public repository integrity workflow | Canonical support | [Research Workflow](operations/Research-Workflow.md) |
 | `LICENSE` | Full AGPL software license text | Canonical legal metadata | [License and Data Assets](governance/License-and-Data-Assets.md) |
 | `LICENSE_SCOPE.md` | Software-license inclusions and exclusions | Canonical legal metadata | [License and Data Assets](governance/License-and-Data-Assets.md) |
@@ -29,6 +30,8 @@ interpretation. [Trace: `C-REPO-001` → `E-REPO-001`]
 | `SOURCE.toml` | Canonical source hash and notice-only predecessor transition | Canonical evidence metadata | [Evidence Ledger](evidence/Evidence-Ledger.md) |
 | `README.md` | Repository navigation | Presentation only | [Wiki Home](README.md) |
 | `pyproject.toml` | Python package and test configuration | Canonical support | [Research System Map](architecture/Research-System-Map.md) |
+| `requirements/` | Exact benchmark-v1 Python dependency lock | Frozen reproduction support | [Reproducibility](REPRODUCIBILITY.md) |
+| `reproducibility/` | Environment lock, digest-pinned container definition, SBOM, and portable scheduler job | Frozen reproduction support | [Reproducibility](REPRODUCIBILITY.md) |
 | `src/` | Package source root; `src/kairos/` is the reusable implementation | Active | [RS-GNN and CFI](methods/RS-GNN-and-CFI.md) |
 | `experiments/` | Active research entry points | Benchmark v1 active | [Experiment Inventory](experiments/Experiment-Inventory.md) |
 | `configs/` | Reviewed experiment configurations | Benchmark v1 frozen | [Evaluation Protocol](methods/Evaluation-Protocol.md) |

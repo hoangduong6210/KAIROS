@@ -1,0 +1,27 @@
+{
+  "schema_version": "1.0",
+  "dataset_id": "D-MARKET-LEGACY-001",
+  "benchmark_id": "kairos-benchmark-v1",
+  "distribution": {
+    "bytes_included": false,
+    "redistribution_grant": false,
+    "staging_responsibility": "user-supplied-lawful-copy"
+  },
+  "artifact": {
+    "canonical_path": "datasets/raw/raw_prices.csv",
+    "media_type": "text/csv",
+    "sha256": "e66b2bd0312712428745f0d8cfcd2ee63857b1518f12ebc6d5443cc9bd491587",
+    "size_bytes": 3095925,
+    "header_sha256": "3c4c005da6990dd6ecfc45aaf5d0e89d6bf524f8d5c46ff784b65978c5e42d4c",
+    "row_count": 3578,
+    "data_column_count": 47,
+    "index_column": "Date",
+    "date_start": "2014-01-01",
+    "date_end": "2023-12-31"
+  },
+  "linked_contracts": {
+    "config": "configs/benchmark-v1.json",
+    "checksum_inventory": "datasets/checksums.sha256",
+    "frozen_release": "results/frozen/kairos-benchmark-v1/release.json"
+  }
+}

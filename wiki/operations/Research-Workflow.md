@@ -27,6 +27,7 @@ unfavorable outcomes remain part of the record.
 | `src/kairos/` | Method page, implementation claims, evidence source hash, tests |
 | `experiments/`, `configs/`, `protocols/` | Experiment inventory, evaluation protocol, reproducibility contract |
 | `datasets/` | Dataset registry, target contract, checksums, licensing |
+| `requirements/`, `reproducibility/`, scheduler wrappers | Reproducibility contract, environment identity, data boundary |
 | `results/`, `runs/` finalization | Evidence ledger, benchmark status, claim registry, project status |
 | `paper/` | Conference/paper record, pointer consistency, paper export contract |
 | `archive/`, `releases/` | Knowledge map, artifact catalog, rights/provenance review |

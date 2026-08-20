@@ -23,6 +23,15 @@ knowledge_map = "wiki/PROJECT-KNOWLEDGE-MAP.md"
 paper_working_state = "paper/current-state"
 conference_snapshot = "paper/snapshots/kairos-conference-final"
 conference_reconstruction = "paper/snapshots/kairos-conference-final/main.tex"
+conference_claim_disposition = "paper/snapshots/kairos-conference-final/claim-disposition.json"
+
+[reproducibility]
+input_manifest = "datasets/benchmark-v1-input.json"
+dependency_lock = "requirements/benchmark-v1-cu128.lock.txt"
+environment_lock = "reproducibility/environment.lock.json"
+container_definition = "reproducibility/Dockerfile"
+sbom = "reproducibility/sbom.cdx.json"
+slurm_job = "reproducibility/slurm/benchmark-v1.sbatch"
 
 [rights]
 software_license = "AGPL-3.0-or-later"

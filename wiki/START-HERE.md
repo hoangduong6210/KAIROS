@@ -45,14 +45,14 @@ observational benchmark supports no causal-effect wording. [Trace:
 
 - The validated input is frozen by checksum, but acquisition provenance and
   redistribution rights remain unresolved; its bytes are local-only staging.
-- The release has exact source hashes preserved in a durable source commit.
 - The target is training-derived and limited to one market dataset.
 - The current paper pointer remains unreleased; the conference artifact is a
   preserved historical snapshot.
 
 ## Next actions
 
-1. Preserve the exact release and conference manifests in durable commits.
+1. Formally review `C-PERF-001` for publication admission without changing its
+   negative and limited-scope wording.
 2. Close data-provider and any separate third-party, employer, venue, or
    publisher rights; the software license and named-author consent are recorded separately.
 3. Develop post-conference wording in `paper/current-state/`, then create a new

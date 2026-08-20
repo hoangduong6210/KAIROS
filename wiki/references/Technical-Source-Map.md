@@ -17,7 +17,7 @@ paper_source: false
 | `experiments/` | Active benchmark-v1 runner |
 | `datasets/` | Public rights/checksum metadata; staged data bytes remain local |
 | `results/historical/legacy-bundle/` | Public checksum inventory plus local-only historical records |
-| `paper/snapshots/kairos-conference-final/` | Canonical conference artifact identity plus a normalized historical reconstruction; neither is current scientific truth |
+| `paper/snapshots/kairos-conference-final/` | Canonical conference artifact identity plus a normalized historical reconstruction and exhaustive claim-disposition manifest; none is current scientific truth |
 | `docs/ALGORITHM.md` | Historical technical specification; conflicts with canonical code |
 | `docs/reports/` | Local generated explanatory reports, excluded from public Git |
 | `archive/` | Local superseded code/workspaces; only boundary README is public |

@@ -15,8 +15,17 @@ the author-consent gate for those identified files; it does not grant rights in
 third-party material or apply the root software license. The former
 venue-specific template is not distributed.
 
+The snapshot-level `figure-rights.toml` is mandatory for this reconstruction.
+It enumerates exactly 15 PNGs by path and SHA-256 and records the narrow
+distribution-as-provided status of each file. It grants no adaptation right,
+no underlying-data right, no trademark right, and no scientific-claim status.
+The separately locked TeX toolchain is build metadata and does not alter these
+rights boundaries.
+
 Every future paper snapshot must carry a rights manifest for its source, PDF,
-figures, bibliography, and templates in addition to its evidence lock.
+figures, bibliography, and templates in addition to its evidence lock. A
+collective statement is insufficient where figures are distributed: every
+figure must have a path-stable, checksum-bound entry.
 
 ## Current verification status
 

@@ -12,8 +12,24 @@ from typing import Iterable
 
 
 ROOT = Path(__file__).resolve().parents[1]
-TEXT_SUFFIXES = {"", ".in", ".md", ".rst", ".tex", ".toml", ".txt", ".yaml", ".yml"}
+TEXT_SUFFIXES = {
+    "",
+    ".in",
+    ".json",
+    ".md",
+    ".py",
+    ".rst",
+    ".sbatch",
+    ".sh",
+    ".tex",
+    ".toml",
+    ".txt",
+    ".yaml",
+    ".yml",
+}
 PUBLIC_ROOTS = (
+    ".dockerignore",
+    ".github",
     "COPYRIGHT",
     "LICENSE",
     "LICENSE_SCOPE.md",
@@ -32,7 +48,10 @@ PUBLIC_ROOTS = (
     "protocols",
     "releases",
     "results",
+    "requirements",
+    "reproducibility",
     "scripts",
+    "src",
     "wiki",
     "pyproject.toml",
 )
@@ -49,8 +68,9 @@ FORBIDDEN = {
         r"(?:^|[\s`'\"])/(?:users|home|scratch|gpfs|lustre)/", re.IGNORECASE
     ),
     "private-area-reference": re.compile(r"(?:^|[\s`'\"])(?:\.internal)(?:/|\b)"),
-    "scheduler-metadata": re.compile(
-        r"\b(?:sbatch|squeue|sacct|scancel|SLURM_[A-Z_]+)\b", re.IGNORECASE
+    "private-scheduler-directive": re.compile(
+        r"^\s*#SBATCH\s+--(?:account|partition|qos|reservation)(?:=|\s+)\S+",
+        re.IGNORECASE,
     ),
     "operational-audit-id": re.compile(r"\b(?:C-WIKI-001|E-WIKI-AUDIT-001)\b"),
     "operational-report-path": re.compile(r"\bdocs/audits/", re.IGNORECASE),
@@ -85,6 +105,10 @@ def iter_public_text() -> Iterable[Path]:
         root = ROOT / entry
         candidates = (root,) if root.is_file() else root.rglob("*") if root.is_dir() else ()
         for path in candidates:
+            if path == Path(__file__).resolve():
+                # This scanner necessarily contains the forbidden expressions
+                # as policy definitions; scanning itself would be recursive.
+                continue
             if path.is_file() and path.suffix.lower() in TEXT_SUFFIXES and not _is_excluded(path):
                 resolved = path.resolve()
                 if resolved not in seen:
@@ -97,14 +121,23 @@ def _scan_text(path: Path, text: str, *, page: int | None = None) -> list[Disclo
     for line_number, line in enumerate(text.splitlines(), start=1):
         for rule, pattern in FORBIDDEN.items():
             if pattern.search(line):
-                if (
-                    path.name == "MANIFEST.in"
-                    and rule == "private-area-reference"
-                    and line.strip().startswith("prune ")
-                ):
-                    # A distribution denylist must be able to name the private
-                    # area it excludes; this is policy, not leaked content.
-                    continue
+                if rule == "private-area-reference":
+                    relative = path.relative_to(ROOT).as_posix()
+                    stripped = line.strip()
+                    denylist_entry = path.name in {
+                        ".dockerignore",
+                        ".gitignore",
+                        "MANIFEST.in",
+                    } and (stripped == ".internal" or stripped.startswith("prune "))
+                    audit_exclusion = (
+                        relative == "scripts/audit_wiki.py"
+                        and '".internal"' in stripped
+                    )
+                    if denylist_entry or audit_exclusion:
+                        # Distribution deny-lists and repository-coverage code
+                        # must name the excluded area as policy. Neither case
+                        # publishes its contents or an operational path.
+                        continue
                 location = f"page {page}, line {line_number}" if page is not None else f"line {line_number}"
                 issues.append(
                     DisclosureIssue(path.relative_to(ROOT).as_posix(), location, rule)

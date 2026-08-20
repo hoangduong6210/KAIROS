@@ -80,6 +80,7 @@ def test_required_repository_layout() -> None:
         "PROJECT.toml",
         "SOURCE.toml",
         "pyproject.toml",
+        ".dockerignore",
         "src/kairos/__init__.py",
         "src/kairos/model.py",
         "src/kairos/NOTICE",
@@ -87,6 +88,16 @@ def test_required_repository_layout() -> None:
         "datasets/README.md",
         "datasets/RIGHTS.md",
         "datasets/checksums.sha256",
+        "datasets/benchmark-v1-input.json",
+        "requirements/benchmark-v1-cu128.lock.txt",
+        "reproducibility/Dockerfile",
+        "reproducibility/environment.lock.json",
+        "reproducibility/sbom.cdx.json",
+        "reproducibility/slurm/benchmark-v1.sbatch",
+        "scripts/stage_benchmark_input.py",
+        "scripts/verify_reproduction_environment.py",
+        "scripts/reproduce_benchmark_v1.py",
+        "scripts/run_benchmark_v1.sh",
         "results/CURRENT",
         "results/historical/legacy-bundle/README.md",
         "paper/CURRENT",
@@ -97,9 +108,12 @@ def test_required_repository_layout() -> None:
         "paper/snapshots/kairos-conference-final/main.tex",
         "paper/snapshots/kairos-conference-final/figures",
         "paper/snapshots/kairos-conference-final/RIGHTS.md",
+        "paper/snapshots/kairos-conference-final/figure-rights.toml",
         "paper/snapshots/kairos-conference-final/artifact.toml",
         "paper/snapshots/kairos-conference-final/checksums.sha256",
         "paper/snapshots/kairos-conference-final/source-checksums.sha256",
+        "paper/snapshots/kairos-conference-final/tex-toolchain.lock.toml",
+        ".github/workflows/repository-integrity.yml",
         "configs/README.md",
         "protocols/README.md",
         "wiki/START-HERE.md",
@@ -118,10 +132,19 @@ def test_repository_name_and_conference_snapshot_boundary() -> None:
     assert not (ROOT / "paper/figures").exists()
 
 
-def test_vendor_specific_agent_instructions_are_not_distributed() -> None:
+def test_internal_agent_instructions_are_not_distributed() -> None:
     assert not (ROOT / "CLAUDE.md").exists()
     assert not (ROOT / ".claude").exists()
     assert not list(ROOT.glob("**/CLAUDE.md"))
+    forbidden_names = {"agent.md", "agents.md"}
+    offenders = sorted(
+        path.relative_to(ROOT).as_posix()
+        for path in ROOT.rglob("*")
+        if path.is_file()
+        and ".git" not in path.relative_to(ROOT).parts
+        and path.name.casefold() in forbidden_names
+    )
+    assert not offenders, f"internal agent instructions distributed: {offenders}"
 
 
 def test_project_and_release_pointers_agree() -> None:
@@ -483,6 +506,9 @@ def test_final_conference_artifact_and_reconstruction_are_separate() -> None:
     assert 'source_status = "normalized-overleaf-reconstruction-included"' in artifact_metadata
     assert 'source_entrypoint = "main.tex"' in artifact_metadata
     assert 'source_build_engine = "pdflatex"' in artifact_metadata
+    assert "source_build_pages = 36" in artifact_metadata
+    assert 'source_toolchain_lock = "tex-toolchain.lock.toml"' in artifact_metadata
+    assert 'figure_rights_manifest = "figure-rights.toml"' in artifact_metadata
     assert "source_venue_template_included = false" in artifact_metadata
     assert "source_exact_historical_build = false" in artifact_metadata
     assert 'source_expected_pdf_equivalence = "none"' in artifact_metadata
@@ -513,7 +539,7 @@ def test_final_conference_artifact_and_reconstruction_are_separate() -> None:
         for path in (snapshot / "figures").glob("*.png")
     }
     assert len(figures) == 15
-    assert set(source_manifest) == {"main.tex"} | figures
+    assert set(source_manifest) == {"main.tex", "tex-toolchain.lock.toml"} | figures
     for filename, expected in source_manifest.items():
         assert _sha256(snapshot / filename) == expected
 
@@ -543,7 +569,96 @@ def test_final_conference_artifact_and_reconstruction_are_separate() -> None:
     assert "Do not modify this snapshot in place" in snapshot_readme
     assert "AGPL-3.0-or-later" in rights
     assert "license does not apply" in rights
+    assert "figure-rights.toml" in rights
+    assert "not an adaptation" in rights
     assert "/paper/snapshots/kairos-conference-final/main.pdf" in ignore
+
+
+def test_conference_figure_rights_manifest_is_complete_and_checksum_bound() -> None:
+    snapshot = ROOT / "paper/snapshots/kairos-conference-final"
+    manifest_text = (snapshot / "figure-rights.toml").read_text(encoding="utf-8")
+    blocks = re.findall(
+        r"^\[\[figures\]\]\n(?P<body>.*?)(?=^\[\[figures\]\]|\Z)",
+        manifest_text,
+        re.MULTILINE | re.DOTALL,
+    )
+    assert len(blocks) == 15
+    assert "entry_count = 15" in manifest_text
+    assert 'adaptation_permission = "not-granted"' in manifest_text
+    assert 'underlying_data_rights = "not-granted"' in manifest_text
+    assert 'trademark_rights = "not-granted"' in manifest_text
+    assert 'claim_status = "historical-quarantined"' in manifest_text
+
+    records: dict[str, dict[str, str]] = {}
+    for block in blocks:
+        fields = dict(re.findall(r'^([a-z0-9_]+) = "([^"]*)"$', block, re.MULTILINE))
+        assert set(fields) == {
+            "path",
+            "sha256",
+            "role",
+            "provenance",
+            "rights_status",
+            "repository_permission",
+        }
+        path = fields["path"]
+        assert path not in records
+        assert fields["provenance"] == "retained-conference-manuscript-asset"
+        assert fields["rights_status"] == "rights-retained"
+        assert fields["repository_permission"] == "distribution-as-provided"
+        records[path] = fields
+
+    figure_paths = {
+        path.relative_to(snapshot).as_posix()
+        for path in (snapshot / "figures").glob("*.png")
+    }
+    assert set(records) == figure_paths
+    for path, fields in records.items():
+        assert _sha256(snapshot / path) == fields["sha256"]
+
+
+def test_locked_tex_toolchain_matches_ci_and_preserves_pdf_boundary() -> None:
+    snapshot = ROOT / "paper/snapshots/kairos-conference-final"
+    lock = (snapshot / "tex-toolchain.lock.toml").read_text(encoding="utf-8")
+    workflow = (ROOT / ".github/workflows/repository-integrity.yml").read_text(
+        encoding="utf-8"
+    )
+    action_commit = "e2f99d4b3685b0da93f97e1b86ad8fab81105098"
+    image_digest = "sha256:c2fc32a343b5b351a3401f3e1083ebe3774c06d0ab746ac8377029acb1daf47f"
+    image = f"ghcr.io/xu-cheng/texlive-full@{image_digest}"
+
+    assert 'root_document = "main.tex"' in lock
+    assert 'engine = "pdflatex"' in lock
+    assert 'driver = "latexmk"' in lock
+    assert "shell_escape = false" in lock
+    assert "expected_pages = 36" in lock
+    assert 'expected_pdf_equivalence = "none"' in lock
+    assert f'action_commit = "{action_commit}"' in lock
+    assert f'docker_image_digest = "{image_digest}"' in lock
+    assert f'docker_image = "{image}"' in lock
+    assert 'canonical_pdf = "KAIROS_FINAL.pdf"' in lock
+    assert 'canonical_pdf_manifest = "checksums.sha256"' in lock
+    assert 'source_manifest = "source-checksums.sha256"' in lock
+    assert "venue_template_included = false" in lock
+    assert "generated_pdf_is_canonical = false" in lock
+
+    assert f"uses: xu-cheng/latex-action@{action_commit}" in workflow
+    assert f"docker_image: {image}" in workflow
+    assert "working_directory: paper/snapshots/kairos-conference-final" in workflow
+    assert "root_file: main.tex" in workflow
+    assert "-pdf -file-line-error -halt-on-error -interaction=nonstopmode" in workflow
+    assert "Output written on main.pdf (36 pages," in workflow
+    assert "Citation .* undefined" in workflow
+    assert "Reference .* undefined" in workflow
+
+    pdf_manifest = (snapshot / "checksums.sha256").read_text(encoding="utf-8")
+    assert pdf_manifest.splitlines() == [
+        "184f40f4e6c4a22555f7ae568bbeb5f7d2105a80e495c71b09bc9e8e90eea9e0  KAIROS_FINAL.pdf"
+    ]
+    source_manifest = (snapshot / "source-checksums.sha256").read_text(
+        encoding="utf-8"
+    )
+    assert "KAIROS_FINAL.pdf" not in source_manifest
+    assert "tex-toolchain.lock.toml" in source_manifest
 
 
 def test_public_tree_has_no_removed_venue_year_template_or_branding() -> None:

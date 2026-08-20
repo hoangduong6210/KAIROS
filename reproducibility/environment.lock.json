@@ -1,0 +1,28 @@
+{
+  "schema_version": "1.0",
+  "benchmark_id": "kairos-benchmark-v1",
+  "historical_execution": {
+    "python": "3.9.21",
+    "torch": "2.8.0+cu128",
+    "cuda_runtime_reported_by_torch": "12.8",
+    "device_type": "cuda",
+    "source": "results/frozen/kairos-benchmark-v1/result.json"
+  },
+  "reproduction_environment": {
+    "platform": "linux/amd64",
+    "python": "3.9.21",
+    "dependency_lock": "requirements/benchmark-v1-cu128.lock.txt",
+    "container_definition": "reproducibility/Dockerfile",
+    "base_image": "python:3.9.21-slim-bookworm",
+    "base_image_digest": "sha256:0710396c56abc20fb84a6d9f4cc09b59463418ff842d2753f11707f71099c6a0",
+    "base_manifest_list_digest": "sha256:40007fe18a72a2e7166be350d52dab86b9fe18f2de08e6a38e26422fb247e81e"
+  },
+  "determinism": {
+    "PYTHONHASHSEED": "0",
+    "CUBLAS_WORKSPACE_CONFIG": ":4096:8",
+    "CUDA_DEVICE_ORDER": "PCI_BUS_ID",
+    "OMP_NUM_THREADS": "scheduler-cpu-count",
+    "MKL_NUM_THREADS": "scheduler-cpu-count"
+  },
+  "boundary": "Environment identity and deterministic settings do not imply bit-identical results across GPU architectures, drivers, or kernels."
+}

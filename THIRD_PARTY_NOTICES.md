@@ -6,8 +6,17 @@ or assets.
 
 ## Python dependencies
 
-Dependencies named in `pyproject.toml` are obtained separately and retain
-their upstream licenses. They are not vendored by the canonical package.
+Dependencies named in `pyproject.toml` or the benchmark lock are obtained
+separately and retain their upstream licenses. They are not vendored by the
+canonical Python package. `reproducibility/sbom.cdx.json` is an identity
+inventory, not a license grant or a representation that every component may be
+redistributed under the KAIROS license.
+
+The reproduction container definition starts from the identified upstream
+Python base and installs CPU, CUDA, and NVIDIA packages from their upstream
+indexes. The repository distributes the definition, not a prebuilt image.
+Anyone building or distributing an image must review and comply with the base
+image and package terms, including any CUDA/NVIDIA terms.
 
 ## Market data
 

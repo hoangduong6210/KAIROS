@@ -335,7 +335,15 @@ def audit() -> tuple[list[Issue], dict[str, int]]:
     actual_surfaces = {
         f"{path.name}/" if path.is_dir() else path.name
         for path in ROOT.iterdir()
-        if path.name not in {".git", ".internal", ".pytest_cache"}
+        if path.name not in {
+            ".git",
+            ".internal",
+            ".pytest_cache",
+            "build",
+            "dist",
+        }
+        and not path.name.endswith(".egg-info")
+        and not re.fullmatch(r"kairos-benchmark-v1-\d+\.(?:out|err)", path.name)
     }
     for surface in sorted(REQUIRED_SURFACES | actual_surfaces):
         if f"`{surface}`" not in knowledge_map:

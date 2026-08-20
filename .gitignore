@@ -9,6 +9,8 @@ __pycache__/
 build/
 dist/
 runs/
+kairos-benchmark-v1-*.out
+kairos-benchmark-v1-*.err
 *.partial
 .internal/
 

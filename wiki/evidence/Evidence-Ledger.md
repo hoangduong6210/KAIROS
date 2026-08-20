@@ -81,9 +81,9 @@ validate schema, computation, interpretation, or claim eligibility.
 |---|---|
 | Lifecycle | VALIDATED |
 | Artifact path | `paper/snapshots/kairos-conference-final/KAIROS_FINAL.pdf` |
-| Manifests | Canonical PDF inventory in `paper/snapshots/kairos-conference-final/checksums.sha256`; reconstruction inventory in `paper/snapshots/kairos-conference-final/source-checksums.sha256`; boundary metadata in `artifact.toml` |
+| Manifests | Canonical PDF inventory in `paper/snapshots/kairos-conference-final/checksums.sha256`; reconstruction inventory in `paper/snapshots/kairos-conference-final/source-checksums.sha256`; exhaustive historical wording disposition in `paper/snapshots/kairos-conference-final/claim-disposition.json`; boundary metadata in `artifact.toml` |
 | Identity | 34 pages; SHA-256 `184f40f4e6c4a22555f7ae568bbeb5f7d2105a80e495c71b09bc9e8e90eea9e0` |
-| Validation | Canonical PDF parsing, text extraction, first/last-page rendering, and exact SHA-256 verification; reconstruction checksum closure, 15-of-15 figure-reference closure, and successful pdfLaTeX compilation; contract check that no venue-specific template is present |
+| Validation | Canonical PDF parsing, text extraction, first/last-page rendering, and exact SHA-256 verification; reconstruction checksum closure, 15-of-15 figure-reference closure, and successful pdfLaTeX compilation; 171-of-171 caption/table/theorem/algorithm/substantive-or-short-claim-prose disposition coverage with every unit unadmitted; contract check that no venue-specific template is present |
 | Supported claim | Artifact-identity claim `C-PAPER-001`; direct source for quarantined historical claim records |
 | Scientific-use boundary | Artifact identity and reconstruction closure only; the normalized source is not the exact historical build closure, is not expected to reproduce the canonical PDF, and does not admit paper values or causal wording as current evidence |
 

@@ -80,6 +80,8 @@ protocols/        versioned experiment and admission contract
 datasets/         public rights/checksum metadata; inputs are staged locally
 results/          current frozen evidence plus legacy quarantine metadata
 runs/             mutable execution outputs; never authoritative evidence
+requirements/     exact benchmark-v1 Python dependency lock
+reproducibility/  container, SBOM, environment lock, and portable Slurm job
 paper/            current manuscript staging and immutable conference snapshot
 wiki/             canonical status, methods, claims, evidence, and limitations
 docs/             technical reference material
@@ -135,19 +137,34 @@ and checksum closure. See [`datasets/README.md`](datasets/README.md) and
 
 ## Reproducing a result
 
-Do not overwrite `results/frozen/`. From a checkout with the exact input
-checksum, execute the runner only inside an allocated compute environment:
+Do not overwrite `results/frozen/` and do not run the benchmark on a login
+node. First verify or stage a lawfully obtained copy of the non-redistributed
+input:
 
 ```bash
-python experiments/07_confirmatory_benchmark.py \
-  --config configs/benchmark-v1.json
+python scripts/stage_benchmark_input.py /path/to/raw_prices.csv --stage --json
 ```
 
-The mutable result is written atomically to `runs/benchmark-v1/result.json`.
-Before scientific use, verify complete model/seed coverage, all
-source/configuration/protocol/data hashes, explicit failures, finite metrics,
-and the frozen-release admission record. Environment and timing fields can vary
-across platforms; reproduction does not mean rewriting the immutable release.
+Then submit the public, site-neutral scheduler definition from the repository
+root:
+
+```bash
+sbatch reproducibility/slurm/benchmark-v1.sbatch
+```
+
+The job fixes `PYTHONHASHSEED=0` and
+`CUBLAS_WORKSPACE_CONFIG=:4096:8`, validates the public environment lock, and
+writes to a unique path under `runs/reproductions/benchmark-v1/`. It never
+rewrites the immutable release. Exact package versions, the digest-pinned
+container definition, CycloneDX SBOM, optional Apptainer path, and a safe
+metadata-only preflight are documented in
+[`reproducibility/README.md`](reproducibility/README.md).
+
+Before scientific use, verify complete model/seed coverage, all source,
+configuration, protocol, data, and environment hashes, explicit failures,
+finite metrics, and the frozen-release admission record. Environment and timing
+fields can vary across platforms; even a deterministic reproduction is new
+evidence, not a rewrite of the frozen record.
 
 ### Provenance
 

@@ -16,6 +16,8 @@ paper_source: false
 | Lifecycle | QUARANTINED |
 | Locally staged files | `datasets/raw/raw_prices.csv`, `datasets/processed/pooled_z_scores.csv`, `datasets/processed/z_scores.csv` |
 | Byte inventory | `datasets/checksums.sha256` |
+| Public input contract | `datasets/benchmark-v1-input.json`; exact bytes absent |
+| Lawful staging verifier | `scripts/stage_benchmark_input.py`; verify first, atomic non-overwriting stage second |
 | Domain | Historical market-price-derived features |
 | Known gaps | Acquisition request/response provenance, stable vendor snapshot, license, missing-ticker accounting, schema version, and split registry |
 | Compatible current claims | File identity (`C-DATA-001`) and benchmark input binding (`C-DATA-002`) only |

@@ -41,7 +41,10 @@ Market-data client licensing does not grant rights in data-provider content.
 The benchmark CSVs remain checksum-identified local staging inputs until their
 acquisition provenance and redistribution permissions are closed. Public
 packages must exclude their bytes, as enforced by `MANIFEST.in` and repository
-ignore rules.
+ignore rules. The public input manifest, verifier, environment lock, dependency
+lock, container definition, and SBOM describe how an authorized user can
+reproduce the byte identity and software environment without treating metadata
+as a redistribution license.
 
 `KAIROS_FINAL.pdf` remains the canonical conference artifact. A generic,
 normalized reconstruction (`main.tex` plus 15 manifested figures) is preserved

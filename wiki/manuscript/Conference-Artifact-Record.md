@@ -31,6 +31,15 @@ Current project results and wording live in the wiki and frozen evidence
 release, not in this conference artifact. Post-conference manuscript changes
 belong in `paper/current-state/` and may later be exported as a new snapshot.
 
+The normalized source is exhaustively inventoried by
+`paper/snapshots/kairos-conference-final/claim-disposition.json`. Every
+caption, table, theorem-like environment, algorithm, and substantive or short
+claim-bearing prose block is hash-bound to an unadmitted historical or
+explicitly unsupported disposition. This mapping proves coverage and
+containment, not scientific truth. [Trace: `H-PERF-001`, `H-LEAD-001`,
+`H-XDOMAIN-001`, `H-MODEL-001`,
+`H-CAUSAL-001` → `E-PAPER-001`, `E-LEGACY-ARTIFACTS-001`]
+
 ## Claim disposition
 
 <!-- trace: H-PERF-001 H-LEAD-001 H-XDOMAIN-001 H-MODEL-001 H-CAUSAL-001 E-PAPER-001 E-LEGACY-ARTIFACTS-001 -->

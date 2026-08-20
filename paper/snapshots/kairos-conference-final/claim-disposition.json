@@ -1,0 +1,2948 @@
+{
+  "schema_version": 1,
+  "source": "paper/snapshots/kairos-conference-final/main.tex",
+  "source_sha256": "b92bb7139141af718a187e2cf246dbd155b8e16f047c2f3d5845ee9ea3e9b26f",
+  "lifecycle": "QUARANTINED",
+  "paper_current": false,
+  "claim_eligible": false,
+  "generated_on": "2026-08-19",
+  "extraction_policy": "All captions, tables, theorem-like environments, algorithms, and substantive or short claim-bearing prose blocks outside those structures.",
+  "interpretation": "Evidence identifiers prove only artifact identity and historical wording. No entry validates, admits, or revives a scientific claim.",
+  "expected_counts": {
+    "caption": 29,
+    "table": 13,
+    "theorem": 10,
+    "algorithm": 1,
+    "prose": 118,
+    "total": 171
+  },
+  "units": [
+    {
+      "unit_id": "PROSE-001",
+      "unit_type": "prose",
+      "start_line": 45,
+      "end_line": 45,
+      "sha256": "74315472fa471224d3f659c648a211019475a4b34b5b2a6fb38de107b3cb4049",
+      "disposition": "QUARANTINED_ARTIFACT_ONLY",
+      "admitted": false,
+      "claim_ids": [
+        "H-CAUSAL-001",
+        "H-LEAD-001",
+        "H-MODEL-001"
+      ],
+      "evidence_ids": [
+        "E-PAPER-001",
+        "E-LEGACY-ARTIFACTS-001"
+      ],
+      "reason": "lead-time definitions and historical artifacts remain unreconciled; artifact-specific implementation or data wording may conflict with the canonical current source; artifact identity does not establish causal identification, theorem validity, or intervention effects."
+    },
+    {
+      "unit_id": "PROSE-002",
+      "unit_type": "prose",
+      "start_line": 47,
+      "end_line": 52,
+      "sha256": "9fded983be65adfd750dbe57c26ce9b72b8f161b4dc771ad386fbc7d95ebf28d",
+      "disposition": "UNSUPPORTED_QUARANTINED",
+      "admitted": false,
+      "claim_ids": [],
+      "evidence_ids": [
+        "E-PAPER-001"
+      ],
+      "reason": "Historical source material preserved for provenance; no truth-supporting claim record is admitted for this unit."
+    },
+    {
+      "unit_id": "PROSE-003",
+      "unit_type": "prose",
+      "start_line": 62,
+      "end_line": 62,
+      "sha256": "42868caa39423092a33e201cdae7d6dad224336d4bdd02fc7144d01dc27f02b6",
+      "disposition": "UNSUPPORTED_QUARANTINED",
+      "admitted": false,
+      "claim_ids": [],
+      "evidence_ids": [
+        "E-PAPER-001"
+      ],
+      "reason": "Historical source material preserved for provenance; no truth-supporting claim record is admitted for this unit."
+    },
+    {
+      "unit_id": "PROSE-004",
+      "unit_type": "prose",
+      "start_line": 64,
+      "end_line": 64,
+      "sha256": "59cf1a2103f3688adeedf2b9702894a77b7df4cb02b73694c2fddc06ee17c7e1",
+      "disposition": "QUARANTINED_ARTIFACT_ONLY",
+      "admitted": false,
+      "claim_ids": [
+        "H-CAUSAL-001",
+        "H-MODEL-001"
+      ],
+      "evidence_ids": [
+        "E-PAPER-001",
+        "E-LEGACY-ARTIFACTS-001"
+      ],
+      "reason": "artifact-specific implementation or data wording may conflict with the canonical current source; artifact identity does not establish causal identification, theorem validity, or intervention effects."
+    },
+    {
+      "unit_id": "PROSE-005",
+      "unit_type": "prose",
+      "start_line": 66,
+      "end_line": 66,
+      "sha256": "896bfcff2b2f301ee816a758dbdc872a87545793ca5bb64b439f522a555ea1f1",
+      "disposition": "QUARANTINED_ARTIFACT_ONLY",
+      "admitted": false,
+      "claim_ids": [
+        "H-CAUSAL-001",
+        "H-MODEL-001",
+        "H-PERF-001"
+      ],
+      "evidence_ids": [
+        "E-PAPER-001",
+        "E-LEGACY-ARTIFACTS-001"
+      ],
+      "reason": "historical performance or comparison wording lacks a matching current frozen evidence closure; artifact-specific implementation or data wording may conflict with the canonical current source; artifact identity does not establish causal identification, theorem validity, or intervention effects."
+    },
+    {
+      "unit_id": "PROSE-006",
+      "unit_type": "prose",
+      "start_line": 68,
+      "end_line": 68,
+      "sha256": "00aa9a2952c6ab06f7ac1db7c977449e010d18df41b85ada49a05bf38dc9bd3b",
+      "disposition": "UNSUPPORTED_QUARANTINED",
+      "admitted": false,
+      "claim_ids": [],
+      "evidence_ids": [
+        "E-PAPER-001"
+      ],
+      "reason": "Historical source material preserved for provenance; no truth-supporting claim record is admitted for this unit."
+    },
+    {
+      "unit_id": "PROSE-007",
+      "unit_type": "prose",
+      "start_line": 71,
+      "end_line": 71,
+      "sha256": "c808fee618ec7e2ec5a69a350b50e56dc7e09f86a73f773f1d256acd0028ae52",
+      "disposition": "QUARANTINED_ARTIFACT_ONLY",
+      "admitted": false,
+      "claim_ids": [
+        "H-CAUSAL-001",
+        "H-MODEL-001"
+      ],
+      "evidence_ids": [
+        "E-PAPER-001",
+        "E-LEGACY-ARTIFACTS-001"
+      ],
+      "reason": "artifact-specific implementation or data wording may conflict with the canonical current source; artifact identity does not establish causal identification, theorem validity, or intervention effects."
+    },
+    {
+      "unit_id": "PROSE-008",
+      "unit_type": "prose",
+      "start_line": 78,
+      "end_line": 78,
+      "sha256": "c9ff82a5e1867ce1f3c7399716e4fd6653228ff7090c3b4582c764d8da496296",
+      "disposition": "UNSUPPORTED_QUARANTINED",
+      "admitted": false,
+      "claim_ids": [],
+      "evidence_ids": [
+        "E-PAPER-001"
+      ],
+      "reason": "Historical source material preserved for provenance; no truth-supporting claim record is admitted for this unit."
+    },
+    {
+      "unit_id": "PROSE-009",
+      "unit_type": "prose",
+      "start_line": 80,
+      "end_line": 80,
+      "sha256": "f0b3ad0a26dcd9721200b4553fed948f01256048e4aad565be9382537c2daec4",
+      "disposition": "QUARANTINED_ARTIFACT_ONLY",
+      "admitted": false,
+      "claim_ids": [
+        "H-CAUSAL-001"
+      ],
+      "evidence_ids": [
+        "E-PAPER-001",
+        "E-LEGACY-ARTIFACTS-001"
+      ],
+      "reason": "artifact identity does not establish causal identification, theorem validity, or intervention effects."
+    },
+    {
+      "unit_id": "PROSE-010",
+      "unit_type": "prose",
+      "start_line": 82,
+      "end_line": 82,
+      "sha256": "63183fa81e529468f6fc62b4a1f38c44a6c11ffd7c2fe6821c57adf230c04849",
+      "disposition": "QUARANTINED_ARTIFACT_ONLY",
+      "admitted": false,
+      "claim_ids": [
+        "H-MODEL-001"
+      ],
+      "evidence_ids": [
+        "E-PAPER-001",
+        "E-LEGACY-ARTIFACTS-001"
+      ],
+      "reason": "artifact-specific implementation or data wording may conflict with the canonical current source."
+    },
+    {
+      "unit_id": "PROSE-011",
+      "unit_type": "prose",
+      "start_line": 84,
+      "end_line": 84,
+      "sha256": "eee3a95ebe9548e41cda40f9ee5b7d91c98d3170d7a0e359c07a95151edd42fd",
+      "disposition": "QUARANTINED_ARTIFACT_ONLY",
+      "admitted": false,
+      "claim_ids": [
+        "H-CAUSAL-001",
+        "H-MODEL-001",
+        "H-PERF-001"
+      ],
+      "evidence_ids": [
+        "E-PAPER-001",
+        "E-LEGACY-ARTIFACTS-001"
+      ],
+      "reason": "historical performance or comparison wording lacks a matching current frozen evidence closure; artifact-specific implementation or data wording may conflict with the canonical current source; artifact identity does not establish causal identification, theorem validity, or intervention effects."
+    },
+    {
+      "unit_id": "PROSE-012",
+      "unit_type": "prose",
+      "start_line": 86,
+      "end_line": 86,
+      "sha256": "716780f6a278b11879c72de44326f5cac101f9b2ca25711fcb1bf64e4cd47351",
+      "disposition": "QUARANTINED_ARTIFACT_ONLY",
+      "admitted": false,
+      "claim_ids": [
+        "H-MODEL-001"
+      ],
+      "evidence_ids": [
+        "E-PAPER-001",
+        "E-LEGACY-ARTIFACTS-001"
+      ],
+      "reason": "artifact-specific implementation or data wording may conflict with the canonical current source."
+    },
+    {
+      "unit_id": "PROSE-013",
+      "unit_type": "prose",
+      "start_line": 88,
+      "end_line": 88,
+      "sha256": "0fef3bff399feb0a274253d804728ba43d6ddcda11a6f571710a8784eb77c863",
+      "disposition": "QUARANTINED_ARTIFACT_ONLY",
+      "admitted": false,
+      "claim_ids": [
+        "H-CAUSAL-001",
+        "H-MODEL-001"
+      ],
+      "evidence_ids": [
+        "E-PAPER-001",
+        "E-LEGACY-ARTIFACTS-001"
+      ],
+      "reason": "artifact-specific implementation or data wording may conflict with the canonical current source; artifact identity does not establish causal identification, theorem validity, or intervention effects."
+    },
+    {
+      "unit_id": "PROSE-014",
+      "unit_type": "prose",
+      "start_line": 92,
+      "end_line": 92,
+      "sha256": "5e88e353553a6ee0b5bfe1dd1997c3be5b4591b9a3316a137cc4877165efc8d4",
+      "disposition": "QUARANTINED_ARTIFACT_ONLY",
+      "admitted": false,
+      "claim_ids": [
+        "H-MODEL-001"
+      ],
+      "evidence_ids": [
+        "E-PAPER-001",
+        "E-LEGACY-ARTIFACTS-001"
+      ],
+      "reason": "artifact-specific implementation or data wording may conflict with the canonical current source."
+    },
+    {
+      "unit_id": "PROSE-015",
+      "unit_type": "prose",
+      "start_line": 93,
+      "end_line": 93,
+      "sha256": "4e7f195cb35fce2dff74567bc03566a8fe07702e37debffd7deebe0ab5787957",
+      "disposition": "QUARANTINED_ARTIFACT_ONLY",
+      "admitted": false,
+      "claim_ids": [
+        "H-MODEL-001"
+      ],
+      "evidence_ids": [
+        "E-PAPER-001",
+        "E-LEGACY-ARTIFACTS-001"
+      ],
+      "reason": "artifact-specific implementation or data wording may conflict with the canonical current source."
+    },
+    {
+      "unit_id": "PROSE-016",
+      "unit_type": "prose",
+      "start_line": 94,
+      "end_line": 94,
+      "sha256": "290f4114c481b28e0d42feda3aad6d5d145d945f8b2a6e76280ae28e2b44e746",
+      "disposition": "QUARANTINED_ARTIFACT_ONLY",
+      "admitted": false,
+      "claim_ids": [
+        "H-CAUSAL-001",
+        "H-PERF-001"
+      ],
+      "evidence_ids": [
+        "E-PAPER-001",
+        "E-LEGACY-ARTIFACTS-001"
+      ],
+      "reason": "historical performance or comparison wording lacks a matching current frozen evidence closure; artifact identity does not establish causal identification, theorem validity, or intervention effects."
+    },
+    {
+      "unit_id": "PROSE-017",
+      "unit_type": "prose",
+      "start_line": 95,
+      "end_line": 95,
+      "sha256": "6bba7e3de3c1e1dfc2b4a0865d5651f50e0cbb46c0fe5c25f97476e1ab6d7e43",
+      "disposition": "QUARANTINED_ARTIFACT_ONLY",
+      "admitted": false,
+      "claim_ids": [
+        "H-LEAD-001",
+        "H-MODEL-001"
+      ],
+      "evidence_ids": [
+        "E-PAPER-001",
+        "E-LEGACY-ARTIFACTS-001"
+      ],
+      "reason": "lead-time definitions and historical artifacts remain unreconciled; artifact-specific implementation or data wording may conflict with the canonical current source."
+    },
+    {
+      "unit_id": "PROSE-018",
+      "unit_type": "prose",
+      "start_line": 103,
+      "end_line": 104,
+      "sha256": "70f5472d922893601b7174945df10c198bfa710404708c9db89cb920c363fa8d",
+      "disposition": "QUARANTINED_ARTIFACT_ONLY",
+      "admitted": false,
+      "claim_ids": [
+        "H-MODEL-001"
+      ],
+      "evidence_ids": [
+        "E-PAPER-001",
+        "E-LEGACY-ARTIFACTS-001"
+      ],
+      "reason": "artifact-specific implementation or data wording may conflict with the canonical current source."
+    },
+    {
+      "unit_id": "PROSE-019",
+      "unit_type": "prose",
+      "start_line": 106,
+      "end_line": 107,
+      "sha256": "a53b344a8114dab36022d40d720ae24e85554033f19feaa72868b4087b87c28c",
+      "disposition": "QUARANTINED_ARTIFACT_ONLY",
+      "admitted": false,
+      "claim_ids": [
+        "H-MODEL-001"
+      ],
+      "evidence_ids": [
+        "E-PAPER-001",
+        "E-LEGACY-ARTIFACTS-001"
+      ],
+      "reason": "artifact-specific implementation or data wording may conflict with the canonical current source."
+    },
+    {
+      "unit_id": "PROSE-020",
+      "unit_type": "prose",
+      "start_line": 109,
+      "end_line": 110,
+      "sha256": "e040abbad070742800b03f3a798ef0880d068111577b55464343394a52ddf260",
+      "disposition": "QUARANTINED_ARTIFACT_ONLY",
+      "admitted": false,
+      "claim_ids": [
+        "H-MODEL-001"
+      ],
+      "evidence_ids": [
+        "E-PAPER-001",
+        "E-LEGACY-ARTIFACTS-001"
+      ],
+      "reason": "artifact-specific implementation or data wording may conflict with the canonical current source."
+    },
+    {
+      "unit_id": "PROSE-021",
+      "unit_type": "prose",
+      "start_line": 112,
+      "end_line": 113,
+      "sha256": "2b58f409bd1a84c9c9d0703d0a4785453f7575244a39a2993f1ac7d6071c656a",
+      "disposition": "QUARANTINED_ARTIFACT_ONLY",
+      "admitted": false,
+      "claim_ids": [
+        "H-MODEL-001"
+      ],
+      "evidence_ids": [
+        "E-PAPER-001",
+        "E-LEGACY-ARTIFACTS-001"
+      ],
+      "reason": "artifact-specific implementation or data wording may conflict with the canonical current source."
+    },
+    {
+      "unit_id": "PROSE-022",
+      "unit_type": "prose",
+      "start_line": 115,
+      "end_line": 116,
+      "sha256": "ff32e720c7bbaf680518b5e6a64554b6caa787e97f177948db1e20cea05658f9",
+      "disposition": "QUARANTINED_ARTIFACT_ONLY",
+      "admitted": false,
+      "claim_ids": [
+        "H-CAUSAL-001",
+        "H-MODEL-001"
+      ],
+      "evidence_ids": [
+        "E-PAPER-001",
+        "E-LEGACY-ARTIFACTS-001"
+      ],
+      "reason": "artifact-specific implementation or data wording may conflict with the canonical current source; artifact identity does not establish causal identification, theorem validity, or intervention effects."
+    },
+    {
+      "unit_id": "PROSE-023",
+      "unit_type": "prose",
+      "start_line": 125,
+      "end_line": 125,
+      "sha256": "a2bb3c3c03c09d070ea69633306fb2cae040ffd93fe09bb87c1de9ed4e913825",
+      "disposition": "UNSUPPORTED_QUARANTINED",
+      "admitted": false,
+      "claim_ids": [],
+      "evidence_ids": [
+        "E-PAPER-001"
+      ],
+      "reason": "Historical source material preserved for provenance; no truth-supporting claim record is admitted for this unit."
+    },
+    {
+      "unit_id": "THEOREM-001",
+      "unit_type": "theorem",
+      "start_line": 129,
+      "end_line": 136,
+      "sha256": "9949f1b9f046637d28af0d27f7211efcfb5e8d12b02f9cf439acb50a1dad5f5b",
+      "disposition": "QUARANTINED_ARTIFACT_ONLY",
+      "admitted": false,
+      "claim_ids": [
+        "H-CAUSAL-001",
+        "H-MODEL-001"
+      ],
+      "evidence_ids": [
+        "E-PAPER-001",
+        "E-LEGACY-ARTIFACTS-001"
+      ],
+      "reason": "artifact-specific implementation or data wording may conflict with the canonical current source; artifact identity does not establish causal identification, theorem validity, or intervention effects."
+    },
+    {
+      "unit_id": "PROSE-024",
+      "unit_type": "prose",
+      "start_line": 138,
+      "end_line": 138,
+      "sha256": "c77347c31ad66ccc214a1edffe6cdcea2cceda212f2ffd841a5dc200458596e6",
+      "disposition": "QUARANTINED_ARTIFACT_ONLY",
+      "admitted": false,
+      "claim_ids": [
+        "H-MODEL-001"
+      ],
+      "evidence_ids": [
+        "E-PAPER-001",
+        "E-LEGACY-ARTIFACTS-001"
+      ],
+      "reason": "artifact-specific implementation or data wording may conflict with the canonical current source."
+    },
+    {
+      "unit_id": "THEOREM-002",
+      "unit_type": "theorem",
+      "start_line": 140,
+      "end_line": 142,
+      "sha256": "834f8eed8c632f6700a37bb28f864e3dc6b72a146dd3fbc181861eb32f877e67",
+      "disposition": "QUARANTINED_ARTIFACT_ONLY",
+      "admitted": false,
+      "claim_ids": [
+        "H-CAUSAL-001"
+      ],
+      "evidence_ids": [
+        "E-PAPER-001",
+        "E-LEGACY-ARTIFACTS-001"
+      ],
+      "reason": "artifact identity does not establish causal identification, theorem validity, or intervention effects."
+    },
+    {
+      "unit_id": "THEOREM-003",
+      "unit_type": "theorem",
+      "start_line": 144,
+      "end_line": 147,
+      "sha256": "f6aa5503fc6d6b59b34778b2740e2e401176092b6b2dc1f8fc79077dd5e0db8c",
+      "disposition": "QUARANTINED_ARTIFACT_ONLY",
+      "admitted": false,
+      "claim_ids": [
+        "H-CAUSAL-001",
+        "H-MODEL-001"
+      ],
+      "evidence_ids": [
+        "E-PAPER-001",
+        "E-LEGACY-ARTIFACTS-001"
+      ],
+      "reason": "artifact-specific implementation or data wording may conflict with the canonical current source; artifact identity does not establish causal identification, theorem validity, or intervention effects."
+    },
+    {
+      "unit_id": "PROSE-025",
+      "unit_type": "prose",
+      "start_line": 149,
+      "end_line": 149,
+      "sha256": "85777d2b9be95400f7967448b665a3a75a4e73094ade75dee68d9c053f2e9a3e",
+      "disposition": "QUARANTINED_ARTIFACT_ONLY",
+      "admitted": false,
+      "claim_ids": [
+        "H-MODEL-001"
+      ],
+      "evidence_ids": [
+        "E-PAPER-001",
+        "E-LEGACY-ARTIFACTS-001"
+      ],
+      "reason": "artifact-specific implementation or data wording may conflict with the canonical current source."
+    },
+    {
+      "unit_id": "THEOREM-004",
+      "unit_type": "theorem",
+      "start_line": 151,
+      "end_line": 154,
+      "sha256": "7b161101e1b9e875f704f57f3bd356cd6bfe2f20a2f39e612ba5ce6374b74bde",
+      "disposition": "QUARANTINED_ARTIFACT_ONLY",
+      "admitted": false,
+      "claim_ids": [
+        "H-CAUSAL-001",
+        "H-LEAD-001",
+        "H-MODEL-001"
+      ],
+      "evidence_ids": [
+        "E-PAPER-001",
+        "E-LEGACY-ARTIFACTS-001"
+      ],
+      "reason": "lead-time definitions and historical artifacts remain unreconciled; artifact-specific implementation or data wording may conflict with the canonical current source; artifact identity does not establish causal identification, theorem validity, or intervention effects."
+    },
+    {
+      "unit_id": "PROSE-026",
+      "unit_type": "prose",
+      "start_line": 156,
+      "end_line": 156,
+      "sha256": "0796eda556447a34971e78b8fe8941bc55df0036e38459a736cd993f4e8a3290",
+      "disposition": "QUARANTINED_ARTIFACT_ONLY",
+      "admitted": false,
+      "claim_ids": [
+        "H-MODEL-001"
+      ],
+      "evidence_ids": [
+        "E-PAPER-001",
+        "E-LEGACY-ARTIFACTS-001"
+      ],
+      "reason": "artifact-specific implementation or data wording may conflict with the canonical current source."
+    },
+    {
+      "unit_id": "THEOREM-005",
+      "unit_type": "theorem",
+      "start_line": 158,
+      "end_line": 160,
+      "sha256": "168cf3c748315c99546acb44e92e98adfbadf5786c75516bca06e1a527442e7e",
+      "disposition": "QUARANTINED_ARTIFACT_ONLY",
+      "admitted": false,
+      "claim_ids": [
+        "H-CAUSAL-001",
+        "H-MODEL-001"
+      ],
+      "evidence_ids": [
+        "E-PAPER-001",
+        "E-LEGACY-ARTIFACTS-001"
+      ],
+      "reason": "artifact-specific implementation or data wording may conflict with the canonical current source; artifact identity does not establish causal identification, theorem validity, or intervention effects."
+    },
+    {
+      "unit_id": "THEOREM-006",
+      "unit_type": "theorem",
+      "start_line": 162,
+      "end_line": 169,
+      "sha256": "5dfcd9a64964c998923230e0fdb51fc131964632f762bec38320bf06cb273a78",
+      "disposition": "QUARANTINED_ARTIFACT_ONLY",
+      "admitted": false,
+      "claim_ids": [
+        "H-CAUSAL-001"
+      ],
+      "evidence_ids": [
+        "E-PAPER-001",
+        "E-LEGACY-ARTIFACTS-001"
+      ],
+      "reason": "artifact identity does not establish causal identification, theorem validity, or intervention effects."
+    },
+    {
+      "unit_id": "PROSE-027",
+      "unit_type": "prose",
+      "start_line": 171,
+      "end_line": 171,
+      "sha256": "f9b1ac74f43c8e6d1a3ba28d93bee07f46fbc09c462050406a1d64803412032c",
+      "disposition": "QUARANTINED_ARTIFACT_ONLY",
+      "admitted": false,
+      "claim_ids": [
+        "H-MODEL-001"
+      ],
+      "evidence_ids": [
+        "E-PAPER-001",
+        "E-LEGACY-ARTIFACTS-001"
+      ],
+      "reason": "artifact-specific implementation or data wording may conflict with the canonical current source."
+    },
+    {
+      "unit_id": "THEOREM-007",
+      "unit_type": "theorem",
+      "start_line": 175,
+      "end_line": 178,
+      "sha256": "f38f16884b96e3b4b7a682402f9f70a5bfcc34aa030effa3f23028c39bf6ea68",
+      "disposition": "QUARANTINED_ARTIFACT_ONLY",
+      "admitted": false,
+      "claim_ids": [
+        "H-CAUSAL-001",
+        "H-PERF-001"
+      ],
+      "evidence_ids": [
+        "E-PAPER-001",
+        "E-LEGACY-ARTIFACTS-001"
+      ],
+      "reason": "historical performance or comparison wording lacks a matching current frozen evidence closure; artifact identity does not establish causal identification, theorem validity, or intervention effects."
+    },
+    {
+      "unit_id": "PROSE-028",
+      "unit_type": "prose",
+      "start_line": 182,
+      "end_line": 182,
+      "sha256": "beabeb009ae0a1808f51f607764549dd63f64e14b9a4f9b993f3ee8d36a29b16",
+      "disposition": "QUARANTINED_ARTIFACT_ONLY",
+      "admitted": false,
+      "claim_ids": [
+        "H-CAUSAL-001"
+      ],
+      "evidence_ids": [
+        "E-PAPER-001",
+        "E-LEGACY-ARTIFACTS-001"
+      ],
+      "reason": "artifact identity does not establish causal identification, theorem validity, or intervention effects."
+    },
+    {
+      "unit_id": "PROSE-029",
+      "unit_type": "prose",
+      "start_line": 184,
+      "end_line": 184,
+      "sha256": "79c1136823c63a01bc3d68d41946607d29b1922eb7fa27e19447ab83a01ea2c4",
+      "disposition": "UNSUPPORTED_QUARANTINED",
+      "admitted": false,
+      "claim_ids": [],
+      "evidence_ids": [
+        "E-PAPER-001"
+      ],
+      "reason": "Historical source material preserved for provenance; no truth-supporting claim record is admitted for this unit."
+    },
+    {
+      "unit_id": "THEOREM-008",
+      "unit_type": "theorem",
+      "start_line": 186,
+      "end_line": 189,
+      "sha256": "57d4a7685a4000ca15bb0bc4869f947047f974f9479a61d25c73f75a4e282780",
+      "disposition": "QUARANTINED_ARTIFACT_ONLY",
+      "admitted": false,
+      "claim_ids": [
+        "H-CAUSAL-001"
+      ],
+      "evidence_ids": [
+        "E-PAPER-001",
+        "E-LEGACY-ARTIFACTS-001"
+      ],
+      "reason": "artifact identity does not establish causal identification, theorem validity, or intervention effects."
+    },
+    {
+      "unit_id": "THEOREM-009",
+      "unit_type": "theorem",
+      "start_line": 191,
+      "end_line": 193,
+      "sha256": "6312d74e3131f46250788134673373c72903edbb9bffc6c82d706ff9249543f0",
+      "disposition": "QUARANTINED_ARTIFACT_ONLY",
+      "admitted": false,
+      "claim_ids": [
+        "H-CAUSAL-001",
+        "H-MODEL-001"
+      ],
+      "evidence_ids": [
+        "E-PAPER-001",
+        "E-LEGACY-ARTIFACTS-001"
+      ],
+      "reason": "artifact-specific implementation or data wording may conflict with the canonical current source; artifact identity does not establish causal identification, theorem validity, or intervention effects."
+    },
+    {
+      "unit_id": "PROSE-030",
+      "unit_type": "prose",
+      "start_line": 200,
+      "end_line": 200,
+      "sha256": "1c9f9d1a55d30e7dbbffe74c8af1bc26f43564ee216f7b3498d605701c772f50",
+      "disposition": "QUARANTINED_ARTIFACT_ONLY",
+      "admitted": false,
+      "claim_ids": [
+        "H-MODEL-001",
+        "H-PERF-001"
+      ],
+      "evidence_ids": [
+        "E-PAPER-001",
+        "E-LEGACY-ARTIFACTS-001"
+      ],
+      "reason": "historical performance or comparison wording lacks a matching current frozen evidence closure; artifact-specific implementation or data wording may conflict with the canonical current source."
+    },
+    {
+      "unit_id": "PROSE-031",
+      "unit_type": "prose",
+      "start_line": 204,
+      "end_line": 204,
+      "sha256": "b042518f31ff959c4c403dd5e6f1b42c785fb9b432e80d6f8da38ee04ba30c37",
+      "disposition": "UNSUPPORTED_QUARANTINED",
+      "admitted": false,
+      "claim_ids": [],
+      "evidence_ids": [
+        "E-PAPER-001"
+      ],
+      "reason": "Historical source material preserved for provenance; no truth-supporting claim record is admitted for this unit."
+    },
+    {
+      "unit_id": "PROSE-032",
+      "unit_type": "prose",
+      "start_line": 208,
+      "end_line": 208,
+      "sha256": "9048764685a9a88d4e0b85f654635ab04ddf170cee9836162d900a4f84ac5c0d",
+      "disposition": "UNSUPPORTED_QUARANTINED",
+      "admitted": false,
+      "claim_ids": [],
+      "evidence_ids": [
+        "E-PAPER-001"
+      ],
+      "reason": "Historical source material preserved for provenance; no truth-supporting claim record is admitted for this unit."
+    },
+    {
+      "unit_id": "PROSE-033",
+      "unit_type": "prose",
+      "start_line": 210,
+      "end_line": 210,
+      "sha256": "933d02b26f52b46b8ff1f527f921270a22155c69a43b61eaaf5ad91a0c981f41",
+      "disposition": "QUARANTINED_ARTIFACT_ONLY",
+      "admitted": false,
+      "claim_ids": [
+        "H-MODEL-001"
+      ],
+      "evidence_ids": [
+        "E-PAPER-001",
+        "E-LEGACY-ARTIFACTS-001"
+      ],
+      "reason": "artifact-specific implementation or data wording may conflict with the canonical current source."
+    },
+    {
+      "unit_id": "PROSE-034",
+      "unit_type": "prose",
+      "start_line": 214,
+      "end_line": 214,
+      "sha256": "04270fcbb9d8152c121cb3ae89406d011018ae9d84fe78c84273baa15013cc47",
+      "disposition": "QUARANTINED_ARTIFACT_ONLY",
+      "admitted": false,
+      "claim_ids": [
+        "H-MODEL-001"
+      ],
+      "evidence_ids": [
+        "E-PAPER-001",
+        "E-LEGACY-ARTIFACTS-001"
+      ],
+      "reason": "artifact-specific implementation or data wording may conflict with the canonical current source."
+    },
+    {
+      "unit_id": "PROSE-035",
+      "unit_type": "prose",
+      "start_line": 219,
+      "end_line": 219,
+      "sha256": "4c26de67cc046c6f6e810e13f2b5edda62e04fe489e58b5d60ddeafda99c50de",
+      "disposition": "UNSUPPORTED_QUARANTINED",
+      "admitted": false,
+      "claim_ids": [],
+      "evidence_ids": [
+        "E-PAPER-001"
+      ],
+      "reason": "Historical source material preserved for provenance; no truth-supporting claim record is admitted for this unit."
+    },
+    {
+      "unit_id": "PROSE-036",
+      "unit_type": "prose",
+      "start_line": 224,
+      "end_line": 224,
+      "sha256": "f035dafa8e625a86bf012313a8cf4e7b439cc68fda8608fcc94294216b27bf84",
+      "disposition": "QUARANTINED_ARTIFACT_ONLY",
+      "admitted": false,
+      "claim_ids": [
+        "H-CAUSAL-001"
+      ],
+      "evidence_ids": [
+        "E-PAPER-001",
+        "E-LEGACY-ARTIFACTS-001"
+      ],
+      "reason": "artifact identity does not establish causal identification, theorem validity, or intervention effects."
+    },
+    {
+      "unit_id": "PROSE-037",
+      "unit_type": "prose",
+      "start_line": 226,
+      "end_line": 226,
+      "sha256": "c7ea6b840d8885311e03c69ac15444b47bd9653cb647c9b7135fcac94f9b19e0",
+      "disposition": "QUARANTINED_ARTIFACT_ONLY",
+      "admitted": false,
+      "claim_ids": [
+        "H-CAUSAL-001"
+      ],
+      "evidence_ids": [
+        "E-PAPER-001",
+        "E-LEGACY-ARTIFACTS-001"
+      ],
+      "reason": "artifact identity does not establish causal identification, theorem validity, or intervention effects."
+    },
+    {
+      "unit_id": "PROSE-038",
+      "unit_type": "prose",
+      "start_line": 228,
+      "end_line": 228,
+      "sha256": "e2e92786045596230c33de04acba1c0e85a9337cd58cd081eec579f46fe6fb5e",
+      "disposition": "QUARANTINED_ARTIFACT_ONLY",
+      "admitted": false,
+      "claim_ids": [
+        "H-CAUSAL-001"
+      ],
+      "evidence_ids": [
+        "E-PAPER-001",
+        "E-LEGACY-ARTIFACTS-001"
+      ],
+      "reason": "artifact identity does not establish causal identification, theorem validity, or intervention effects."
+    },
+    {
+      "unit_id": "PROSE-039",
+      "unit_type": "prose",
+      "start_line": 230,
+      "end_line": 230,
+      "sha256": "89e94290576839c8570695980e85fb1750da8ab4854d52e4ea2dd0b2ca051c67",
+      "disposition": "UNSUPPORTED_QUARANTINED",
+      "admitted": false,
+      "claim_ids": [],
+      "evidence_ids": [
+        "E-PAPER-001"
+      ],
+      "reason": "Historical source material preserved for provenance; no truth-supporting claim record is admitted for this unit."
+    },
+    {
+      "unit_id": "PROSE-040",
+      "unit_type": "prose",
+      "start_line": 232,
+      "end_line": 232,
+      "sha256": "a1879699dbaadc4b854f43b51dcd679a178ddfb2ba29cdf9c9e1ce97b359640b",
+      "disposition": "QUARANTINED_ARTIFACT_ONLY",
+      "admitted": false,
+      "claim_ids": [
+        "H-CAUSAL-001"
+      ],
+      "evidence_ids": [
+        "E-PAPER-001",
+        "E-LEGACY-ARTIFACTS-001"
+      ],
+      "reason": "artifact identity does not establish causal identification, theorem validity, or intervention effects."
+    },
+    {
+      "unit_id": "PROSE-041",
+      "unit_type": "prose",
+      "start_line": 234,
+      "end_line": 234,
+      "sha256": "b54c391c276eb52028a31b237385a77ef2889b8ea63654518305f81cced5e4f2",
+      "disposition": "UNSUPPORTED_QUARANTINED",
+      "admitted": false,
+      "claim_ids": [],
+      "evidence_ids": [
+        "E-PAPER-001"
+      ],
+      "reason": "Historical source material preserved for provenance; no truth-supporting claim record is admitted for this unit."
+    },
+    {
+      "unit_id": "PROSE-042",
+      "unit_type": "prose",
+      "start_line": 236,
+      "end_line": 236,
+      "sha256": "16c842bb5e41ae955adb7ad3376079aa271665745a8c8dec50dd1ce2a98c5579",
+      "disposition": "UNSUPPORTED_QUARANTINED",
+      "admitted": false,
+      "claim_ids": [],
+      "evidence_ids": [
+        "E-PAPER-001"
+      ],
+      "reason": "Historical source material preserved for provenance; no truth-supporting claim record is admitted for this unit."
+    },
+    {
+      "unit_id": "PROSE-043",
+      "unit_type": "prose",
+      "start_line": 249,
+      "end_line": 249,
+      "sha256": "f4b6e9cc706e262caccc75f6cce5e624645f8807440f9310bf74a84a37b85b1a",
+      "disposition": "QUARANTINED_ARTIFACT_ONLY",
+      "admitted": false,
+      "claim_ids": [
+        "H-MODEL-001"
+      ],
+      "evidence_ids": [
+        "E-PAPER-001",
+        "E-LEGACY-ARTIFACTS-001"
+      ],
+      "reason": "artifact-specific implementation or data wording may conflict with the canonical current source."
+    },
+    {
+      "unit_id": "PROSE-044",
+      "unit_type": "prose",
+      "start_line": 254,
+      "end_line": 254,
+      "sha256": "6f208eb936a9ec7edb4e2d6ca9ba28da3e37fc5091fa0721b28d48e671bbca42",
+      "disposition": "UNSUPPORTED_QUARANTINED",
+      "admitted": false,
+      "claim_ids": [],
+      "evidence_ids": [
+        "E-PAPER-001"
+      ],
+      "reason": "Historical source material preserved for provenance; no truth-supporting claim record is admitted for this unit."
+    },
+    {
+      "unit_id": "PROSE-045",
+      "unit_type": "prose",
+      "start_line": 258,
+      "end_line": 258,
+      "sha256": "096f306d080f28d75fa31b81131cfd45ea64b0ce1c4892677d4967fd6b9d9b94",
+      "disposition": "QUARANTINED_ARTIFACT_ONLY",
+      "admitted": false,
+      "claim_ids": [
+        "H-CAUSAL-001",
+        "H-MODEL-001"
+      ],
+      "evidence_ids": [
+        "E-PAPER-001",
+        "E-LEGACY-ARTIFACTS-001"
+      ],
+      "reason": "artifact-specific implementation or data wording may conflict with the canonical current source; artifact identity does not establish causal identification, theorem validity, or intervention effects."
+    },
+    {
+      "unit_id": "PROSE-046",
+      "unit_type": "prose",
+      "start_line": 262,
+      "end_line": 262,
+      "sha256": "8f456b2378b908ba14fd53cb73627bd6dbb904076acb8f2818000411b9208c6b",
+      "disposition": "QUARANTINED_ARTIFACT_ONLY",
+      "admitted": false,
+      "claim_ids": [
+        "H-MODEL-001"
+      ],
+      "evidence_ids": [
+        "E-PAPER-001",
+        "E-LEGACY-ARTIFACTS-001"
+      ],
+      "reason": "artifact-specific implementation or data wording may conflict with the canonical current source."
+    },
+    {
+      "unit_id": "PROSE-047",
+      "unit_type": "prose",
+      "start_line": 264,
+      "end_line": 264,
+      "sha256": "abd7bc1717aa2970ca03456d315d814d6bd9e6dcc976d84dc4a81e63c4dd1b5c",
+      "disposition": "QUARANTINED_ARTIFACT_ONLY",
+      "admitted": false,
+      "claim_ids": [
+        "H-CAUSAL-001"
+      ],
+      "evidence_ids": [
+        "E-PAPER-001",
+        "E-LEGACY-ARTIFACTS-001"
+      ],
+      "reason": "artifact identity does not establish causal identification, theorem validity, or intervention effects."
+    },
+    {
+      "unit_id": "PROSE-048",
+      "unit_type": "prose",
+      "start_line": 268,
+      "end_line": 268,
+      "sha256": "6384220605c640fd9c76e653ad929c76a34925fe7cd5c2a371a1f9978b0ed48f",
+      "disposition": "QUARANTINED_ARTIFACT_ONLY",
+      "admitted": false,
+      "claim_ids": [
+        "H-CAUSAL-001",
+        "H-MODEL-001"
+      ],
+      "evidence_ids": [
+        "E-PAPER-001",
+        "E-LEGACY-ARTIFACTS-001"
+      ],
+      "reason": "artifact-specific implementation or data wording may conflict with the canonical current source; artifact identity does not establish causal identification, theorem validity, or intervention effects."
+    },
+    {
+      "unit_id": "PROSE-049",
+      "unit_type": "prose",
+      "start_line": 276,
+      "end_line": 276,
+      "sha256": "700baeef3be5f12694f9cc6d5b05770986490fde45923934dddf6cf02d3bca94",
+      "disposition": "QUARANTINED_ARTIFACT_ONLY",
+      "admitted": false,
+      "claim_ids": [
+        "H-MODEL-001"
+      ],
+      "evidence_ids": [
+        "E-PAPER-001",
+        "E-LEGACY-ARTIFACTS-001"
+      ],
+      "reason": "artifact-specific implementation or data wording may conflict with the canonical current source."
+    },
+    {
+      "unit_id": "PROSE-050",
+      "unit_type": "prose",
+      "start_line": 278,
+      "end_line": 278,
+      "sha256": "dae0ceb2e28f07cd8487a8fc89aa14e4d55e6fc1e16627ca093de3b0eb8fbb22",
+      "disposition": "QUARANTINED_ARTIFACT_ONLY",
+      "admitted": false,
+      "claim_ids": [
+        "H-LEAD-001",
+        "H-PERF-001"
+      ],
+      "evidence_ids": [
+        "E-PAPER-001",
+        "E-LEGACY-ARTIFACTS-001"
+      ],
+      "reason": "historical performance or comparison wording lacks a matching current frozen evidence closure; lead-time definitions and historical artifacts remain unreconciled."
+    },
+    {
+      "unit_id": "PROSE-051",
+      "unit_type": "prose",
+      "start_line": 282,
+      "end_line": 282,
+      "sha256": "9a210b9738b0c47808799e2bce8fed1fa0808d758f0692f3671a74740a0a06b0",
+      "disposition": "UNSUPPORTED_QUARANTINED",
+      "admitted": false,
+      "claim_ids": [],
+      "evidence_ids": [
+        "E-PAPER-001"
+      ],
+      "reason": "Historical source material preserved for provenance; no truth-supporting claim record is admitted for this unit."
+    },
+    {
+      "unit_id": "PROSE-052",
+      "unit_type": "prose",
+      "start_line": 286,
+      "end_line": 286,
+      "sha256": "cf1a1d68bfd61701ec6f7dfb6e31596113f76df081bdd48b1b4f1a1e051aef58",
+      "disposition": "UNSUPPORTED_QUARANTINED",
+      "admitted": false,
+      "claim_ids": [],
+      "evidence_ids": [
+        "E-PAPER-001"
+      ],
+      "reason": "Historical source material preserved for provenance; no truth-supporting claim record is admitted for this unit."
+    },
+    {
+      "unit_id": "PROSE-053",
+      "unit_type": "prose",
+      "start_line": 288,
+      "end_line": 288,
+      "sha256": "e524972f61315abf102d6c6a33b163c6f2268ca9191a94ca704409e5e076bc9a",
+      "disposition": "QUARANTINED_ARTIFACT_ONLY",
+      "admitted": false,
+      "claim_ids": [
+        "H-PERF-001"
+      ],
+      "evidence_ids": [
+        "E-PAPER-001",
+        "E-LEGACY-ARTIFACTS-001"
+      ],
+      "reason": "historical performance or comparison wording lacks a matching current frozen evidence closure."
+    },
+    {
+      "unit_id": "PROSE-054",
+      "unit_type": "prose",
+      "start_line": 292,
+      "end_line": 292,
+      "sha256": "27bfc7d3f792a0fa4c3122290db060a32629646c898204383ece2422399df655",
+      "disposition": "UNSUPPORTED_QUARANTINED",
+      "admitted": false,
+      "claim_ids": [],
+      "evidence_ids": [
+        "E-PAPER-001"
+      ],
+      "reason": "Historical source material preserved for provenance; no truth-supporting claim record is admitted for this unit."
+    },
+    {
+      "unit_id": "PROSE-055",
+      "unit_type": "prose",
+      "start_line": 297,
+      "end_line": 297,
+      "sha256": "ece485bbc355a38daa3aab88b5d1d70fe6237b46d2cf764a5f6814756ae24add",
+      "disposition": "QUARANTINED_ARTIFACT_ONLY",
+      "admitted": false,
+      "claim_ids": [
+        "H-CAUSAL-001",
+        "H-MODEL-001"
+      ],
+      "evidence_ids": [
+        "E-PAPER-001",
+        "E-LEGACY-ARTIFACTS-001"
+      ],
+      "reason": "artifact-specific implementation or data wording may conflict with the canonical current source; artifact identity does not establish causal identification, theorem validity, or intervention effects."
+    },
+    {
+      "unit_id": "PROSE-056",
+      "unit_type": "prose",
+      "start_line": 299,
+      "end_line": 299,
+      "sha256": "7734ada67887c02a8c60113859b7dba845ac9752e7a694ab0a9a84c9459c24f2",
+      "disposition": "UNSUPPORTED_QUARANTINED",
+      "admitted": false,
+      "claim_ids": [],
+      "evidence_ids": [
+        "E-PAPER-001"
+      ],
+      "reason": "Historical source material preserved for provenance; no truth-supporting claim record is admitted for this unit."
+    },
+    {
+      "unit_id": "CAPTION-001",
+      "unit_type": "caption",
+      "start_line": 305,
+      "end_line": 305,
+      "sha256": "008e478cf51d9d2b283aeaf83d92794d5911b2ae0129bd8e0fe0255b4ba05574",
+      "disposition": "QUARANTINED_ARTIFACT_ONLY",
+      "admitted": false,
+      "claim_ids": [
+        "H-CAUSAL-001",
+        "H-MODEL-001"
+      ],
+      "evidence_ids": [
+        "E-PAPER-001",
+        "E-LEGACY-ARTIFACTS-001"
+      ],
+      "reason": "artifact-specific implementation or data wording may conflict with the canonical current source; artifact identity does not establish causal identification, theorem validity, or intervention effects."
+    },
+    {
+      "unit_id": "CAPTION-002",
+      "unit_type": "caption",
+      "start_line": 312,
+      "end_line": 312,
+      "sha256": "41b5c9e4f6f26099521867dee70dffce567513c7e888c0f368a81a178ca085d4",
+      "disposition": "QUARANTINED_ARTIFACT_ONLY",
+      "admitted": false,
+      "claim_ids": [
+        "H-CAUSAL-001",
+        "H-MODEL-001"
+      ],
+      "evidence_ids": [
+        "E-PAPER-001",
+        "E-LEGACY-ARTIFACTS-001"
+      ],
+      "reason": "artifact-specific implementation or data wording may conflict with the canonical current source; artifact identity does not establish causal identification, theorem validity, or intervention effects."
+    },
+    {
+      "unit_id": "CAPTION-003",
+      "unit_type": "caption",
+      "start_line": 319,
+      "end_line": 319,
+      "sha256": "87b361076c3cb689d8f75604404e144d1d6068da433710a5cfac64a9ee0bd638",
+      "disposition": "QUARANTINED_ARTIFACT_ONLY",
+      "admitted": false,
+      "claim_ids": [
+        "H-CAUSAL-001",
+        "H-MODEL-001"
+      ],
+      "evidence_ids": [
+        "E-PAPER-001",
+        "E-LEGACY-ARTIFACTS-001"
+      ],
+      "reason": "artifact-specific implementation or data wording may conflict with the canonical current source; artifact identity does not establish causal identification, theorem validity, or intervention effects."
+    },
+    {
+      "unit_id": "PROSE-057",
+      "unit_type": "prose",
+      "start_line": 330,
+      "end_line": 330,
+      "sha256": "52fb8e4440977d049f8069b71659d24df37a909f65b1e71dddcdadffa6a6b455",
+      "disposition": "QUARANTINED_ARTIFACT_ONLY",
+      "admitted": false,
+      "claim_ids": [
+        "H-MODEL-001"
+      ],
+      "evidence_ids": [
+        "E-PAPER-001",
+        "E-LEGACY-ARTIFACTS-001"
+      ],
+      "reason": "artifact-specific implementation or data wording may conflict with the canonical current source."
+    },
+    {
+      "unit_id": "PROSE-058",
+      "unit_type": "prose",
+      "start_line": 332,
+      "end_line": 332,
+      "sha256": "ab666ab2c5f3dd021483e155bfa2e2cc44aec489c7695112c6c1b4b771b68619",
+      "disposition": "QUARANTINED_ARTIFACT_ONLY",
+      "admitted": false,
+      "claim_ids": [
+        "H-MODEL-001",
+        "H-PERF-001"
+      ],
+      "evidence_ids": [
+        "E-PAPER-001",
+        "E-LEGACY-ARTIFACTS-001"
+      ],
+      "reason": "historical performance or comparison wording lacks a matching current frozen evidence closure; artifact-specific implementation or data wording may conflict with the canonical current source."
+    },
+    {
+      "unit_id": "TABLE-001",
+      "unit_type": "table",
+      "start_line": 336,
+      "end_line": 353,
+      "sha256": "220ac64ce2eb477e0b0ab92cf07c1821d886111bcbd958781c8fcd383c642965",
+      "disposition": "QUARANTINED_ARTIFACT_ONLY",
+      "admitted": false,
+      "claim_ids": [
+        "H-PERF-001"
+      ],
+      "evidence_ids": [
+        "E-PAPER-001",
+        "E-LEGACY-ARTIFACTS-001"
+      ],
+      "reason": "historical performance or comparison wording lacks a matching current frozen evidence closure."
+    },
+    {
+      "unit_id": "CAPTION-004",
+      "unit_type": "caption",
+      "start_line": 338,
+      "end_line": 338,
+      "sha256": "221f4e9f6b2fc2ddb9ea2e695aab42b000aaf65ffbb23d583f45273af0235ecc",
+      "disposition": "QUARANTINED_ARTIFACT_ONLY",
+      "admitted": false,
+      "claim_ids": [
+        "H-PERF-001"
+      ],
+      "evidence_ids": [
+        "E-PAPER-001",
+        "E-LEGACY-ARTIFACTS-001"
+      ],
+      "reason": "historical performance or comparison wording lacks a matching current frozen evidence closure."
+    },
+    {
+      "unit_id": "PROSE-059",
+      "unit_type": "prose",
+      "start_line": 355,
+      "end_line": 355,
+      "sha256": "80c2c4b1cd16a2f78b09a8f2fc6a8b6b7194ebf57f9ae867238125dcc7538850",
+      "disposition": "QUARANTINED_ARTIFACT_ONLY",
+      "admitted": false,
+      "claim_ids": [
+        "H-CAUSAL-001",
+        "H-MODEL-001",
+        "H-PERF-001"
+      ],
+      "evidence_ids": [
+        "E-PAPER-001",
+        "E-LEGACY-ARTIFACTS-001"
+      ],
+      "reason": "historical performance or comparison wording lacks a matching current frozen evidence closure; artifact-specific implementation or data wording may conflict with the canonical current source; artifact identity does not establish causal identification, theorem validity, or intervention effects."
+    },
+    {
+      "unit_id": "PROSE-060",
+      "unit_type": "prose",
+      "start_line": 359,
+      "end_line": 359,
+      "sha256": "18ae4624ec8174b225793c64211e49208e175a07b59718d4045044876f36b2ab",
+      "disposition": "QUARANTINED_ARTIFACT_ONLY",
+      "admitted": false,
+      "claim_ids": [
+        "H-CAUSAL-001",
+        "H-PERF-001"
+      ],
+      "evidence_ids": [
+        "E-PAPER-001",
+        "E-LEGACY-ARTIFACTS-001"
+      ],
+      "reason": "historical performance or comparison wording lacks a matching current frozen evidence closure; artifact identity does not establish causal identification, theorem validity, or intervention effects."
+    },
+    {
+      "unit_id": "TABLE-002",
+      "unit_type": "table",
+      "start_line": 361,
+      "end_line": 379,
+      "sha256": "4d9dc8c3d7dcc06bbe8d752177ea28e4603d4c929e88ece800688599e0ef540e",
+      "disposition": "QUARANTINED_ARTIFACT_ONLY",
+      "admitted": false,
+      "claim_ids": [
+        "H-CAUSAL-001",
+        "H-PERF-001"
+      ],
+      "evidence_ids": [
+        "E-PAPER-001",
+        "E-LEGACY-ARTIFACTS-001"
+      ],
+      "reason": "historical performance or comparison wording lacks a matching current frozen evidence closure; artifact identity does not establish causal identification, theorem validity, or intervention effects."
+    },
+    {
+      "unit_id": "CAPTION-005",
+      "unit_type": "caption",
+      "start_line": 363,
+      "end_line": 363,
+      "sha256": "371bc26652fe5074e90d39045f6775f3993c005b56aaf62abba6241a86ef5702",
+      "disposition": "QUARANTINED_ARTIFACT_ONLY",
+      "admitted": false,
+      "claim_ids": [
+        "H-CAUSAL-001"
+      ],
+      "evidence_ids": [
+        "E-PAPER-001",
+        "E-LEGACY-ARTIFACTS-001"
+      ],
+      "reason": "artifact identity does not establish causal identification, theorem validity, or intervention effects."
+    },
+    {
+      "unit_id": "PROSE-061",
+      "unit_type": "prose",
+      "start_line": 381,
+      "end_line": 381,
+      "sha256": "ce4b88784c55d943bcfb0bd48696945085e002bf70bcde82fb5179434b8fe3cd",
+      "disposition": "QUARANTINED_ARTIFACT_ONLY",
+      "admitted": false,
+      "claim_ids": [
+        "H-MODEL-001",
+        "H-PERF-001"
+      ],
+      "evidence_ids": [
+        "E-PAPER-001",
+        "E-LEGACY-ARTIFACTS-001"
+      ],
+      "reason": "historical performance or comparison wording lacks a matching current frozen evidence closure; artifact-specific implementation or data wording may conflict with the canonical current source."
+    },
+    {
+      "unit_id": "CAPTION-006",
+      "unit_type": "caption",
+      "start_line": 386,
+      "end_line": 386,
+      "sha256": "20ca86ccfab2f41261410a46fceec3d3a3940396810f1fd5f7c5b46abdf907d6",
+      "disposition": "QUARANTINED_ARTIFACT_ONLY",
+      "admitted": false,
+      "claim_ids": [
+        "H-CAUSAL-001"
+      ],
+      "evidence_ids": [
+        "E-PAPER-001",
+        "E-LEGACY-ARTIFACTS-001"
+      ],
+      "reason": "artifact identity does not establish causal identification, theorem validity, or intervention effects."
+    },
+    {
+      "unit_id": "PROSE-062",
+      "unit_type": "prose",
+      "start_line": 390,
+      "end_line": 390,
+      "sha256": "4b524a110001c0dfaf5c70d042238410561888a18bae923d5727dfe5a4bcb85d",
+      "disposition": "QUARANTINED_ARTIFACT_ONLY",
+      "admitted": false,
+      "claim_ids": [
+        "H-CAUSAL-001",
+        "H-MODEL-001"
+      ],
+      "evidence_ids": [
+        "E-PAPER-001",
+        "E-LEGACY-ARTIFACTS-001"
+      ],
+      "reason": "artifact-specific implementation or data wording may conflict with the canonical current source; artifact identity does not establish causal identification, theorem validity, or intervention effects."
+    },
+    {
+      "unit_id": "CAPTION-007",
+      "unit_type": "caption",
+      "start_line": 395,
+      "end_line": 395,
+      "sha256": "d9a7ad28cceae15131f18e9059a29694a49f77510ee1c88d5c7a4dd43b749171",
+      "disposition": "QUARANTINED_ARTIFACT_ONLY",
+      "admitted": false,
+      "claim_ids": [
+        "H-PERF-001"
+      ],
+      "evidence_ids": [
+        "E-PAPER-001",
+        "E-LEGACY-ARTIFACTS-001"
+      ],
+      "reason": "historical performance or comparison wording lacks a matching current frozen evidence closure."
+    },
+    {
+      "unit_id": "CAPTION-008",
+      "unit_type": "caption",
+      "start_line": 404,
+      "end_line": 404,
+      "sha256": "e4e5442ab29ee7b767cc626202087f32dff58cae97e4510020f05ac21015a53a",
+      "disposition": "QUARANTINED_ARTIFACT_ONLY",
+      "admitted": false,
+      "claim_ids": [
+        "H-CAUSAL-001",
+        "H-LEAD-001"
+      ],
+      "evidence_ids": [
+        "E-PAPER-001",
+        "E-LEGACY-ARTIFACTS-001"
+      ],
+      "reason": "lead-time definitions and historical artifacts remain unreconciled; artifact identity does not establish causal identification, theorem validity, or intervention effects."
+    },
+    {
+      "unit_id": "TABLE-003",
+      "unit_type": "table",
+      "start_line": 408,
+      "end_line": 422,
+      "sha256": "2bef81ff03a8ccde7e82b302c74520f24f05f10763fcc09c0735fff448fc3e15",
+      "disposition": "QUARANTINED_ARTIFACT_ONLY",
+      "admitted": false,
+      "claim_ids": [
+        "H-LEAD-001",
+        "H-PERF-001"
+      ],
+      "evidence_ids": [
+        "E-PAPER-001",
+        "E-LEGACY-ARTIFACTS-001"
+      ],
+      "reason": "historical performance or comparison wording lacks a matching current frozen evidence closure; lead-time definitions and historical artifacts remain unreconciled."
+    },
+    {
+      "unit_id": "CAPTION-009",
+      "unit_type": "caption",
+      "start_line": 410,
+      "end_line": 410,
+      "sha256": "8d6412f290055e64c3eacb85afc158a394f61573886ed42fb457cdd6b34e7e88",
+      "disposition": "QUARANTINED_ARTIFACT_ONLY",
+      "admitted": false,
+      "claim_ids": [
+        "H-LEAD-001"
+      ],
+      "evidence_ids": [
+        "E-PAPER-001",
+        "E-LEGACY-ARTIFACTS-001"
+      ],
+      "reason": "lead-time definitions and historical artifacts remain unreconciled."
+    },
+    {
+      "unit_id": "PROSE-063",
+      "unit_type": "prose",
+      "start_line": 424,
+      "end_line": 424,
+      "sha256": "4256e5663ef57b7d6bb27d0ef3c36f4d9647dc62a815a748646b9808dcecff4b",
+      "disposition": "QUARANTINED_ARTIFACT_ONLY",
+      "admitted": false,
+      "claim_ids": [
+        "H-CAUSAL-001",
+        "H-MODEL-001"
+      ],
+      "evidence_ids": [
+        "E-PAPER-001",
+        "E-LEGACY-ARTIFACTS-001"
+      ],
+      "reason": "artifact-specific implementation or data wording may conflict with the canonical current source; artifact identity does not establish causal identification, theorem validity, or intervention effects."
+    },
+    {
+      "unit_id": "PROSE-064",
+      "unit_type": "prose",
+      "start_line": 426,
+      "end_line": 426,
+      "sha256": "f596e5b06688d4736e616534a95ca27e9bdd2e28a22883b40524e4670cd0926f",
+      "disposition": "QUARANTINED_ARTIFACT_ONLY",
+      "admitted": false,
+      "claim_ids": [
+        "H-LEAD-001",
+        "H-MODEL-001"
+      ],
+      "evidence_ids": [
+        "E-PAPER-001",
+        "E-LEGACY-ARTIFACTS-001"
+      ],
+      "reason": "lead-time definitions and historical artifacts remain unreconciled; artifact-specific implementation or data wording may conflict with the canonical current source."
+    },
+    {
+      "unit_id": "PROSE-065",
+      "unit_type": "prose",
+      "start_line": 429,
+      "end_line": 429,
+      "sha256": "f83b1503e2db9d4f68cdff2465d47ed01e9b50c41f8bfa55bb13584b12cfe6d7",
+      "disposition": "QUARANTINED_ARTIFACT_ONLY",
+      "admitted": false,
+      "claim_ids": [
+        "H-MODEL-001"
+      ],
+      "evidence_ids": [
+        "E-PAPER-001",
+        "E-LEGACY-ARTIFACTS-001"
+      ],
+      "reason": "artifact-specific implementation or data wording may conflict with the canonical current source."
+    },
+    {
+      "unit_id": "PROSE-066",
+      "unit_type": "prose",
+      "start_line": 431,
+      "end_line": 431,
+      "sha256": "2416d5d5a5b133db16ddd39eccc1bb744ad76f975b32c32bae662bc56fe598fa",
+      "disposition": "QUARANTINED_ARTIFACT_ONLY",
+      "admitted": false,
+      "claim_ids": [
+        "H-MODEL-001"
+      ],
+      "evidence_ids": [
+        "E-PAPER-001",
+        "E-LEGACY-ARTIFACTS-001"
+      ],
+      "reason": "artifact-specific implementation or data wording may conflict with the canonical current source."
+    },
+    {
+      "unit_id": "TABLE-004",
+      "unit_type": "table",
+      "start_line": 435,
+      "end_line": 451,
+      "sha256": "18193080612be8c82b7dc53fce1dee9f55f6213de0f9b6a89df3b6bc692bbe67",
+      "disposition": "QUARANTINED_ARTIFACT_ONLY",
+      "admitted": false,
+      "claim_ids": [
+        "H-CAUSAL-001",
+        "H-PERF-001"
+      ],
+      "evidence_ids": [
+        "E-PAPER-001",
+        "E-LEGACY-ARTIFACTS-001"
+      ],
+      "reason": "historical performance or comparison wording lacks a matching current frozen evidence closure; artifact identity does not establish causal identification, theorem validity, or intervention effects."
+    },
+    {
+      "unit_id": "CAPTION-010",
+      "unit_type": "caption",
+      "start_line": 437,
+      "end_line": 437,
+      "sha256": "a8a90e89635dac7e8ee8a57107499e2bf86359526fa7ac24071a0f3c3ab48898",
+      "disposition": "QUARANTINED_ARTIFACT_ONLY",
+      "admitted": false,
+      "claim_ids": [
+        "H-CAUSAL-001"
+      ],
+      "evidence_ids": [
+        "E-PAPER-001",
+        "E-LEGACY-ARTIFACTS-001"
+      ],
+      "reason": "artifact identity does not establish causal identification, theorem validity, or intervention effects."
+    },
+    {
+      "unit_id": "PROSE-067",
+      "unit_type": "prose",
+      "start_line": 453,
+      "end_line": 453,
+      "sha256": "b83999406292887697fa4aa89674a2a1e81075ac85314b1e04936d61b1e094c4",
+      "disposition": "QUARANTINED_ARTIFACT_ONLY",
+      "admitted": false,
+      "claim_ids": [
+        "H-CAUSAL-001",
+        "H-MODEL-001"
+      ],
+      "evidence_ids": [
+        "E-PAPER-001",
+        "E-LEGACY-ARTIFACTS-001"
+      ],
+      "reason": "artifact-specific implementation or data wording may conflict with the canonical current source; artifact identity does not establish causal identification, theorem validity, or intervention effects."
+    },
+    {
+      "unit_id": "PROSE-068",
+      "unit_type": "prose",
+      "start_line": 455,
+      "end_line": 455,
+      "sha256": "177a944b0f6bf35b96d880d2487561aa0dc660d15f7082934406a612ca68175b",
+      "disposition": "QUARANTINED_ARTIFACT_ONLY",
+      "admitted": false,
+      "claim_ids": [
+        "H-MODEL-001"
+      ],
+      "evidence_ids": [
+        "E-PAPER-001",
+        "E-LEGACY-ARTIFACTS-001"
+      ],
+      "reason": "artifact-specific implementation or data wording may conflict with the canonical current source."
+    },
+    {
+      "unit_id": "PROSE-069",
+      "unit_type": "prose",
+      "start_line": 457,
+      "end_line": 457,
+      "sha256": "24e2f1a8afd901f476b09265675ff0783979835f8bc192d76b4a5df64b184a32",
+      "disposition": "UNSUPPORTED_QUARANTINED",
+      "admitted": false,
+      "claim_ids": [],
+      "evidence_ids": [
+        "E-PAPER-001"
+      ],
+      "reason": "Historical source material preserved for provenance; no truth-supporting claim record is admitted for this unit."
+    },
+    {
+      "unit_id": "PROSE-070",
+      "unit_type": "prose",
+      "start_line": 458,
+      "end_line": 458,
+      "sha256": "01ad0b23ac6bacab69648074e7c6f6387acfa631658517fbc20f0755a1e5005a",
+      "disposition": "QUARANTINED_ARTIFACT_ONLY",
+      "admitted": false,
+      "claim_ids": [
+        "H-CAUSAL-001",
+        "H-MODEL-001"
+      ],
+      "evidence_ids": [
+        "E-PAPER-001",
+        "E-LEGACY-ARTIFACTS-001"
+      ],
+      "reason": "artifact-specific implementation or data wording may conflict with the canonical current source; artifact identity does not establish causal identification, theorem validity, or intervention effects."
+    },
+    {
+      "unit_id": "PROSE-071",
+      "unit_type": "prose",
+      "start_line": 460,
+      "end_line": 460,
+      "sha256": "199d079d5f49067608916fbb128b9266f76f8842c85b693326b1885bf1c8d343",
+      "disposition": "QUARANTINED_ARTIFACT_ONLY",
+      "admitted": false,
+      "claim_ids": [
+        "H-CAUSAL-001"
+      ],
+      "evidence_ids": [
+        "E-PAPER-001",
+        "E-LEGACY-ARTIFACTS-001"
+      ],
+      "reason": "artifact identity does not establish causal identification, theorem validity, or intervention effects."
+    },
+    {
+      "unit_id": "PROSE-072",
+      "unit_type": "prose",
+      "start_line": 462,
+      "end_line": 462,
+      "sha256": "c2d55fb402f160ba21d6d3c08c15cce4541dc7f4760a66b32309d014b916b829",
+      "disposition": "QUARANTINED_ARTIFACT_ONLY",
+      "admitted": false,
+      "claim_ids": [
+        "H-MODEL-001"
+      ],
+      "evidence_ids": [
+        "E-PAPER-001",
+        "E-LEGACY-ARTIFACTS-001"
+      ],
+      "reason": "artifact-specific implementation or data wording may conflict with the canonical current source."
+    },
+    {
+      "unit_id": "TABLE-005",
+      "unit_type": "table",
+      "start_line": 467,
+      "end_line": 483,
+      "sha256": "77e1d7067d3897c6144e09952c13e6bc11303fbf313d763017881750bbb42191",
+      "disposition": "QUARANTINED_ARTIFACT_ONLY",
+      "admitted": false,
+      "claim_ids": [
+        "H-MODEL-001",
+        "H-PERF-001"
+      ],
+      "evidence_ids": [
+        "E-PAPER-001",
+        "E-LEGACY-ARTIFACTS-001"
+      ],
+      "reason": "historical performance or comparison wording lacks a matching current frozen evidence closure; artifact-specific implementation or data wording may conflict with the canonical current source."
+    },
+    {
+      "unit_id": "CAPTION-011",
+      "unit_type": "caption",
+      "start_line": 469,
+      "end_line": 469,
+      "sha256": "462ff020d7ee212faed2995bda68da4fd70bf8995ff1313b7dceb5eccd0e51d1",
+      "disposition": "QUARANTINED_ARTIFACT_ONLY",
+      "admitted": false,
+      "claim_ids": [
+        "H-MODEL-001",
+        "H-PERF-001"
+      ],
+      "evidence_ids": [
+        "E-PAPER-001",
+        "E-LEGACY-ARTIFACTS-001"
+      ],
+      "reason": "historical performance or comparison wording lacks a matching current frozen evidence closure; artifact-specific implementation or data wording may conflict with the canonical current source."
+    },
+    {
+      "unit_id": "CAPTION-012",
+      "unit_type": "caption",
+      "start_line": 488,
+      "end_line": 488,
+      "sha256": "68d5c3fd030b77dc8122879da097c4db57eac70e1e79b8149de1016491f4f24e",
+      "disposition": "QUARANTINED_ARTIFACT_ONLY",
+      "admitted": false,
+      "claim_ids": [
+        "H-MODEL-001",
+        "H-PERF-001"
+      ],
+      "evidence_ids": [
+        "E-PAPER-001",
+        "E-LEGACY-ARTIFACTS-001"
+      ],
+      "reason": "historical performance or comparison wording lacks a matching current frozen evidence closure; artifact-specific implementation or data wording may conflict with the canonical current source."
+    },
+    {
+      "unit_id": "PROSE-073",
+      "unit_type": "prose",
+      "start_line": 492,
+      "end_line": 492,
+      "sha256": "b33210a53f1294910ce8779bd9dedc1ff4be6542eb87e0dba7cb9d082afb0b10",
+      "disposition": "QUARANTINED_ARTIFACT_ONLY",
+      "admitted": false,
+      "claim_ids": [
+        "H-MODEL-001",
+        "H-PERF-001"
+      ],
+      "evidence_ids": [
+        "E-PAPER-001",
+        "E-LEGACY-ARTIFACTS-001"
+      ],
+      "reason": "historical performance or comparison wording lacks a matching current frozen evidence closure; artifact-specific implementation or data wording may conflict with the canonical current source."
+    },
+    {
+      "unit_id": "PROSE-074",
+      "unit_type": "prose",
+      "start_line": 494,
+      "end_line": 494,
+      "sha256": "7f22d7f8b040847f27db2b8542203ad72e290889f2d803a4e10f6f7c40b91d52",
+      "disposition": "UNSUPPORTED_QUARANTINED",
+      "admitted": false,
+      "claim_ids": [],
+      "evidence_ids": [
+        "E-PAPER-001"
+      ],
+      "reason": "Historical source material preserved for provenance; no truth-supporting claim record is admitted for this unit."
+    },
+    {
+      "unit_id": "PROSE-075",
+      "unit_type": "prose",
+      "start_line": 496,
+      "end_line": 496,
+      "sha256": "bfbb0af09b2dc38456200d3b9d5d6ed8818f74e8f35ff51b87d15b52c0fdbf55",
+      "disposition": "QUARANTINED_ARTIFACT_ONLY",
+      "admitted": false,
+      "claim_ids": [
+        "H-MODEL-001",
+        "H-PERF-001"
+      ],
+      "evidence_ids": [
+        "E-PAPER-001",
+        "E-LEGACY-ARTIFACTS-001"
+      ],
+      "reason": "historical performance or comparison wording lacks a matching current frozen evidence closure; artifact-specific implementation or data wording may conflict with the canonical current source."
+    },
+    {
+      "unit_id": "PROSE-076",
+      "unit_type": "prose",
+      "start_line": 498,
+      "end_line": 498,
+      "sha256": "ebef4e8213dcf12ec0591fc7dd843a048f4e2efc72f7be4d8d10da03c7dc3db4",
+      "disposition": "QUARANTINED_ARTIFACT_ONLY",
+      "admitted": false,
+      "claim_ids": [
+        "H-CAUSAL-001",
+        "H-MODEL-001"
+      ],
+      "evidence_ids": [
+        "E-PAPER-001",
+        "E-LEGACY-ARTIFACTS-001"
+      ],
+      "reason": "artifact-specific implementation or data wording may conflict with the canonical current source; artifact identity does not establish causal identification, theorem validity, or intervention effects."
+    },
+    {
+      "unit_id": "PROSE-077",
+      "unit_type": "prose",
+      "start_line": 505,
+      "end_line": 505,
+      "sha256": "2a48b93a8800e207f30f6f67da560634efb507fa6f1839b08c0cafa84717a2bc",
+      "disposition": "QUARANTINED_ARTIFACT_ONLY",
+      "admitted": false,
+      "claim_ids": [
+        "H-CAUSAL-001",
+        "H-MODEL-001"
+      ],
+      "evidence_ids": [
+        "E-PAPER-001",
+        "E-LEGACY-ARTIFACTS-001"
+      ],
+      "reason": "artifact-specific implementation or data wording may conflict with the canonical current source; artifact identity does not establish causal identification, theorem validity, or intervention effects."
+    },
+    {
+      "unit_id": "CAPTION-013",
+      "unit_type": "caption",
+      "start_line": 510,
+      "end_line": 510,
+      "sha256": "858a9b5cbfce6d1ec633f93880cf53dcaccb75792fc766a906fafd96ea9882f8",
+      "disposition": "QUARANTINED_ARTIFACT_ONLY",
+      "admitted": false,
+      "claim_ids": [
+        "H-CAUSAL-001",
+        "H-MODEL-001"
+      ],
+      "evidence_ids": [
+        "E-PAPER-001",
+        "E-LEGACY-ARTIFACTS-001"
+      ],
+      "reason": "artifact-specific implementation or data wording may conflict with the canonical current source; artifact identity does not establish causal identification, theorem validity, or intervention effects."
+    },
+    {
+      "unit_id": "PROSE-078",
+      "unit_type": "prose",
+      "start_line": 514,
+      "end_line": 514,
+      "sha256": "409d0a76c8af28272b8abea1c53701e62df1f2005f8e766b171208798c4b3c6b",
+      "disposition": "QUARANTINED_ARTIFACT_ONLY",
+      "admitted": false,
+      "claim_ids": [
+        "H-CAUSAL-001",
+        "H-MODEL-001"
+      ],
+      "evidence_ids": [
+        "E-PAPER-001",
+        "E-LEGACY-ARTIFACTS-001"
+      ],
+      "reason": "artifact-specific implementation or data wording may conflict with the canonical current source; artifact identity does not establish causal identification, theorem validity, or intervention effects."
+    },
+    {
+      "unit_id": "PROSE-079",
+      "unit_type": "prose",
+      "start_line": 516,
+      "end_line": 516,
+      "sha256": "5a847af46295ccfeeef9e5a0508f4738905c093221c5e568f5ac753586ffd385",
+      "disposition": "QUARANTINED_ARTIFACT_ONLY",
+      "admitted": false,
+      "claim_ids": [
+        "H-MODEL-001"
+      ],
+      "evidence_ids": [
+        "E-PAPER-001",
+        "E-LEGACY-ARTIFACTS-001"
+      ],
+      "reason": "artifact-specific implementation or data wording may conflict with the canonical current source."
+    },
+    {
+      "unit_id": "PROSE-080",
+      "unit_type": "prose",
+      "start_line": 518,
+      "end_line": 518,
+      "sha256": "15d0d2d5a6eebc5235dec57ad40ac2f2b7d8cf341095cc59e350c95061f19cef",
+      "disposition": "QUARANTINED_ARTIFACT_ONLY",
+      "admitted": false,
+      "claim_ids": [
+        "H-MODEL-001"
+      ],
+      "evidence_ids": [
+        "E-PAPER-001",
+        "E-LEGACY-ARTIFACTS-001"
+      ],
+      "reason": "artifact-specific implementation or data wording may conflict with the canonical current source."
+    },
+    {
+      "unit_id": "PROSE-081",
+      "unit_type": "prose",
+      "start_line": 520,
+      "end_line": 520,
+      "sha256": "e06e5d8903ea5005dbc62821cd7c5381095fbe7ccfe9a83129651bf810a559fa",
+      "disposition": "QUARANTINED_ARTIFACT_ONLY",
+      "admitted": false,
+      "claim_ids": [
+        "H-MODEL-001"
+      ],
+      "evidence_ids": [
+        "E-PAPER-001",
+        "E-LEGACY-ARTIFACTS-001"
+      ],
+      "reason": "artifact-specific implementation or data wording may conflict with the canonical current source."
+    },
+    {
+      "unit_id": "PROSE-082",
+      "unit_type": "prose",
+      "start_line": 522,
+      "end_line": 522,
+      "sha256": "746c8b959d980a82922d1272048cba8eed89e3b21814dc9d47f3267fa4a34498",
+      "disposition": "QUARANTINED_ARTIFACT_ONLY",
+      "admitted": false,
+      "claim_ids": [
+        "H-MODEL-001",
+        "H-PERF-001"
+      ],
+      "evidence_ids": [
+        "E-PAPER-001",
+        "E-LEGACY-ARTIFACTS-001"
+      ],
+      "reason": "historical performance or comparison wording lacks a matching current frozen evidence closure; artifact-specific implementation or data wording may conflict with the canonical current source."
+    },
+    {
+      "unit_id": "PROSE-083",
+      "unit_type": "prose",
+      "start_line": 526,
+      "end_line": 526,
+      "sha256": "b620b556b07ce5f18b5a770a68057d7aadfddcee07e38844731f5f976bb91b49",
+      "disposition": "QUARANTINED_ARTIFACT_ONLY",
+      "admitted": false,
+      "claim_ids": [
+        "H-MODEL-001",
+        "H-XDOMAIN-001"
+      ],
+      "evidence_ids": [
+        "E-PAPER-001",
+        "E-LEGACY-ARTIFACTS-001"
+      ],
+      "reason": "no frozen external-validity protocol supports the cross-domain wording; artifact-specific implementation or data wording may conflict with the canonical current source."
+    },
+    {
+      "unit_id": "TABLE-006",
+      "unit_type": "table",
+      "start_line": 528,
+      "end_line": 541,
+      "sha256": "b16699844490e313c41d52a952b944ade385bca04adafd436c58daecc14011d9",
+      "disposition": "QUARANTINED_ARTIFACT_ONLY",
+      "admitted": false,
+      "claim_ids": [
+        "H-PERF-001",
+        "H-XDOMAIN-001"
+      ],
+      "evidence_ids": [
+        "E-PAPER-001",
+        "E-LEGACY-ARTIFACTS-001"
+      ],
+      "reason": "historical performance or comparison wording lacks a matching current frozen evidence closure; no frozen external-validity protocol supports the cross-domain wording."
+    },
+    {
+      "unit_id": "CAPTION-014",
+      "unit_type": "caption",
+      "start_line": 530,
+      "end_line": 530,
+      "sha256": "ebc6f925bf1859414569c6549280bdb5a6107a1e4a90c3e843ef8784285d8d4e",
+      "disposition": "QUARANTINED_ARTIFACT_ONLY",
+      "admitted": false,
+      "claim_ids": [
+        "H-PERF-001",
+        "H-XDOMAIN-001"
+      ],
+      "evidence_ids": [
+        "E-PAPER-001",
+        "E-LEGACY-ARTIFACTS-001"
+      ],
+      "reason": "historical performance or comparison wording lacks a matching current frozen evidence closure; no frozen external-validity protocol supports the cross-domain wording."
+    },
+    {
+      "unit_id": "PROSE-084",
+      "unit_type": "prose",
+      "start_line": 543,
+      "end_line": 543,
+      "sha256": "6c9867e02d5b0e340d9eb25518a4263c8f7a2fee157db5dcb0ca7836f1759dc7",
+      "disposition": "QUARANTINED_ARTIFACT_ONLY",
+      "admitted": false,
+      "claim_ids": [
+        "H-PERF-001"
+      ],
+      "evidence_ids": [
+        "E-PAPER-001",
+        "E-LEGACY-ARTIFACTS-001"
+      ],
+      "reason": "historical performance or comparison wording lacks a matching current frozen evidence closure."
+    },
+    {
+      "unit_id": "PROSE-085",
+      "unit_type": "prose",
+      "start_line": 545,
+      "end_line": 545,
+      "sha256": "21181e1413675d77a19cb8a15579eb7104e80f870a6fd7b3a234a37150a8bcfa",
+      "disposition": "UNSUPPORTED_QUARANTINED",
+      "admitted": false,
+      "claim_ids": [],
+      "evidence_ids": [
+        "E-PAPER-001"
+      ],
+      "reason": "Historical source material preserved for provenance; no truth-supporting claim record is admitted for this unit."
+    },
+    {
+      "unit_id": "PROSE-086",
+      "unit_type": "prose",
+      "start_line": 547,
+      "end_line": 547,
+      "sha256": "1019e7c04e2553885b7c6b6b4c5134be1ed358f2d543238ef551bf0a5a5deec7",
+      "disposition": "QUARANTINED_ARTIFACT_ONLY",
+      "admitted": false,
+      "claim_ids": [
+        "H-MODEL-001"
+      ],
+      "evidence_ids": [
+        "E-PAPER-001",
+        "E-LEGACY-ARTIFACTS-001"
+      ],
+      "reason": "artifact-specific implementation or data wording may conflict with the canonical current source."
+    },
+    {
+      "unit_id": "PROSE-087",
+      "unit_type": "prose",
+      "start_line": 554,
+      "end_line": 554,
+      "sha256": "b03f66a2dd5f278f6f2d75674265400b64271bc8e2f2247abddee540b566df34",
+      "disposition": "QUARANTINED_ARTIFACT_ONLY",
+      "admitted": false,
+      "claim_ids": [
+        "H-CAUSAL-001",
+        "H-MODEL-001"
+      ],
+      "evidence_ids": [
+        "E-PAPER-001",
+        "E-LEGACY-ARTIFACTS-001"
+      ],
+      "reason": "artifact-specific implementation or data wording may conflict with the canonical current source; artifact identity does not establish causal identification, theorem validity, or intervention effects."
+    },
+    {
+      "unit_id": "PROSE-088",
+      "unit_type": "prose",
+      "start_line": 556,
+      "end_line": 556,
+      "sha256": "51c6ef768c9853b6127be93c0a51927c5312a58bf1300a84f8d5b243ba9fbdaa",
+      "disposition": "QUARANTINED_ARTIFACT_ONLY",
+      "admitted": false,
+      "claim_ids": [
+        "H-MODEL-001"
+      ],
+      "evidence_ids": [
+        "E-PAPER-001",
+        "E-LEGACY-ARTIFACTS-001"
+      ],
+      "reason": "artifact-specific implementation or data wording may conflict with the canonical current source."
+    },
+    {
+      "unit_id": "PROSE-089",
+      "unit_type": "prose",
+      "start_line": 558,
+      "end_line": 558,
+      "sha256": "8dc8151f22ffe6c5ff44cd8b2759ee79b290ef94d22d3e1aa1c2695125861877",
+      "disposition": "QUARANTINED_ARTIFACT_ONLY",
+      "admitted": false,
+      "claim_ids": [
+        "H-MODEL-001",
+        "H-PERF-001"
+      ],
+      "evidence_ids": [
+        "E-PAPER-001",
+        "E-LEGACY-ARTIFACTS-001"
+      ],
+      "reason": "historical performance or comparison wording lacks a matching current frozen evidence closure; artifact-specific implementation or data wording may conflict with the canonical current source."
+    },
+    {
+      "unit_id": "PROSE-090",
+      "unit_type": "prose",
+      "start_line": 560,
+      "end_line": 560,
+      "sha256": "615eca944b69e428ffb6c693dd8e868c9240f29e4a795563bb120559e1f40b37",
+      "disposition": "QUARANTINED_ARTIFACT_ONLY",
+      "admitted": false,
+      "claim_ids": [
+        "H-CAUSAL-001",
+        "H-MODEL-001"
+      ],
+      "evidence_ids": [
+        "E-PAPER-001",
+        "E-LEGACY-ARTIFACTS-001"
+      ],
+      "reason": "artifact-specific implementation or data wording may conflict with the canonical current source; artifact identity does not establish causal identification, theorem validity, or intervention effects."
+    },
+    {
+      "unit_id": "PROSE-091",
+      "unit_type": "prose",
+      "start_line": 562,
+      "end_line": 562,
+      "sha256": "0d8d439b0697d3e059e1b779c05c40a62720334153beabb80f42138655ccfb4e",
+      "disposition": "QUARANTINED_ARTIFACT_ONLY",
+      "admitted": false,
+      "claim_ids": [
+        "H-CAUSAL-001",
+        "H-MODEL-001"
+      ],
+      "evidence_ids": [
+        "E-PAPER-001",
+        "E-LEGACY-ARTIFACTS-001"
+      ],
+      "reason": "artifact-specific implementation or data wording may conflict with the canonical current source; artifact identity does not establish causal identification, theorem validity, or intervention effects."
+    },
+    {
+      "unit_id": "PROSE-092",
+      "unit_type": "prose",
+      "start_line": 571,
+      "end_line": 571,
+      "sha256": "41f1a6ed9ed1314c5b453882bae4cd5e0423996ed1904b146232731d73605b6f",
+      "disposition": "QUARANTINED_ARTIFACT_ONLY",
+      "admitted": false,
+      "claim_ids": [
+        "H-MODEL-001"
+      ],
+      "evidence_ids": [
+        "E-PAPER-001",
+        "E-LEGACY-ARTIFACTS-001"
+      ],
+      "reason": "artifact-specific implementation or data wording may conflict with the canonical current source."
+    },
+    {
+      "unit_id": "PROSE-093",
+      "unit_type": "prose",
+      "start_line": 573,
+      "end_line": 573,
+      "sha256": "370b7971c1412de7c6a2430e5bcda2737088ee24a6a35e067ad62a0c85d13e86",
+      "disposition": "QUARANTINED_ARTIFACT_ONLY",
+      "admitted": false,
+      "claim_ids": [
+        "H-MODEL-001"
+      ],
+      "evidence_ids": [
+        "E-PAPER-001",
+        "E-LEGACY-ARTIFACTS-001"
+      ],
+      "reason": "artifact-specific implementation or data wording may conflict with the canonical current source."
+    },
+    {
+      "unit_id": "PROSE-094",
+      "unit_type": "prose",
+      "start_line": 575,
+      "end_line": 575,
+      "sha256": "986fb0e8a22c5140c8122f48ba5e5ec01df117dd00e3eb3d1a9b822fdd5e3912",
+      "disposition": "QUARANTINED_ARTIFACT_ONLY",
+      "admitted": false,
+      "claim_ids": [
+        "H-CAUSAL-001",
+        "H-MODEL-001",
+        "H-PERF-001"
+      ],
+      "evidence_ids": [
+        "E-PAPER-001",
+        "E-LEGACY-ARTIFACTS-001"
+      ],
+      "reason": "historical performance or comparison wording lacks a matching current frozen evidence closure; artifact-specific implementation or data wording may conflict with the canonical current source; artifact identity does not establish causal identification, theorem validity, or intervention effects."
+    },
+    {
+      "unit_id": "PROSE-095",
+      "unit_type": "prose",
+      "start_line": 577,
+      "end_line": 577,
+      "sha256": "3beff2707258213e997cb9fb4603fce08302e7d78ea3fc9290af6a50e9b7ba8d",
+      "disposition": "QUARANTINED_ARTIFACT_ONLY",
+      "admitted": false,
+      "claim_ids": [
+        "H-CAUSAL-001",
+        "H-MODEL-001"
+      ],
+      "evidence_ids": [
+        "E-PAPER-001",
+        "E-LEGACY-ARTIFACTS-001"
+      ],
+      "reason": "artifact-specific implementation or data wording may conflict with the canonical current source; artifact identity does not establish causal identification, theorem validity, or intervention effects."
+    },
+    {
+      "unit_id": "PROSE-096",
+      "unit_type": "prose",
+      "start_line": 584,
+      "end_line": 584,
+      "sha256": "8a9053c7a7745ced916aa247042122e6f71b787bf382b1864ddb9bee78b2f097",
+      "disposition": "QUARANTINED_ARTIFACT_ONLY",
+      "admitted": false,
+      "claim_ids": [
+        "H-CAUSAL-001",
+        "H-MODEL-001"
+      ],
+      "evidence_ids": [
+        "E-PAPER-001",
+        "E-LEGACY-ARTIFACTS-001"
+      ],
+      "reason": "artifact-specific implementation or data wording may conflict with the canonical current source; artifact identity does not establish causal identification, theorem validity, or intervention effects."
+    },
+    {
+      "unit_id": "PROSE-097",
+      "unit_type": "prose",
+      "start_line": 586,
+      "end_line": 586,
+      "sha256": "efa8e3d7b7c60ebd7821b38a3c5a94fc9bf89ba7d00171c04dacf382f7ef9a3e",
+      "disposition": "QUARANTINED_ARTIFACT_ONLY",
+      "admitted": false,
+      "claim_ids": [
+        "H-LEAD-001",
+        "H-MODEL-001"
+      ],
+      "evidence_ids": [
+        "E-PAPER-001",
+        "E-LEGACY-ARTIFACTS-001"
+      ],
+      "reason": "lead-time definitions and historical artifacts remain unreconciled; artifact-specific implementation or data wording may conflict with the canonical current source."
+    },
+    {
+      "unit_id": "PROSE-098",
+      "unit_type": "prose",
+      "start_line": 588,
+      "end_line": 588,
+      "sha256": "e839f544dd9fb280ee789e939f567b7b7ef56ed6ecb8575708a15040480a310d",
+      "disposition": "QUARANTINED_ARTIFACT_ONLY",
+      "admitted": false,
+      "claim_ids": [
+        "H-PERF-001",
+        "H-XDOMAIN-001"
+      ],
+      "evidence_ids": [
+        "E-PAPER-001",
+        "E-LEGACY-ARTIFACTS-001"
+      ],
+      "reason": "historical performance or comparison wording lacks a matching current frozen evidence closure; no frozen external-validity protocol supports the cross-domain wording."
+    },
+    {
+      "unit_id": "PROSE-099",
+      "unit_type": "prose",
+      "start_line": 590,
+      "end_line": 590,
+      "sha256": "7cd13c25d5d9e94596f23c2e85cdb8ee0b031b4175c4d516707988d6e8ad3251",
+      "disposition": "QUARANTINED_ARTIFACT_ONLY",
+      "admitted": false,
+      "claim_ids": [
+        "H-CAUSAL-001",
+        "H-LEAD-001",
+        "H-PERF-001"
+      ],
+      "evidence_ids": [
+        "E-PAPER-001",
+        "E-LEGACY-ARTIFACTS-001"
+      ],
+      "reason": "historical performance or comparison wording lacks a matching current frozen evidence closure; lead-time definitions and historical artifacts remain unreconciled; artifact identity does not establish causal identification, theorem validity, or intervention effects."
+    },
+    {
+      "unit_id": "PROSE-100",
+      "unit_type": "prose",
+      "start_line": 972,
+      "end_line": 972,
+      "sha256": "c7476b004a750a653bcb1ad2a55b9e3ef67c8b4b27a88d294120138a265101a1",
+      "disposition": "QUARANTINED_ARTIFACT_ONLY",
+      "admitted": false,
+      "claim_ids": [
+        "H-MODEL-001"
+      ],
+      "evidence_ids": [
+        "E-PAPER-001",
+        "E-LEGACY-ARTIFACTS-001"
+      ],
+      "reason": "artifact-specific implementation or data wording may conflict with the canonical current source."
+    },
+    {
+      "unit_id": "PROSE-101",
+      "unit_type": "prose",
+      "start_line": 978,
+      "end_line": 978,
+      "sha256": "93a0e293a578efd63ed676084f85de0daf227fb40e2296e80d96971654057974",
+      "disposition": "QUARANTINED_ARTIFACT_ONLY",
+      "admitted": false,
+      "claim_ids": [
+        "H-CAUSAL-001",
+        "H-MODEL-001"
+      ],
+      "evidence_ids": [
+        "E-PAPER-001",
+        "E-LEGACY-ARTIFACTS-001"
+      ],
+      "reason": "artifact-specific implementation or data wording may conflict with the canonical current source; artifact identity does not establish causal identification, theorem validity, or intervention effects."
+    },
+    {
+      "unit_id": "PROSE-102",
+      "unit_type": "prose",
+      "start_line": 984,
+      "end_line": 984,
+      "sha256": "a50f7f8e97a465f00228edb36f17813f70f39e1ebbaec1e3a40037eb69202e4c",
+      "disposition": "UNSUPPORTED_QUARANTINED",
+      "admitted": false,
+      "claim_ids": [],
+      "evidence_ids": [
+        "E-PAPER-001"
+      ],
+      "reason": "Historical source material preserved for provenance; no truth-supporting claim record is admitted for this unit."
+    },
+    {
+      "unit_id": "PROSE-103",
+      "unit_type": "prose",
+      "start_line": 990,
+      "end_line": 990,
+      "sha256": "df5140fc3d4b8786638bafea0354ab6a93c8731b7ffaace72e189a5d0d2a30d6",
+      "disposition": "QUARANTINED_ARTIFACT_ONLY",
+      "admitted": false,
+      "claim_ids": [
+        "H-MODEL-001"
+      ],
+      "evidence_ids": [
+        "E-PAPER-001",
+        "E-LEGACY-ARTIFACTS-001"
+      ],
+      "reason": "artifact-specific implementation or data wording may conflict with the canonical current source."
+    },
+    {
+      "unit_id": "THEOREM-010",
+      "unit_type": "theorem",
+      "start_line": 995,
+      "end_line": 997,
+      "sha256": "ef771a36bc4e759a94f8e75e872b31f4fac6972dacb292b05c9c6f9595e94a21",
+      "disposition": "QUARANTINED_ARTIFACT_ONLY",
+      "admitted": false,
+      "claim_ids": [
+        "H-CAUSAL-001",
+        "H-MODEL-001"
+      ],
+      "evidence_ids": [
+        "E-PAPER-001",
+        "E-LEGACY-ARTIFACTS-001"
+      ],
+      "reason": "artifact-specific implementation or data wording may conflict with the canonical current source; artifact identity does not establish causal identification, theorem validity, or intervention effects."
+    },
+    {
+      "unit_id": "PROSE-104",
+      "unit_type": "prose",
+      "start_line": 1000,
+      "end_line": 1000,
+      "sha256": "50affa51a526e6848329c8c25250d90c456ed9a0d5fc0df83284a4e52c9d61b2",
+      "disposition": "QUARANTINED_ARTIFACT_ONLY",
+      "admitted": false,
+      "claim_ids": [
+        "H-MODEL-001"
+      ],
+      "evidence_ids": [
+        "E-PAPER-001",
+        "E-LEGACY-ARTIFACTS-001"
+      ],
+      "reason": "artifact-specific implementation or data wording may conflict with the canonical current source."
+    },
+    {
+      "unit_id": "PROSE-105",
+      "unit_type": "prose",
+      "start_line": 1005,
+      "end_line": 1005,
+      "sha256": "f2128e170de7f600baff36f950de3dde660761a0b08188554347dccd28415e49",
+      "disposition": "QUARANTINED_ARTIFACT_ONLY",
+      "admitted": false,
+      "claim_ids": [
+        "H-MODEL-001",
+        "H-PERF-001"
+      ],
+      "evidence_ids": [
+        "E-PAPER-001",
+        "E-LEGACY-ARTIFACTS-001"
+      ],
+      "reason": "historical performance or comparison wording lacks a matching current frozen evidence closure; artifact-specific implementation or data wording may conflict with the canonical current source."
+    },
+    {
+      "unit_id": "PROSE-106",
+      "unit_type": "prose",
+      "start_line": 1009,
+      "end_line": 1009,
+      "sha256": "f40a76250f1ec80fa6cc908d5dc52908631313ef6e47a3b611c798c0892dc35f",
+      "disposition": "QUARANTINED_ARTIFACT_ONLY",
+      "admitted": false,
+      "claim_ids": [
+        "H-LEAD-001"
+      ],
+      "evidence_ids": [
+        "E-PAPER-001",
+        "E-LEGACY-ARTIFACTS-001"
+      ],
+      "reason": "lead-time definitions and historical artifacts remain unreconciled."
+    },
+    {
+      "unit_id": "ALGORITHM-001",
+      "unit_type": "algorithm",
+      "start_line": 1013,
+      "end_line": 1041,
+      "sha256": "e0a859bafd2fcc52b040dcbdc6079dc75122fbf23fe569e6305a5635f4ab0aba",
+      "disposition": "QUARANTINED_ARTIFACT_ONLY",
+      "admitted": false,
+      "claim_ids": [
+        "H-CAUSAL-001",
+        "H-MODEL-001"
+      ],
+      "evidence_ids": [
+        "E-PAPER-001",
+        "E-LEGACY-ARTIFACTS-001"
+      ],
+      "reason": "artifact-specific implementation or data wording may conflict with the canonical current source; artifact identity does not establish causal identification, theorem validity, or intervention effects."
+    },
+    {
+      "unit_id": "CAPTION-015",
+      "unit_type": "caption",
+      "start_line": 1014,
+      "end_line": 1014,
+      "sha256": "7d792c40a3e3a7ebe7cc38d77ad1e4bd876de40de43eebd74201c6f369b4c8a7",
+      "disposition": "QUARANTINED_ARTIFACT_ONLY",
+      "admitted": false,
+      "claim_ids": [
+        "H-CAUSAL-001",
+        "H-MODEL-001"
+      ],
+      "evidence_ids": [
+        "E-PAPER-001",
+        "E-LEGACY-ARTIFACTS-001"
+      ],
+      "reason": "artifact-specific implementation or data wording may conflict with the canonical current source; artifact identity does not establish causal identification, theorem validity, or intervention effects."
+    },
+    {
+      "unit_id": "TABLE-007",
+      "unit_type": "table",
+      "start_line": 1045,
+      "end_line": 1074,
+      "sha256": "966ab5a9cb2e8b58b414b054d895b73dd67ed521faf3f61faf809562ee53ea1a",
+      "disposition": "QUARANTINED_ARTIFACT_ONLY",
+      "admitted": false,
+      "claim_ids": [
+        "H-PERF-001"
+      ],
+      "evidence_ids": [
+        "E-PAPER-001",
+        "E-LEGACY-ARTIFACTS-001"
+      ],
+      "reason": "historical performance or comparison wording lacks a matching current frozen evidence closure."
+    },
+    {
+      "unit_id": "CAPTION-016",
+      "unit_type": "caption",
+      "start_line": 1047,
+      "end_line": 1047,
+      "sha256": "1d57e06d8e52418ab7070d6c807e72c54be5b450fca799946e179806240df36e",
+      "disposition": "QUARANTINED_ARTIFACT_ONLY",
+      "admitted": false,
+      "claim_ids": [
+        "H-PERF-001"
+      ],
+      "evidence_ids": [
+        "E-PAPER-001",
+        "E-LEGACY-ARTIFACTS-001"
+      ],
+      "reason": "historical performance or comparison wording lacks a matching current frozen evidence closure."
+    },
+    {
+      "unit_id": "PROSE-107",
+      "unit_type": "prose",
+      "start_line": 1078,
+      "end_line": 1078,
+      "sha256": "1f36adf90e2b3c73928aa2645ae7236346d77ce122ac2e5f1df14bf929284c62",
+      "disposition": "QUARANTINED_ARTIFACT_ONLY",
+      "admitted": false,
+      "claim_ids": [
+        "H-MODEL-001",
+        "H-PERF-001"
+      ],
+      "evidence_ids": [
+        "E-PAPER-001",
+        "E-LEGACY-ARTIFACTS-001"
+      ],
+      "reason": "historical performance or comparison wording lacks a matching current frozen evidence closure; artifact-specific implementation or data wording may conflict with the canonical current source."
+    },
+    {
+      "unit_id": "PROSE-108",
+      "unit_type": "prose",
+      "start_line": 1080,
+      "end_line": 1080,
+      "sha256": "56885f4598846c03abbdbb8e6b234506267b9636ee05ee6a51f52e25031a2ddf",
+      "disposition": "QUARANTINED_ARTIFACT_ONLY",
+      "admitted": false,
+      "claim_ids": [
+        "H-MODEL-001"
+      ],
+      "evidence_ids": [
+        "E-PAPER-001",
+        "E-LEGACY-ARTIFACTS-001"
+      ],
+      "reason": "artifact-specific implementation or data wording may conflict with the canonical current source."
+    },
+    {
+      "unit_id": "TABLE-008",
+      "unit_type": "table",
+      "start_line": 1082,
+      "end_line": 1097,
+      "sha256": "947affd5056132cdbabe8a9a079adab7d5863fcced6a785d037f0bd7166a4683",
+      "disposition": "QUARANTINED_ARTIFACT_ONLY",
+      "admitted": false,
+      "claim_ids": [
+        "H-MODEL-001",
+        "H-PERF-001"
+      ],
+      "evidence_ids": [
+        "E-PAPER-001",
+        "E-LEGACY-ARTIFACTS-001"
+      ],
+      "reason": "historical performance or comparison wording lacks a matching current frozen evidence closure; artifact-specific implementation or data wording may conflict with the canonical current source."
+    },
+    {
+      "unit_id": "CAPTION-017",
+      "unit_type": "caption",
+      "start_line": 1084,
+      "end_line": 1084,
+      "sha256": "0b8b90b6134df40b0709d07a47401177ba4b84c03a984606444a3e0c0a3edb4a",
+      "disposition": "QUARANTINED_ARTIFACT_ONLY",
+      "admitted": false,
+      "claim_ids": [
+        "H-MODEL-001",
+        "H-PERF-001"
+      ],
+      "evidence_ids": [
+        "E-PAPER-001",
+        "E-LEGACY-ARTIFACTS-001"
+      ],
+      "reason": "historical performance or comparison wording lacks a matching current frozen evidence closure; artifact-specific implementation or data wording may conflict with the canonical current source."
+    },
+    {
+      "unit_id": "PROSE-109",
+      "unit_type": "prose",
+      "start_line": 1099,
+      "end_line": 1099,
+      "sha256": "b215370bec2590315902e1df8ea73e91f7f855551bc10b5056ec4a69f2922f4a",
+      "disposition": "UNSUPPORTED_QUARANTINED",
+      "admitted": false,
+      "claim_ids": [],
+      "evidence_ids": [
+        "E-PAPER-001"
+      ],
+      "reason": "Historical source material preserved for provenance; no truth-supporting claim record is admitted for this unit."
+    },
+    {
+      "unit_id": "PROSE-110",
+      "unit_type": "prose",
+      "start_line": 1101,
+      "end_line": 1101,
+      "sha256": "74f89de81c884561f9b4afd8708172f503623e0f35c968a76f6b925f3c8c8214",
+      "disposition": "QUARANTINED_ARTIFACT_ONLY",
+      "admitted": false,
+      "claim_ids": [
+        "H-MODEL-001"
+      ],
+      "evidence_ids": [
+        "E-PAPER-001",
+        "E-LEGACY-ARTIFACTS-001"
+      ],
+      "reason": "artifact-specific implementation or data wording may conflict with the canonical current source."
+    },
+    {
+      "unit_id": "TABLE-009",
+      "unit_type": "table",
+      "start_line": 1103,
+      "end_line": 1118,
+      "sha256": "331d349997b4b4402e520f6c040ef66b412c23890f579a8a7c1305cd258ba095",
+      "disposition": "QUARANTINED_ARTIFACT_ONLY",
+      "admitted": false,
+      "claim_ids": [
+        "H-MODEL-001",
+        "H-PERF-001"
+      ],
+      "evidence_ids": [
+        "E-PAPER-001",
+        "E-LEGACY-ARTIFACTS-001"
+      ],
+      "reason": "historical performance or comparison wording lacks a matching current frozen evidence closure; artifact-specific implementation or data wording may conflict with the canonical current source."
+    },
+    {
+      "unit_id": "CAPTION-018",
+      "unit_type": "caption",
+      "start_line": 1105,
+      "end_line": 1105,
+      "sha256": "5547225935ba00f732ab5907317353d26b5eff37c0659dc32a4fb3edd1f45efe",
+      "disposition": "QUARANTINED_ARTIFACT_ONLY",
+      "admitted": false,
+      "claim_ids": [
+        "H-MODEL-001",
+        "H-PERF-001"
+      ],
+      "evidence_ids": [
+        "E-PAPER-001",
+        "E-LEGACY-ARTIFACTS-001"
+      ],
+      "reason": "historical performance or comparison wording lacks a matching current frozen evidence closure; artifact-specific implementation or data wording may conflict with the canonical current source."
+    },
+    {
+      "unit_id": "PROSE-111",
+      "unit_type": "prose",
+      "start_line": 1120,
+      "end_line": 1120,
+      "sha256": "b57911f3e7f42e6fca493b12589cf937a3d6e9ec9bff79b8a93101bda659c4b3",
+      "disposition": "UNSUPPORTED_QUARANTINED",
+      "admitted": false,
+      "claim_ids": [],
+      "evidence_ids": [
+        "E-PAPER-001"
+      ],
+      "reason": "Historical source material preserved for provenance; no truth-supporting claim record is admitted for this unit."
+    },
+    {
+      "unit_id": "PROSE-112",
+      "unit_type": "prose",
+      "start_line": 1122,
+      "end_line": 1122,
+      "sha256": "13810a0a11c71b712e514fb6639a16fb3d26fe15946c43f1267406a99089545d",
+      "disposition": "QUARANTINED_ARTIFACT_ONLY",
+      "admitted": false,
+      "claim_ids": [
+        "H-MODEL-001",
+        "H-PERF-001"
+      ],
+      "evidence_ids": [
+        "E-PAPER-001",
+        "E-LEGACY-ARTIFACTS-001"
+      ],
+      "reason": "historical performance or comparison wording lacks a matching current frozen evidence closure; artifact-specific implementation or data wording may conflict with the canonical current source."
+    },
+    {
+      "unit_id": "TABLE-010",
+      "unit_type": "table",
+      "start_line": 1124,
+      "end_line": 1142,
+      "sha256": "bd16b4edce74f08efd7c5fbdac39140cea00d60a072d1e3a82036c3625113483",
+      "disposition": "QUARANTINED_ARTIFACT_ONLY",
+      "admitted": false,
+      "claim_ids": [
+        "H-PERF-001"
+      ],
+      "evidence_ids": [
+        "E-PAPER-001",
+        "E-LEGACY-ARTIFACTS-001"
+      ],
+      "reason": "historical performance or comparison wording lacks a matching current frozen evidence closure."
+    },
+    {
+      "unit_id": "CAPTION-019",
+      "unit_type": "caption",
+      "start_line": 1126,
+      "end_line": 1126,
+      "sha256": "ad0cabc54b52630ae464d665aa8237a96886d54a57679ed282bd5886f409f16c",
+      "disposition": "QUARANTINED_ARTIFACT_ONLY",
+      "admitted": false,
+      "claim_ids": [
+        "H-PERF-001"
+      ],
+      "evidence_ids": [
+        "E-PAPER-001",
+        "E-LEGACY-ARTIFACTS-001"
+      ],
+      "reason": "historical performance or comparison wording lacks a matching current frozen evidence closure."
+    },
+    {
+      "unit_id": "PROSE-113",
+      "unit_type": "prose",
+      "start_line": 1144,
+      "end_line": 1144,
+      "sha256": "564ff4411f4e80dfa9812ca5e5114d5d0593de7000ff0313eb3d8c5f7aa9b079",
+      "disposition": "QUARANTINED_ARTIFACT_ONLY",
+      "admitted": false,
+      "claim_ids": [
+        "H-PERF-001"
+      ],
+      "evidence_ids": [
+        "E-PAPER-001",
+        "E-LEGACY-ARTIFACTS-001"
+      ],
+      "reason": "historical performance or comparison wording lacks a matching current frozen evidence closure."
+    },
+    {
+      "unit_id": "PROSE-114",
+      "unit_type": "prose",
+      "start_line": 1146,
+      "end_line": 1146,
+      "sha256": "bbdbe3ca4206de7c09ec3b66d8ae651554824fdf89b61d8c70f2cd0f26619815",
+      "disposition": "QUARANTINED_ARTIFACT_ONLY",
+      "admitted": false,
+      "claim_ids": [
+        "H-MODEL-001",
+        "H-PERF-001"
+      ],
+      "evidence_ids": [
+        "E-PAPER-001",
+        "E-LEGACY-ARTIFACTS-001"
+      ],
+      "reason": "historical performance or comparison wording lacks a matching current frozen evidence closure; artifact-specific implementation or data wording may conflict with the canonical current source."
+    },
+    {
+      "unit_id": "PROSE-115",
+      "unit_type": "prose",
+      "start_line": 1148,
+      "end_line": 1148,
+      "sha256": "4bf536ebe1994f7044be5055dd97a43f8b8dccf0fe50cf1db96844ed233d6eb6",
+      "disposition": "QUARANTINED_ARTIFACT_ONLY",
+      "admitted": false,
+      "claim_ids": [
+        "H-MODEL-001"
+      ],
+      "evidence_ids": [
+        "E-PAPER-001",
+        "E-LEGACY-ARTIFACTS-001"
+      ],
+      "reason": "artifact-specific implementation or data wording may conflict with the canonical current source."
+    },
+    {
+      "unit_id": "TABLE-011",
+      "unit_type": "table",
+      "start_line": 1150,
+      "end_line": 1160,
+      "sha256": "c18ca7455a70fe41073b27ab1de2d82f37b49747ffb0a516df8bc3695126c2a2",
+      "disposition": "QUARANTINED_ARTIFACT_ONLY",
+      "admitted": false,
+      "claim_ids": [
+        "H-MODEL-001",
+        "H-PERF-001"
+      ],
+      "evidence_ids": [
+        "E-PAPER-001",
+        "E-LEGACY-ARTIFACTS-001"
+      ],
+      "reason": "historical performance or comparison wording lacks a matching current frozen evidence closure; artifact-specific implementation or data wording may conflict with the canonical current source."
+    },
+    {
+      "unit_id": "CAPTION-020",
+      "unit_type": "caption",
+      "start_line": 1152,
+      "end_line": 1152,
+      "sha256": "8654ba760857b3f32f0818ed07cfb6c73109350463eed873a8bf59fd6e980d2e",
+      "disposition": "QUARANTINED_ARTIFACT_ONLY",
+      "admitted": false,
+      "claim_ids": [
+        "H-MODEL-001",
+        "H-PERF-001"
+      ],
+      "evidence_ids": [
+        "E-PAPER-001",
+        "E-LEGACY-ARTIFACTS-001"
+      ],
+      "reason": "historical performance or comparison wording lacks a matching current frozen evidence closure; artifact-specific implementation or data wording may conflict with the canonical current source."
+    },
+    {
+      "unit_id": "TABLE-012",
+      "unit_type": "table",
+      "start_line": 1164,
+      "end_line": 1179,
+      "sha256": "53be71353c57f439d85465f5c3a8addeca8d9208b2056f95083eb94b5846970c",
+      "disposition": "QUARANTINED_ARTIFACT_ONLY",
+      "admitted": false,
+      "claim_ids": [
+        "H-PERF-001"
+      ],
+      "evidence_ids": [
+        "E-PAPER-001",
+        "E-LEGACY-ARTIFACTS-001"
+      ],
+      "reason": "historical performance or comparison wording lacks a matching current frozen evidence closure."
+    },
+    {
+      "unit_id": "CAPTION-021",
+      "unit_type": "caption",
+      "start_line": 1166,
+      "end_line": 1166,
+      "sha256": "8947e92daba2a106444929c3284c6d0600f1829b103c67a540b83b50b9709010",
+      "disposition": "QUARANTINED_ARTIFACT_ONLY",
+      "admitted": false,
+      "claim_ids": [
+        "H-MODEL-001",
+        "H-PERF-001"
+      ],
+      "evidence_ids": [
+        "E-PAPER-001",
+        "E-LEGACY-ARTIFACTS-001"
+      ],
+      "reason": "historical performance or comparison wording lacks a matching current frozen evidence closure; artifact-specific implementation or data wording may conflict with the canonical current source."
+    },
+    {
+      "unit_id": "PROSE-116",
+      "unit_type": "prose",
+      "start_line": 1181,
+      "end_line": 1181,
+      "sha256": "113f123ead5a9d1505b6222dba181b323103dfaf2063d247ba7b3861530cf0a5",
+      "disposition": "QUARANTINED_ARTIFACT_ONLY",
+      "admitted": false,
+      "claim_ids": [
+        "H-MODEL-001",
+        "H-PERF-001"
+      ],
+      "evidence_ids": [
+        "E-PAPER-001",
+        "E-LEGACY-ARTIFACTS-001"
+      ],
+      "reason": "historical performance or comparison wording lacks a matching current frozen evidence closure; artifact-specific implementation or data wording may conflict with the canonical current source."
+    },
+    {
+      "unit_id": "TABLE-013",
+      "unit_type": "table",
+      "start_line": 1185,
+      "end_line": 1199,
+      "sha256": "686435550a7a0c739107a6c2f8f0fc72bfc3c2e6637e1c0a3da8a1dcb9b23f03",
+      "disposition": "QUARANTINED_ARTIFACT_ONLY",
+      "admitted": false,
+      "claim_ids": [
+        "H-MODEL-001",
+        "H-PERF-001"
+      ],
+      "evidence_ids": [
+        "E-PAPER-001",
+        "E-LEGACY-ARTIFACTS-001"
+      ],
+      "reason": "historical performance or comparison wording lacks a matching current frozen evidence closure; artifact-specific implementation or data wording may conflict with the canonical current source."
+    },
+    {
+      "unit_id": "CAPTION-022",
+      "unit_type": "caption",
+      "start_line": 1187,
+      "end_line": 1187,
+      "sha256": "1ec37ce4f0709602bf508161d2154bd84f78eccb3413a98f943257b1d3aaf86a",
+      "disposition": "QUARANTINED_ARTIFACT_ONLY",
+      "admitted": false,
+      "claim_ids": [
+        "H-MODEL-001",
+        "H-PERF-001"
+      ],
+      "evidence_ids": [
+        "E-PAPER-001",
+        "E-LEGACY-ARTIFACTS-001"
+      ],
+      "reason": "historical performance or comparison wording lacks a matching current frozen evidence closure; artifact-specific implementation or data wording may conflict with the canonical current source."
+    },
+    {
+      "unit_id": "PROSE-117",
+      "unit_type": "prose",
+      "start_line": 1201,
+      "end_line": 1201,
+      "sha256": "4082d8f9d9602aaeea64f4148abed35e2d48fdf7fbdd07cd7f6c2e76e64a8731",
+      "disposition": "QUARANTINED_ARTIFACT_ONLY",
+      "admitted": false,
+      "claim_ids": [
+        "H-MODEL-001",
+        "H-PERF-001"
+      ],
+      "evidence_ids": [
+        "E-PAPER-001",
+        "E-LEGACY-ARTIFACTS-001"
+      ],
+      "reason": "historical performance or comparison wording lacks a matching current frozen evidence closure; artifact-specific implementation or data wording may conflict with the canonical current source."
+    },
+    {
+      "unit_id": "CAPTION-023",
+      "unit_type": "caption",
+      "start_line": 1208,
+      "end_line": 1208,
+      "sha256": "792a8ba16de901ba7e0150e5d446dbfd1afcece5f8c8f2e296790ed9a430f1a3",
+      "disposition": "QUARANTINED_ARTIFACT_ONLY",
+      "admitted": false,
+      "claim_ids": [
+        "H-LEAD-001"
+      ],
+      "evidence_ids": [
+        "E-PAPER-001",
+        "E-LEGACY-ARTIFACTS-001"
+      ],
+      "reason": "lead-time definitions and historical artifacts remain unreconciled."
+    },
+    {
+      "unit_id": "CAPTION-024",
+      "unit_type": "caption",
+      "start_line": 1215,
+      "end_line": 1215,
+      "sha256": "eb807061bc5deeef58b80d47e2144080198f3a198641f7f36ba3d4d0f4de20e0",
+      "disposition": "QUARANTINED_ARTIFACT_ONLY",
+      "admitted": false,
+      "claim_ids": [
+        "H-MODEL-001"
+      ],
+      "evidence_ids": [
+        "E-PAPER-001",
+        "E-LEGACY-ARTIFACTS-001"
+      ],
+      "reason": "artifact-specific implementation or data wording may conflict with the canonical current source."
+    },
+    {
+      "unit_id": "CAPTION-025",
+      "unit_type": "caption",
+      "start_line": 1222,
+      "end_line": 1222,
+      "sha256": "6158072dde2b8d3cd9c57c001dd9d3aad14860a1e0b23850373f972ea0447078",
+      "disposition": "QUARANTINED_ARTIFACT_ONLY",
+      "admitted": false,
+      "claim_ids": [
+        "H-CAUSAL-001"
+      ],
+      "evidence_ids": [
+        "E-PAPER-001",
+        "E-LEGACY-ARTIFACTS-001"
+      ],
+      "reason": "artifact identity does not establish causal identification, theorem validity, or intervention effects."
+    },
+    {
+      "unit_id": "CAPTION-026",
+      "unit_type": "caption",
+      "start_line": 1229,
+      "end_line": 1229,
+      "sha256": "110d470ab29bb702aeb30463d2da787aefa0b7a6d26d55356e43196833e98b4b",
+      "disposition": "QUARANTINED_ARTIFACT_ONLY",
+      "admitted": false,
+      "claim_ids": [
+        "H-PERF-001"
+      ],
+      "evidence_ids": [
+        "E-PAPER-001",
+        "E-LEGACY-ARTIFACTS-001"
+      ],
+      "reason": "historical performance or comparison wording lacks a matching current frozen evidence closure."
+    },
+    {
+      "unit_id": "CAPTION-027",
+      "unit_type": "caption",
+      "start_line": 1236,
+      "end_line": 1236,
+      "sha256": "bb052b66003f7dac9c3da78b10e07584ffc918dbe407204679d3e90f52d03747",
+      "disposition": "QUARANTINED_ARTIFACT_ONLY",
+      "admitted": false,
+      "claim_ids": [
+        "H-CAUSAL-001",
+        "H-MODEL-001",
+        "H-PERF-001"
+      ],
+      "evidence_ids": [
+        "E-PAPER-001",
+        "E-LEGACY-ARTIFACTS-001"
+      ],
+      "reason": "historical performance or comparison wording lacks a matching current frozen evidence closure; artifact-specific implementation or data wording may conflict with the canonical current source; artifact identity does not establish causal identification, theorem validity, or intervention effects."
+    },
+    {
+      "unit_id": "CAPTION-028",
+      "unit_type": "caption",
+      "start_line": 1243,
+      "end_line": 1243,
+      "sha256": "50499d0f0b96c39dd42a519e2a6a1ce5b7c6d324dc6a418349273f3b5a25cef5",
+      "disposition": "QUARANTINED_ARTIFACT_ONLY",
+      "admitted": false,
+      "claim_ids": [
+        "H-MODEL-001",
+        "H-PERF-001"
+      ],
+      "evidence_ids": [
+        "E-PAPER-001",
+        "E-LEGACY-ARTIFACTS-001"
+      ],
+      "reason": "historical performance or comparison wording lacks a matching current frozen evidence closure; artifact-specific implementation or data wording may conflict with the canonical current source."
+    },
+    {
+      "unit_id": "CAPTION-029",
+      "unit_type": "caption",
+      "start_line": 1250,
+      "end_line": 1250,
+      "sha256": "f50c02436ea7fa7114d9ca38df62b18f5ef4b9ded21f78cbcf2f84db621842ca",
+      "disposition": "QUARANTINED_ARTIFACT_ONLY",
+      "admitted": false,
+      "claim_ids": [
+        "H-PERF-001",
+        "H-XDOMAIN-001"
+      ],
+      "evidence_ids": [
+        "E-PAPER-001",
+        "E-LEGACY-ARTIFACTS-001"
+      ],
+      "reason": "historical performance or comparison wording lacks a matching current frozen evidence closure; no frozen external-validity protocol supports the cross-domain wording."
+    },
+    {
+      "unit_id": "PROSE-118",
+      "unit_type": "prose",
+      "start_line": 1256,
+      "end_line": 1256,
+      "sha256": "849ae3e09c880145d2f67c0eb93546b4262694d31bed08e3ed6b5eaad108b04a",
+      "disposition": "QUARANTINED_ARTIFACT_ONLY",
+      "admitted": false,
+      "claim_ids": [
+        "H-MODEL-001"
+      ],
+      "evidence_ids": [
+        "E-PAPER-001",
+        "E-LEGACY-ARTIFACTS-001"
+      ],
+      "reason": "artifact-specific implementation or data wording may conflict with the canonical current source."
+    }
+  ]
+}

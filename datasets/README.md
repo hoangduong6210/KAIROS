@@ -14,3 +14,19 @@ instead.
 
 `cache/` is an ignored local-only area. Cache contents are not evidence and are
 not required by repository contract tests.
+
+## External benchmark staging
+
+The public repository does not distribute benchmark CSV bytes. The exact input
+identity and minimal schema are declared in
+[`benchmark-v1-input.json`](benchmark-v1-input.json). Given a lawfully obtained
+copy, verify it without writing anything:
+
+```bash
+python scripts/stage_benchmark_input.py /path/to/raw_prices.csv --json
+```
+
+Add `--stage` to copy a verified file to the canonical local path. Staging uses
+exclusive creation and refuses to replace an existing file. See
+[`reproducibility/README.md`](../reproducibility/README.md) for the complete
+environment and scheduler workflow.

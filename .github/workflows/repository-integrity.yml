@@ -41,3 +41,33 @@ jobs:
           (cd results/frozen/kairos-benchmark-v1 && sha256sum -c checksums.sha256)
           (cd paper/snapshots/kairos-conference-final && sha256sum -c checksums.sha256)
           (cd paper/snapshots/kairos-conference-final && sha256sum -c source-checksums.sha256)
+
+  conference-reconstruction:
+    name: Compile conference reconstruction
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      # The action commit and TeX image digest are mirrored in
+      # paper/snapshots/kairos-conference-final/tex-toolchain.lock.toml.
+      - name: Compile normalized article source
+        uses: xu-cheng/latex-action@e2f99d4b3685b0da93f97e1b86ad8fab81105098
+        with:
+          root_file: main.tex
+          working_directory: paper/snapshots/kairos-conference-final
+          docker_image: ghcr.io/xu-cheng/texlive-full@sha256:c2fc32a343b5b351a3401f3e1083ebe3774c06d0ab746ac8377029acb1daf47f
+          args: -pdf -file-line-error -halt-on-error -interaction=nonstopmode
+
+      - name: Validate compiled source closure
+        working-directory: paper/snapshots/kairos-conference-final
+        shell: bash
+        run: |
+          test -s main.pdf
+          test -s main.log
+          grep -Fq 'Output written on main.pdf (36 pages,' main.log
+          if grep -Eq 'LaTeX Error|Package .* Error|Undefined control sequence|Citation .* undefined|Reference .* undefined|Fatal error' main.log; then
+            echo 'LaTeX closure contains an unresolved error, citation, or reference.' >&2
+            exit 1
+          fi

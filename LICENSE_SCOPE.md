@@ -2,8 +2,10 @@
 
 The root [`LICENSE`](LICENSE) is `AGPL-3.0-or-later`. It applies, unless a file
 states otherwise, to original KAIROS software in `src/`, `experiments/`, and
-`scripts/`, and to project-authored test code and machine-readable configuration
-files to the extent those files are copyrightable software.
+`scripts/`, to project-authored test code, and to original container,
+reproduction, dependency-lock, and machine-readable configuration files to the
+extent those files are copyrightable software. Third-party identities recorded
+inside a lock or SBOM retain their upstream terms.
 
 It does **not** grant rights to the following material:
 

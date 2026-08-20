@@ -26,7 +26,7 @@ research question
 
 Benchmark v1 has passed the validated-release and scoped wording-review stages.
 Its descriptive negative/mixed performance claim remains `VALIDATED`, not
-`ADMITTED`: the flow currently stops at durable source closure and publication
-admission. Post-conference manuscript work belongs in `paper/current-state/`;
+`ADMITTED`: durable source closure is complete, and the flow currently stops
+before publication admission. Post-conference manuscript work belongs in `paper/current-state/`;
 the conference snapshot remains outside this flow and immutable. [Trace:
 `C-REPO-001`, `C-PERF-001` → `E-REPO-001`, `E-BENCH-001`]

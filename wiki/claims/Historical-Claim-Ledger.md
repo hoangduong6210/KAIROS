@@ -18,3 +18,8 @@ paper_source: false
 | `H-CAUSAL-001` | Historical paper and metadata use wording such as unique causal trace, ground-truth cause, causal compliance, and native counterfactual reasoning. | Final conference artifact and legacy sources | `E-PAPER-001`, `E-LEGACY-ARTIFACTS-001` | Structural decomposition and masks do not establish causal identification or intervention effects. |
 
 These records preserve history; they are not permitted current wording.
+
+The five families above are applied unit by unit to the normalized conference
+source in `paper/snapshots/kairos-conference-final/claim-disposition.json`.
+Units that do not resolve cleanly to one of these families are retained as
+`UNSUPPORTED_QUARANTINED`; they are not silently promoted or omitted.

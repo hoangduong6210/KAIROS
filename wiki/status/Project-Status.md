@@ -50,14 +50,13 @@ rerun. [Trace: `C-IMPL-001`, `C-REPO-001` → `E-IMPL-001`, `E-BENCH-001`]
 
 ## Remaining publication gates
 
-1. Preserve the canonical implementation and both conference-artifact manifests in durable commits.
-2. Formally admit `C-PERF-001` before making any benchmark page a paper source.
-3. Keep the declared software license separate from unresolved provider,
+1. Formally admit `C-PERF-001` before making any benchmark page a paper source.
+2. Keep the declared software license separate from unresolved provider,
    third-party, venue, employer, and archived-material rights before any new
    paper-source distribution.
-4. Develop manuscript updates in `paper/current-state/` and create a new
+3. Develop manuscript updates in `paper/current-state/` and create a new
    evidence-locked snapshot only when publication is requested.
-5. Treat lead-time and cross-domain questions as separate future protocols; the
+4. Treat lead-time and cross-domain questions as separate future protocols; the
    current observational design rejects causal-effect wording.
 
 ## Next stage

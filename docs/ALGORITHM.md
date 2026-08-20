@@ -1,5 +1,16 @@
 # RS-GNN Algorithm Specification (Detailed)
 
+> **QUARANTINED / SUPERSEDED SPECIFICATION.** This document preserves an
+> earlier design narrative for historical comparison. It is not the canonical
+> implementation, current experiment protocol, or admissible claim source.
+> Several dimensions and causal interpretations below conflict with the
+> maintained code. Use [`src/kairos/model.py`](../src/kairos/model.py) for
+> implementation facts, the
+> [current claim registry](../wiki/claims/Current-Claim-Language.md) for
+> permitted wording, and the
+> [historical claim ledger](../wiki/claims/Historical-Claim-Ledger.md) for
+> disposition of causal and performance statements.
+
 ## Overview
 
 RS-GNN (Resonance Symbolic Graph Neural Network) is the core engine of KAIROS. It compiles continuous event streams into causally valid temporal interaction graphs through a 4-layer pipeline: **RSE → CSM → RMP-TIP → SCP**.

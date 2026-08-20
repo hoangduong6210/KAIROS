@@ -1,0 +1,132 @@
+schema_version = 1
+scope = "conference-reconstruction-figures"
+recorded_on = "2026-08-19"
+entry_count = 15
+rights_status = "rights-retained"
+authorization_basis = "project-owner-confirmed-approval-from-all-named-authors"
+authorization_record = "private-not-distributed"
+repository_permission = "distribution-as-provided"
+adaptation_permission = "not-granted"
+underlying_data_rights = "not-granted"
+trademark_rights = "not-granted"
+claim_status = "historical-quarantined"
+
+[[figures]]
+path = "figures/fig10_synthetic_noise.png"
+sha256 = "d9f3b34f569d7d468ee8824d380442d311d2ba89b1876357331415fce1b63ea2"
+role = "synthetic-noise-comparison"
+provenance = "retained-conference-manuscript-asset"
+rights_status = "rights-retained"
+repository_permission = "distribution-as-provided"
+
+[[figures]]
+path = "figures/fig12_domain_transfer.png"
+sha256 = "af45effd6b2507d260f80567f5d7b38951e9459c27cf960f1743ca0859630dee"
+role = "cross-domain-transfer-summary"
+provenance = "retained-conference-manuscript-asset"
+rights_status = "rights-retained"
+repository_permission = "distribution-as-provided"
+
+[[figures]]
+path = "figures/fig3_covid_zoom.png"
+sha256 = "1a9b616e3af82bf94e7907ec69f0f53dd7fbfadd3f470edb4814b4eeca2b03ee"
+role = "historical-case-study"
+provenance = "retained-conference-manuscript-asset"
+rights_status = "rights-retained"
+repository_permission = "distribution-as-provided"
+
+[[figures]]
+path = "figures/fig3_errors_as_intelligence.png"
+sha256 = "8504a37666dd11232459c8f353fdd103b913050e72ebf5f7a0a5ad0cd15d7bdf"
+role = "errors-as-intelligence-concept-diagram"
+provenance = "retained-conference-manuscript-asset"
+rights_status = "rights-retained"
+repository_permission = "distribution-as-provided"
+
+[[figures]]
+path = "figures/fig4_ci_radar.png"
+sha256 = "722e8bc8474c7a95d868b3a0c8fdbcc312110b1bd5fe7992df737572f0fa123b"
+role = "causal-intelligence-radar"
+provenance = "retained-conference-manuscript-asset"
+rights_status = "rights-retained"
+repository_permission = "distribution-as-provided"
+
+[[figures]]
+path = "figures/fig4_fsm_dynamics.png"
+sha256 = "581309ba30c5011b77763503185b83c4d8a26e4196667dacc35ade85a5727f8c"
+role = "state-machine-dynamics"
+provenance = "retained-conference-manuscript-asset"
+rights_status = "rights-retained"
+repository_permission = "distribution-as-provided"
+
+[[figures]]
+path = "figures/fig5_cfi_overlay.png"
+sha256 = "726fde954021207521b460b5b0fdee3dc681bec5c4f242ca498de6461f7e269f"
+role = "historical-index-overlay"
+provenance = "retained-conference-manuscript-asset"
+rights_status = "rights-retained"
+repository_permission = "distribution-as-provided"
+
+[[figures]]
+path = "figures/fig5_granger_analysis.png"
+sha256 = "c99f67178dfa4907acb07659d47ca7605fd341e15dbb4b68587fa21168cc5044"
+role = "granger-analysis"
+provenance = "retained-conference-manuscript-asset"
+rights_status = "rights-retained"
+repository_permission = "distribution-as-provided"
+
+[[figures]]
+path = "figures/fig6_ablation_tradeoff.png"
+sha256 = "18587fb887e81024739a23f438e1216a64d633b85d830bd6cd27ecb5403bab64"
+role = "ablation-tradeoff"
+provenance = "retained-conference-manuscript-asset"
+rights_status = "rights-retained"
+repository_permission = "distribution-as-provided"
+
+[[figures]]
+path = "figures/fig6_training_performance.png"
+sha256 = "311422817849d64e8aa818f64c912a2d360e634ba7b86231f5098325d28b94dc"
+role = "training-performance"
+provenance = "retained-conference-manuscript-asset"
+rights_status = "rights-retained"
+repository_permission = "distribution-as-provided"
+
+[[figures]]
+path = "figures/fig9_causal_vs_outcome.png"
+sha256 = "dc2d5b249a2a509420de56cdb27df1e571f40b1e9c0211ccaff7b7480052fb25"
+role = "causal-versus-outcome-concept-diagram"
+provenance = "retained-conference-manuscript-asset"
+rights_status = "rights-retained"
+repository_permission = "distribution-as-provided"
+
+[[figures]]
+path = "figures/fig_algo_overview.png"
+sha256 = "70b3f2c2d583d7801e3809cc630de2db4e54fd780eaec1e1c7544284792072dd"
+role = "algorithm-overview"
+provenance = "retained-conference-manuscript-asset"
+rights_status = "rights-retained"
+repository_permission = "distribution-as-provided"
+
+[[figures]]
+path = "figures/fig_counterfactual.png"
+sha256 = "0e83caf81cfcc08cca32067329b264ef7077f03ce7517ddba0decb7a1befb7f5"
+role = "counterfactual-attribution"
+provenance = "retained-conference-manuscript-asset"
+rights_status = "rights-retained"
+repository_permission = "distribution-as-provided"
+
+[[figures]]
+path = "figures/fig_lifecycle.png"
+sha256 = "754853a472b45d5dcfa7eade6f360852953401a02f3977163c5edc92bf2e2192"
+role = "state-machine-lifecycle"
+provenance = "retained-conference-manuscript-asset"
+rights_status = "rights-retained"
+repository_permission = "distribution-as-provided"
+
+[[figures]]
+path = "figures/fig_message_passing.png"
+sha256 = "2df2a985af3bcd50503a854f539b5879ffc7d8e41707bd7d86bce1df36679031"
+role = "message-passing-overview"
+provenance = "retained-conference-manuscript-asset"
+rights_status = "rights-retained"
+repository_permission = "distribution-as-provided"

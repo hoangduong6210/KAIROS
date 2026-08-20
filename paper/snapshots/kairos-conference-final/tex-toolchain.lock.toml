@@ -1,0 +1,36 @@
+schema_version = 1
+scope = "normalized-overleaf-reconstruction"
+root_document = "main.tex"
+engine = "pdflatex"
+driver = "latexmk"
+arguments = [
+  "-pdf",
+  "-file-line-error",
+  "-halt-on-error",
+  "-interaction=nonstopmode",
+]
+shell_escape = false
+expected_pages = 36
+expected_pdf_equivalence = "none"
+
+[github_actions]
+action = "xu-cheng/latex-action"
+action_commit = "e2f99d4b3685b0da93f97e1b86ad8fab81105098"
+docker_image_repository = "ghcr.io/xu-cheng/texlive-full"
+docker_image_tag_evidence = "20250301"
+docker_image_digest = "sha256:c2fc32a343b5b351a3401f3e1083ebe3774c06d0ab746ac8377029acb1daf47f"
+docker_image = "ghcr.io/xu-cheng/texlive-full@sha256:c2fc32a343b5b351a3401f3e1083ebe3774c06d0ab746ac8377029acb1daf47f"
+
+[boundaries]
+canonical_pdf = "KAIROS_FINAL.pdf"
+canonical_pdf_manifest = "checksums.sha256"
+source_manifest = "source-checksums.sha256"
+figure_rights_manifest = "figure-rights.toml"
+venue_template_included = false
+generated_pdf_is_canonical = false
+
+[verification]
+locked_on = "2026-08-19"
+lock_basis = "immutable-action-commit-and-container-manifest-digest"
+local_smoke_test = "latexmk-pdf-pdflatex"
+
