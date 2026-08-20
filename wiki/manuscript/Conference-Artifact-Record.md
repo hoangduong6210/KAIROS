@@ -17,8 +17,8 @@ paper_source: false
 | Conference pointer | `paper/CONFERENCE_CURRENT` → `kairos-conference-final` |
 | Pages | 34 |
 | SHA-256 | `184f40f4e6c4a22555f7ae568bbeb5f7d2105a80e495c71b09bc9e8e90eea9e0` |
-| Distribution form | PDF-only; former venue-specific source/template bundle removed from public surfaces on 2026-08-19 |
-| Source closure | Not distributed and not claimed as a reproducible public build closure |
+| Distribution form | Canonical PDF plus a separately manifested, normalized Overleaf reconstruction; venue-specific template excluded |
+| Source closure | Reconstruction closure validated; exact historical build closure not claimed |
 | Current project evidence release | `kairos-benchmark-v1` |
 | Conference artifact evidence lock | `UNRELEASED` (the artifact predates the evidence-lock contract) |
 | Current evidence-locked paper pointer | `UNRELEASED` |
@@ -45,8 +45,12 @@ and must not be restated as current findings. [Trace: `H-PERF-001`,
 
 ## Build boundary
 
-The preserved PDF is the sole canonical conference artifact. Its checksum
-provides artifact identity, not build reproducibility. A future manuscript must
-be created from current admitted wiki content under the paper-export contract;
-it must not be described as a rebuild of this artifact. [Trace: `C-PAPER-001`
-→ `E-PAPER-001`]
+The preserved PDF remains the sole canonical conference artifact. Its checksum
+provides artifact identity. The adjacent generic `main.tex` bundle compiles and
+closes over all manifested figures, but it is a preservation-oriented
+reconstruction rather than the original submission closure. It is not expected
+to reproduce the PDF's bytes, pagination, or layout, and it does not make the
+historical claims current. Future manuscript work must copy the bundle into
+`paper/current-state/`, use admitted wiki content, and pass the paper-export
+contract before a new snapshot is created. [Trace: `C-PAPER-001` →
+`E-PAPER-001`]

@@ -94,8 +94,12 @@ def test_required_repository_layout() -> None:
         "paper/current-state/README.md",
         "paper/RIGHTS.md",
         "paper/snapshots/kairos-conference-final/KAIROS_FINAL.pdf",
+        "paper/snapshots/kairos-conference-final/main.tex",
+        "paper/snapshots/kairos-conference-final/figures",
+        "paper/snapshots/kairos-conference-final/RIGHTS.md",
         "paper/snapshots/kairos-conference-final/artifact.toml",
         "paper/snapshots/kairos-conference-final/checksums.sha256",
+        "paper/snapshots/kairos-conference-final/source-checksums.sha256",
         "configs/README.md",
         "protocols/README.md",
         "wiki/START-HERE.md",
@@ -136,6 +140,9 @@ def test_project_and_release_pointers_agree() -> None:
     conference_path = project["canonical"]["conference_snapshot"].strip('"')
     assert conference_path == f"paper/snapshots/{conference_pointer}"
     assert (ROOT / conference_path).is_dir()
+    conference_source = project["canonical"]["conference_reconstruction"].strip('"')
+    assert conference_source == f"{conference_path}/main.tex"
+    assert (ROOT / conference_source).is_file()
     for pointer in ("status", "claims", "evidence"):
         assert (ROOT / project["pointers"][pointer].strip('"')).is_file()
     evidence_metadata = _front_matter(WIKI / "evidence/Evidence-Ledger.md")
@@ -327,6 +334,7 @@ def test_tracked_artifact_checksums_match() -> None:
         ROOT / "results/historical/legacy-bundle/checksums.sha256",
         ROOT / "datasets/checksums.sha256",
         ROOT / "paper/snapshots/kairos-conference-final/checksums.sha256",
+        ROOT / "paper/snapshots/kairos-conference-final/source-checksums.sha256",
         ROOT / "results/frozen/kairos-benchmark-v1/checksums.sha256",
     ]
     for manifest in manifests:
@@ -385,10 +393,7 @@ def test_evidence_manifests_cover_their_artifact_sets() -> None:
         for line in (snapshot / "checksums.sha256").read_text(encoding="utf-8").splitlines()
         if line.strip()
     }
-    snapshot_artifacts = {"KAIROS_FINAL.pdf"} | {
-        path.relative_to(snapshot).as_posix() for path in (snapshot / "source").rglob("*") if path.is_file()
-    }
-    assert snapshot_manifest == snapshot_artifacts
+    assert snapshot_manifest == {"KAIROS_FINAL.pdf"}
 
     benchmark = ROOT / "results/frozen/kairos-benchmark-v1"
     benchmark_manifest = {
@@ -470,19 +475,75 @@ def test_current_evidence_release_is_complete_and_self_consistent() -> None:
         ]
 
 
-def test_final_conference_snapshot_is_pdf_only() -> None:
+def test_final_conference_artifact_and_reconstruction_are_separate() -> None:
     snapshot = ROOT / "paper/snapshots/kairos-conference-final"
     assert not (snapshot / "source").exists()
     artifact_metadata = (snapshot / "artifact.toml").read_text(encoding="utf-8")
     assert 'evidence_release = "UNRELEASED"' in artifact_metadata
-    assert 'source_status = "removed-from-public-snapshot"' in artifact_metadata
+    assert 'source_status = "normalized-overleaf-reconstruction-included"' in artifact_metadata
+    assert 'source_entrypoint = "main.tex"' in artifact_metadata
+    assert 'source_build_engine = "pdflatex"' in artifact_metadata
+    assert "source_venue_template_included = false" in artifact_metadata
+    assert "source_exact_historical_build = false" in artifact_metadata
+    assert 'source_expected_pdf_equivalence = "none"' in artifact_metadata
+    assert "source_claim_eligible = false" in artifact_metadata
+    assert 'source_license = "rights-retained"' in artifact_metadata
     assert "184f40f4e6c4a22555f7ae568bbeb5f7d2105a80e495c71b09bc9e8e90eea9e0" in artifact_metadata
-    manifest_rows = [
+    pdf_manifest_rows = [
         line.split(maxsplit=1)
         for line in (snapshot / "checksums.sha256").read_text(encoding="utf-8").splitlines()
         if line.strip()
     ]
-    assert manifest_rows == [[_sha256(snapshot / "KAIROS_FINAL.pdf"), "KAIROS_FINAL.pdf"]]
+    assert pdf_manifest_rows == [
+        [_sha256(snapshot / "KAIROS_FINAL.pdf"), "KAIROS_FINAL.pdf"]
+    ]
+
+    source_manifest = {
+        filename: expected
+        for expected, filename in (
+            line.split(maxsplit=1)
+            for line in (snapshot / "source-checksums.sha256").read_text(
+                encoding="utf-8"
+            ).splitlines()
+            if line.strip()
+        )
+    }
+    figures = {
+        path.relative_to(snapshot).as_posix()
+        for path in (snapshot / "figures").glob("*.png")
+    }
+    assert len(figures) == 15
+    assert set(source_manifest) == {"main.tex"} | figures
+    for filename, expected in source_manifest.items():
+        assert _sha256(snapshot / filename) == expected
+
+    source = (snapshot / "main.tex").read_text(encoding="utf-8")
+    figure_references = set(LATEX_FIGURE.findall(source))
+    assert figure_references == figures
+    assert r"\documentclass[11pt]{article}" in source
+    assert r"\usepackage[hidelinks]{hyperref}" in source
+    assert r"\begin{thebibliography}" in source
+    assert not re.search(r"\\(?:input|include)\s*\{", source)
+    assert not list(snapshot.glob("*.bib"))
+    bibliography_keys = set(
+        re.findall(r"\\bibitem(?:\[[^\]]+\])?\{([^}]+)\}", source)
+    )
+    citation_keys = {
+        key.strip()
+        for group in re.findall(r"\\cite[a-zA-Z]*\{([^}]+)\}", source)
+        for key in group.split(",")
+    }
+    assert len(bibliography_keys) == 70
+    assert citation_keys == bibliography_keys
+
+    snapshot_readme = (snapshot / "README.md").read_text(encoding="utf-8")
+    rights = (snapshot / "RIGHTS.md").read_text(encoding="utf-8")
+    ignore = (ROOT / ".gitignore").read_text(encoding="utf-8")
+    assert "not the original submitted or camera-ready source package" in snapshot_readme
+    assert "Do not modify this snapshot in place" in snapshot_readme
+    assert "AGPL-3.0-or-later" in rights
+    assert "license does not apply" in rights
+    assert "/paper/snapshots/kairos-conference-final/main.pdf" in ignore
 
 
 def test_public_tree_has_no_removed_venue_year_template_or_branding() -> None:

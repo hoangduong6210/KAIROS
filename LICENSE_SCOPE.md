@@ -11,7 +11,7 @@ It does **not** grant rights to the following material:
 |---|---|
 | `datasets/` | No redistribution grant; see `datasets/RIGHTS.md` |
 | `results/` | Evidence outputs are outside the software grant; no underlying market-data rights are granted |
-| `paper/`, manuscript text, PDFs, figures, and slides | Excluded; see `paper/RIGHTS.md` |
+| `paper/`, including the conference PDF, reconstruction source, figures, and slides | Excluded; rights retained, see `paper/RIGHTS.md` |
 | Conference or publisher templates and style files | Not distributed; upstream terms would control any future use |
 | `archive/` | Local non-distributed payload; only its boundary README is public |
 | `releases/` | Current public placeholder only; historical bundle excluded |

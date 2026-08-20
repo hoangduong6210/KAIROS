@@ -22,6 +22,7 @@ wiki = "wiki"
 knowledge_map = "wiki/PROJECT-KNOWLEDGE-MAP.md"
 paper_working_state = "paper/current-state"
 conference_snapshot = "paper/snapshots/kairos-conference-final"
+conference_reconstruction = "paper/snapshots/kairos-conference-final/main.tex"
 
 [rights]
 software_license = "AGPL-3.0-or-later"

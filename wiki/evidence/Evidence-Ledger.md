@@ -16,7 +16,7 @@ evidence_release: kairos-benchmark-v1
 |---|---|
 | Lifecycle | VALIDATED |
 | Scientific purpose | Verify only the named canonical implementation structure and repository contracts |
-| Source identity | `src/kairos/model.py`, SHA-256 `bd9c108c448ca747ba6031c42251fa9856d00c6da99c9da18ca0a511ee1e3a2f`; registered by `SOURCE.toml`, durable commit pending |
+| Source identity | `src/kairos/model.py`, SHA-256 `bd9c108c448ca747ba6031c42251fa9856d00c6da99c9da18ca0a511ee1e3a2f`; registered by `SOURCE.toml` and preserved in commit `5401c46804302e7095ef7cce57b4e6ea0ca9424e` |
 | Artifact path | `src/kairos/model.py` |
 | Validation | Repository contract tests, including Python syntax and required class inventory |
 | Supported claims | `C-IMPL-001`, `C-IMPL-002`, `C-IMPL-003` |
@@ -81,11 +81,11 @@ validate schema, computation, interpretation, or claim eligibility.
 |---|---|
 | Lifecycle | VALIDATED |
 | Artifact path | `paper/snapshots/kairos-conference-final/KAIROS_FINAL.pdf` |
-| Manifest | PDF-only inventory in `paper/snapshots/kairos-conference-final/checksums.sha256` and removal record in `paper/snapshots/kairos-conference-final/artifact.toml` |
+| Manifests | Canonical PDF inventory in `paper/snapshots/kairos-conference-final/checksums.sha256`; reconstruction inventory in `paper/snapshots/kairos-conference-final/source-checksums.sha256`; boundary metadata in `artifact.toml` |
 | Identity | 34 pages; SHA-256 `184f40f4e6c4a22555f7ae568bbeb5f7d2105a80e495c71b09bc9e8e90eea9e0` |
-| Validation | PDF parsing, text extraction, first/last-page rendering, exact SHA-256 verification, and contract check that no venue-specific source/template remains on public surfaces |
+| Validation | Canonical PDF parsing, text extraction, first/last-page rendering, and exact SHA-256 verification; reconstruction checksum closure, 15-of-15 figure-reference closure, and successful pdfLaTeX compilation; contract check that no venue-specific template is present |
 | Supported claim | Artifact-identity claim `C-PAPER-001`; direct source for quarantined historical claim records |
-| Scientific-use boundary | Artifact identity only; the removed source is not a reproducible public build closure, and paper values and causal wording are not admitted evidence |
+| Scientific-use boundary | Artifact identity and reconstruction closure only; the normalized source is not the exact historical build closure, is not expected to reproduce the canonical PDF, and does not admit paper values or causal wording as current evidence |
 
 ## E-REPO-001
 
@@ -110,7 +110,7 @@ validate schema, computation, interpretation, or claim eligibility.
 | Artifact path | `results/frozen/kairos-benchmark-v1/result.json` |
 | Artifact checksum | SHA-256 `4ad144a070cd406e7c92ccd8effe0fb7cb881dc8adbac2a83a9187f0bcd0d1c1` |
 | Release manifest | `results/frozen/kairos-benchmark-v1/release.json` and `results/frozen/kairos-benchmark-v1/checksums.sha256` |
-| Source identity | Benchmark execution source `src/kairos/model.py` SHA-256 `b9dbbcb36bac125a10912b87033ec46814c4b0a2ffe70ef8e55a01f1919d32da`; current canonical source SHA-256 `bd9c108c448ca747ba6031c42251fa9856d00c6da99c9da18ca0a511ee1e3a2f` is registered in `SOURCE.toml` as a seven-line license-notice-only successor; benchmark not rerun; durable commit pending |
+| Source identity | Benchmark execution source `src/kairos/model.py` SHA-256 `b9dbbcb36bac125a10912b87033ec46814c4b0a2ffe70ef8e55a01f1919d32da`; current canonical source SHA-256 `bd9c108c448ca747ba6031c42251fa9856d00c6da99c9da18ca0a511ee1e3a2f` is registered in `SOURCE.toml` as a seven-line license-notice-only successor and preserved in commit `5401c46804302e7095ef7cce57b4e6ea0ca9424e`; benchmark not rerun |
 | Protocol/configuration identity | `protocols/benchmark-v1.md` SHA-256 `05e6bad173282434264eb63fdf9da155c7531b64e72196985f392b8806dfe8c7`; `configs/benchmark-v1.json` SHA-256 `b11035996800de90b2c9e4f2e273277fbbddac1b6b82a916fdfb97d4383826e2` |
 | Data identity | `datasets/raw/raw_prices.csv` SHA-256 `e66b2bd0312712428745f0d8cfcd2ee63857b1518f12ebc6d5443cc9bd491587` |
 | Coverage/failures | Fifteen declared attempts, fifteen successes, zero failures; five seeds for each of three models |

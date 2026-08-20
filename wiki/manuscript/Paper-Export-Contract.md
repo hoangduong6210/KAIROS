@@ -20,7 +20,9 @@ Submitted and accepted snapshots are immutable. The current paper pointer is
 `kairos-conference-final`, the preserved final conference artifact under
 `paper/snapshots/`. It predates this evidence-lock contract and is retained for
 provenance, not admitted as a current claim-bearing release. The superseded
-conference build workspace is not distributed in the public tree. Living
-post-conference manuscript work belongs in `paper/current-state/`; it is
-not a snapshot and cannot be selected by `paper/CURRENT` until it has passed
-this export contract.
+venue-specific build workspace is not distributed in the public tree. A
+normalized generic reconstruction is preserved directly in the conference
+snapshot for editability, but it predates the evidence-lock contract and is not
+current paper source. Living post-conference manuscript work belongs in
+`paper/current-state/`; it is not a snapshot and cannot be selected by
+`paper/CURRENT` until it has passed this export contract.

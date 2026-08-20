@@ -28,5 +28,9 @@ paper_source: false
   semantics, stochastic TIP inference, pseudo-label behavior, and loss terms.
 - The final conference artifact is preserved faithfully, but its finality as a
   conference file does not make its claims current evidence.
-- The software license does not resolve provider rights for market data or
-  redistribution rights for manuscripts, figures, and conference templates.
+- The normalized conference source reconstruction compiles, but it is not the
+  exact historical source closure and does not reproduce the canonical PDF's
+  bytes, pagination, or layout. [Trace: `C-PAPER-001` → `E-PAPER-001`]
+- Named-author consent for the identified conference PDF, source, and figures
+  does not resolve provider rights for market data or any separate third-party,
+  employer, venue, publisher, or template rights.

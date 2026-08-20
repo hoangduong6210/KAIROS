@@ -15,10 +15,11 @@ stage is `evidence-release`: benchmark v1 is the current validated evidence
 release, while no evidence-locked paper snapshot is current.
 
 The repository is named `KAIROS`. The final conference artifact is preserved at
-`paper/snapshots/kairos-conference-final/`; superseded paper work is excluded
-from the public tree under the archive boundary. Post-conference manuscript
-updates belong in `paper/current-state/`, after the wiki is updated. The
-conference artifact is not a current evidence-locked paper release.
+`paper/snapshots/kairos-conference-final/` together with a generic, normalized
+Overleaf reconstruction; superseded paper work and the venue-specific template
+are excluded under the archive boundary. Post-conference manuscript updates
+belong in `paper/current-state/`, after the wiki is updated. The conference
+artifact and reconstruction are not a current evidence-locked paper release.
 
 ## Current pointers
 
@@ -44,16 +45,16 @@ observational benchmark supports no causal-effect wording. [Trace:
 
 - The validated input is frozen by checksum, but acquisition provenance and
   redistribution rights remain unresolved; its bytes are local-only staging.
-- The release has exact source hashes but still needs a durable source commit.
+- The release has exact source hashes preserved in a durable source commit.
 - The target is training-derived and limited to one market dataset.
 - The current paper pointer remains unreleased; the conference artifact is a
   preserved historical snapshot.
 
 ## Next actions
 
-1. Commit the exact release closure.
-2. Close data and conference-asset redistribution rights; the software license
-   is already declared separately.
+1. Preserve the exact release and conference manifests in durable commits.
+2. Close data-provider and any separate third-party, employer, venue, or
+   publisher rights; the software license and named-author consent are recorded separately.
 3. Develop post-conference wording in `paper/current-state/`, then create a new
    snapshot only from admitted, evidence-linked wiki content.
 

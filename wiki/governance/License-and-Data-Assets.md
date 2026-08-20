@@ -43,10 +43,13 @@ acquisition provenance and redistribution permissions are closed. Public
 packages must exclude their bytes, as enforced by `MANIFEST.in` and repository
 ignore rules.
 
-`KAIROS_FINAL.pdf` remains a PDF-only conference snapshot. The former
-venue-specific source/template bundle was removed from public surfaces under
-explicit project-owner authorization. Preservation of the PDF does not grant
-republication or adaptation rights. A future snapshot must carry both an
+`KAIROS_FINAL.pdf` remains the canonical conference artifact. A generic,
+normalized reconstruction (`main.tex` plus 15 manifested figures) is preserved
+beside it; the venue-specific template is not distributed. The project owner
+confirms all named authors approved distribution of those identified files as
+provided, while the root AGPL grant does not apply to them and third-party,
+employer, venue, and publisher terms remain controlling. Preservation does not
+grant republication or adaptation rights. A future snapshot must carry both an
 evidence lock and a rights manifest.
 
 These boundaries reduce accidental over-licensing and redistribution; they do

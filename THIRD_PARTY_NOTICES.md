@@ -19,11 +19,12 @@ license of a download client does not grant rights in provider data. See
 
 ## Conference and publication material
 
-`paper/snapshots/kairos-conference-final/` contains a PDF-only conference
-artifact. The former venue-specific source/template bundle is not distributed.
-Manuscript text and PDFs are not covered by the software license and retain
-their respective rights. Preservation for provenance does not imply permission
-to republish or adapt them.
+`paper/snapshots/kairos-conference-final/` contains the canonical conference
+PDF plus a generic, normalized reconstruction made from retained manuscript
+text and 15 retained figures. No venue-specific template is distributed. The
+PDF, manuscript text, and figures are not covered by the software license and
+retain their respective rights. Preservation for provenance and future
+authoring does not imply permission to republish or adapt them.
 
 ## Historical and archived material
 

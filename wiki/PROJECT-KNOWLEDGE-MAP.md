@@ -36,7 +36,7 @@ interpretation. [Trace: `C-REPO-001` → `E-REPO-001`]
 | `datasets/` | Public rights/checksum metadata plus locally staged legacy data | Quarantined bytes; validated identity | [Dataset Registry](datasets/Dataset-Registry.md) |
 | `results/` | Evidence pointer and result lifecycle | Benchmark v1 validated | [Evidence Ledger](evidence/Evidence-Ledger.md) |
 | `runs/` | Ignored mutable execution outputs | Ephemeral | [Reproducibility](REPRODUCIBILITY.md) |
-| `paper/` | Living manuscript staging plus pointers and immutable packages | Current state mutable; conference artifact immutable; current paper unreleased | [Paper Export Contract](manuscript/Paper-Export-Contract.md) |
+| `paper/` | Living manuscript staging plus pointers, canonical conference PDF, and normalized reconstruction | Current state mutable; conference snapshot immutable; current paper unreleased | [Paper Export Contract](manuscript/Paper-Export-Contract.md) |
 | `wiki/` | Living scientific interpretation | Canonical | [Wiki Home](README.md) |
 | `docs/` | Public technical references and reports | Reference | [Technical Source Map](references/Technical-Source-Map.md) |
 | `scripts/` | Repository/reporting validators and utilities | Active support | [Research Workflow](operations/Research-Workflow.md) |

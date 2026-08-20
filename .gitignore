@@ -44,3 +44,4 @@ datasets/processed/*.parquet
 *.log
 *.out
 *.synctex.gz
+/paper/snapshots/kairos-conference-final/main.pdf

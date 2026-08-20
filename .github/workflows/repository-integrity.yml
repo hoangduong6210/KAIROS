@@ -40,3 +40,4 @@ jobs:
         run: |
           (cd results/frozen/kairos-benchmark-v1 && sha256sum -c checksums.sha256)
           (cd paper/snapshots/kairos-conference-final && sha256sum -c checksums.sha256)
+          (cd paper/snapshots/kairos-conference-final && sha256sum -c source-checksums.sha256)

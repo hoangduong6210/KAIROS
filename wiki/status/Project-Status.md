@@ -15,13 +15,16 @@ The repository layout and governance scaffolding are in place. The canonical
 implementation is `src/kairos/model.py`; V1/V2 code remains in the local archive,
 and the previous public bundle is excluded from the public tree.
 
-The repository root is `KAIROS/`. `KAIROS_FINAL.pdf` is preserved as a
-PDF-only artifact at `paper/snapshots/kairos-conference-final/` and is selected
-by `paper/CONFERENCE_CURRENT`. Its former venue-specific source/template bundle
-was removed from public surfaces on explicit project-owner authorization;
-`artifact.toml` records the exception. Superseded drafts, slides, generated
-exports, and paper scripts are excluded from the public tree under the archive
-boundary.
+The repository root is `KAIROS/`. `KAIROS_FINAL.pdf` is preserved as the
+canonical conference artifact at `paper/snapshots/kairos-conference-final/`
+and is selected by `paper/CONFERENCE_CURRENT`. A separately manifested
+`main.tex` and 15 retained figures provide a generic Overleaf reconstruction
+directly in that snapshot. The venue-specific template remains excluded, and
+the reconstruction is neither the original camera-ready source nor an exact
+build closure for the canonical PDF. `artifact.toml`, `checksums.sha256`, and
+`source-checksums.sha256` record these boundaries. Superseded drafts, slides,
+generated exports, and paper scripts remain excluded under the archive
+boundary. [Trace: `C-PAPER-001` → `E-PAPER-001`]
 
 Legacy code, prototypes, and workbenches are categorized in the local archive.
 Public Git retains only archive boundary documentation and the checksum
@@ -47,11 +50,11 @@ rerun. [Trace: `C-IMPL-001`, `C-REPO-001` → `E-IMPL-001`, `E-BENCH-001`]
 
 ## Remaining publication gates
 
-1. Record the canonical implementation and PDF-only artifact closure in a durable commit.
+1. Preserve the canonical implementation and both conference-artifact manifests in durable commits.
 2. Formally admit `C-PERF-001` before making any benchmark page a paper source.
-3. Keep the declared software license separate from unresolved data, template,
-   figure, manuscript, and archived-material redistribution rights before any
-   new paper-source distribution.
+3. Keep the declared software license separate from unresolved provider,
+   third-party, venue, employer, and archived-material rights before any new
+   paper-source distribution.
 4. Develop manuscript updates in `paper/current-state/` and create a new
    evidence-locked snapshot only when publication is requested.
 5. Treat lead-time and cross-domain questions as separate future protocols; the

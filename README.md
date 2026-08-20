@@ -32,12 +32,15 @@ immutable conference artifact:
 | Package | Purpose | Status |
 |---|---|---|
 | [`paper/current-state/`](paper/current-state/) | Living staging area for post-conference updates | Mutable; currently no claim-bearing manuscript |
-| [`paper/snapshots/kairos-conference-final/`](paper/snapshots/kairos-conference-final/) | Final conference PDF and integrity metadata | Immutable, PDF-only historical snapshot |
+| [`paper/snapshots/kairos-conference-final/`](paper/snapshots/kairos-conference-final/) | Canonical conference PDF plus a separately manifested Overleaf reconstruction | Immutable historical snapshot; reconstruction is not exact source closure |
 
 `paper/CONFERENCE_CURRENT` identifies `kairos-conference-final`, while
 `paper/CURRENT` remains `UNRELEASED`. The conference artifact predates the
 current evidence-lock contract, so its claims do not override the wiki. Its
-former venue-specific source and template are not part of the public tree.
+venue-specific template is not part of the public tree. A generic, normalized
+`main.tex` reconstruction and its 15 retained figures are included beside the
+PDF for preservation and future editing; they are not the original submitted
+or camera-ready source and are not expected to reproduce the canonical PDF.
 Future manuscript revisions must be developed in `paper/current-state/` from
 admitted wiki content and locked to a frozen evidence release before snapshot
 publication.
@@ -77,7 +80,7 @@ protocols/        versioned experiment and admission contract
 datasets/         public rights/checksum metadata; inputs are staged locally
 results/          current frozen evidence plus legacy quarantine metadata
 runs/             mutable execution outputs; never authoritative evidence
-paper/            current manuscript staging and immutable PDF snapshot
+paper/            current manuscript staging and immutable conference snapshot
 wiki/             canonical status, methods, claims, evidence, and limitations
 docs/             technical reference material
 scripts/          integrity, disclosure, and reporting utilities
@@ -184,7 +187,8 @@ Original KAIROS software is licensed under
 PDFs, figures, conference materials, archives, and third-party content do not
 automatically inherit the root software license; their own notices and upstream
 terms control. The project owner confirms that all named authors approved
-repository distribution of the final conference PDF as provided; this closes
-only the author-consent gate and does not alter any third-party terms.
+repository distribution of the final conference PDF and the identified
+reconstruction source and figures as provided; this closes only the
+author-consent gate and does not alter any third-party terms.
 See [`paper/RIGHTS.md`](paper/RIGHTS.md) and
 [`THIRD_PARTY_NOTICES.md`](THIRD_PARTY_NOTICES.md).
